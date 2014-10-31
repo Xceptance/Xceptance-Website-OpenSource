@@ -1,0 +1,154 @@
+---
+layout: news-post
+title: posts.news.8.title
+when: posts.news.8.when
+categories: news
+excerpt: posts.news.8.excerpt
+---
+{% if site.lang == 'en' %}
+    <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">
+	    Xceptance released version 4.3 of its load testing and test automation product Xceptance LoadTest (XLT). It features a wide range of improvements and new functionality.
+    </p>
+
+    <!-- that is regular content -->
+    <p>
+	    As always, this update is free of charge for every user. You can use XLT freely for your daily automation work, regression testing, and performance validation. If you are an eligible Open Source project, you can get a full XLT license for your load and performance testing needs for free as well.
+    </p>
+
+    <h3>New Features and Improvements</h3>
+    <h4>Script Developer</h4>
+    <p>
+	    Enjoy more automation with less clicking. The new information panel summarizes the specifics of the currently selected item, so you do not need to open it anymore. Additionally, the new log panel lists all executed commands and their respective parameters.
+    </p>
+    <p>
+	    If an element is styled with the CSS property text-transform, then the element’s text on the screen may have a different character casing from what is defined in the page’s DOM tree. The WebDriver specification mandates to return the text as shown on the screen. Script Developer will now record text with the character casing that appears on the screen and it will also take the CSS property text-transform into account when replaying text assertions.
+    </p>
+
+    <h4>Reporting</h4>
+    <p>
+	    The XLT load test reports have been improved by adding more charts and data details, such as overall statistics for all timers. Arrival rate charts have been added to visualize the load development over time and make sure the desired load factor was reached.
+    </p>
+
+    <p>
+	    Charts can now optionally be configured to be logarithmic. A capping can be added to hide larger spikes, which usually make charts hard to read, without removing the important information altogether.
+    </p>
+
+    <p>
+	    The new networking section summarizes all general network-related statistics and charts on a separate page.
+    </p>
+
+    <p>
+	    The error and event page has been redesigned and includes a new error chart that contains separate graphs for all transactions/actions/requests so that the temporal distribution of transaction/action/request errors is displayed in one chart. A new error summary table groups all errors by their error message to help you see which types of errors occurred and how many of them.
+    </p>
+
+    <h4>Load and Performance Testing</h4>
+    <p>
+	    The master controller features two new commands to validate the availability of agents and display their current configuration. A new command line option permits the skipping of result downloads when XLT is used as a load generator only.
+    </p>
+
+    <h4>Framework Extensions</h4>
+    <p>
+	    A set of new commands is available in Script Developer and in the framework: commands such as assertAttribute, assertStyle, assertClass, assertEval, and their matching store and wait equivalents.
+    </p>
+
+    <p>
+	    XLT can now send and receive IDs as part of the request to ease the correlation of server-side logs and test results. XLT may send a randomly generated alphanumeric ID as request header or extract such an ID from an arbitrary response header.
+    </p>
+
+    <p>
+	    When dealing with different test environments, different load profiles, and/or different test data at the same time, managing different combinations of configuration settings can be challenging. The new property file include feature makes it easier now to predefine aspects and reuse them later in different configurations without copying and pasting.
+    </p>
+
+    <p>
+	    When a test case reads a certain setting from the configuration, the framework uses a fallback strategy when doing the property look-up. This strategy performs an additional look-up step now, based on the transaction name (the short name to which the full class name is mapped). This additional step lets you parameterize different transactions differently, even if they are mapped to the same class and therefore share the same code.
+    </p>
+
+    <p>
+	    The webdriver that will be used when executing functional tests can now be configured via properties. This allows greater flexibility and hardcoding is not necessary anymore.
+    </p>
+
+    <p>
+	    When XLT executes XML script test cases with a WebDriver instance that is capable of taking screenshots, it can take a screenshot after each action, if desired.
+    </p>
+
+    <h4>Result Browser</h4>
+    <p>
+	    A new look matches the overall styling of reports. Also, the navigation bar can now be resized, requests are color coded to visualize the content type, and the first page is displayed automatically. URLs are now active links, so you can click them easily.
+    </p>
+
+    <p>
+	    If needed, the content of a response can be beautified for certain content types (HTML, JavaScript, JSON, CSS). This includes formatting and syntax highlighting.
+    </p>
+
+    <h4>Misc</h4>
+    <ul>
+	    <li>
+		    XLT is shipped with an empty test suite project that can be used as a template for your own projects.
+	    </li>
+	    <li>
+		    HtmlUnit has been upgraded to version 2.12.
+	    </li>
+	    <li>
+		    WebDriver/Selenium has been upgraded to version 2.39.0.
+	    </li>
+	    <li>
+		    EC2 admin console permits setting a tag name now.
+	    </li>
+    </ul>
+
+    <h3>Where to Get it</h3>
+    <ul>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.3.0/releasenotes.html">Release Notes</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.3.0/xlt-4.3.0.zip">Download</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.3.0/user-manual.html">User Manual</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/xltportal/">XLT Self Service Center</a>
+	    </li>
+    </ul>
+{% else %}
+        <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">
+	    Endlich ist sie da, die Xceptance LoadTest (XLT) 4.3 Version. Freuen Sie sich auf Verbesserungen und neue Features!
+    </p>
+
+    <!-- that is regular content -->
+    <p>
+	    XLT 4.3 kommt mit einer großen Bandbreite neuer Funktionen und Verbesserungen. Der Script Developer vereinfacht das Auswählen von Elementen durch eine neue Informationsleiste. Die Test Reports beinhalten ab sofort noch mehr Datendetails. Darüber hinaus gibt es zahlreiche Framework-Erweiterungen.  
+    </p>
+    <p>
+        Dieses Update ist wie immer kostenlos. Nutzen Sie XLT kostenfrei zur Testautomatisierung sowie für Regressions- und Performancetests. Anerkannte Open-Source Projekte erhalten eine kostenlose Community-Lizenz mit Zugang zum kompletten Funktionsumfang.  
+    </p>
+    <p>
+        Einen detaillierten Überblick über XLT 4.3 gibt es hier. 
+    </p>
+    <h3>Download und weitere Informationen</h3>
+    <ul>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.3.0/releasenotes.html">Release Notes</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.3.0/xlt-4.3.0.zip">Download</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.3.0/user-manual.html">Benutzerhandbuch</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/xltportal/">XLT Self Service Center</a>
+	    </li>
+    </ul>
+{% endif %}

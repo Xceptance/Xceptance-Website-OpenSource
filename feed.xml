@@ -1,0 +1,36 @@
+---
+layout: none
+origin: https://github.com/snaptortoise/jekyll-rss-feeds
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    {% if site.lang == 'de' %} 
+        {% capture host %}http://www.xceptance.de/de{% endcapture %}
+    {% else %}
+        {% capture host %}http://www.xceptance.com/en{% endcapture %}
+    {% endif %}    
+   
+    <channel>
+        {% capture name %}{% t global.website.name %}{% endcapture %}
+        <title>{{ name | xml_escape }}</title>
+        
+        {% capture desc %}{% t global.website.description %}{% endcapture %}
+        <description>{{ desc | xml_escape }}</description>	
+        <link>{{ host }}</link>
+    
+        <atom:link href="{{ host }}/feed.xml" rel="self" type="application/rss+xml" />
+        
+        {% for post in site.posts limit:20 %}
+        <item>
+            {% capture title %}{% t post.title %}{% endcapture %}
+            <title>{{ title | xml_escape }}</title>
+            
+            <description>{{ post.content | xml_escape }}</description>
+            
+            <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+            <link>{{ host }}{{ post.url }}</link>
+            <guid isPermaLink="true">{{ host }}{{ post.url }}</guid>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

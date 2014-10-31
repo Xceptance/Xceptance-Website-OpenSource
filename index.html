@@ -1,0 +1,95 @@
+---
+layout: homepage
+
+title: homepage.title
+description: homepage.description
+
+navName: Home
+mainNavLinkName: main.navigation.Home
+
+permalink: /
+---
+
+<div id="service-areas">
+	<div class="row">
+		<div class="container">
+			<div class="text-center landing-intro col-md-offset-1 col-md-10">
+				<h1>{% t homepage.intro.headline %}</h1>
+				<p class="lead">{% t homepage.intro.details %}</p>
+			</div>
+		</div>
+	</div>
+	
+	 <div class="row">
+		<div class="container">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail"> 
+					<div class="caption">
+						<a class="icon" href="{{ 'services/#functional-testing' | to_absoluteurl }}">
+							<i class="fa fa-eye fa-3x"></i>
+							<h2>{% t homepage.offer.manual.headline %}</h2>
+						</a>
+						<p class="explanation">
+							{% t homepage.offer.manual.details %}
+						</p>
+						<a href="{{ 'services/#functional-testing' | to_absoluteurl }}" class="more">{% t global.link.learnmore %}</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<div class="caption">
+						<a class="icon" href="{{ 'services/#performance-testing' | to_absoluteurl }}">
+							<i class="fa fa-tachometer fa-3x"></i>
+							<h2>{% t homepage.offer.load.headline %}</h2>
+						</a>
+						<p class="explanation">
+							{% t homepage.offer.load.details %}
+						</p>
+						<a href="{{ 'services/#performance-testing' | to_absoluteurl }}" class="more">{% t global.link.learnmore %}</a>
+					</div>	
+				</div>
+			</div>
+	
+			<!-- Add the extra clearfix for only the required viewport -->
+			<div class="clearfix visible-sm"></div>
+	
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<div class="caption">
+						<a class="icon" href="{{ 'services/#test-guidance' | to_absoluteurl }}">
+							<i class="fa fa-compass fa-3x"></i>
+							<h2>{% t homepage.offer.support.headline %}</h2>
+						</a>
+						<p class="explanation">
+							{% t homepage.offer.support.details %}
+						</p>
+						<a href="{{ 'services/#test-guidance' | to_absoluteurl }}" class="more">{% t global.link.learnmore %}</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail">
+					<div class="caption">
+						<a class="icon" href="{{ 'xlt/' | to_absoluteurl }}">
+							<img src="/images/xlt-logo-small.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+							<h2>{% t homepage.offer.product.headline %}</h2>
+						</a>
+						<p class="explanation">
+							{% t homepage.offer.product.details %}
+						</p>
+						<a href="{{ 'xlt/' | to_absoluteurl }}" class="more">{% t global.link.learnmore %}</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row" id="xlt-background">
+	<div class="container">
+		<div class="col-sm-9">
+			<p class="lead">{% t homepage.welcome_teaser.headline %} <a class="btn btn-primary" href="{{ 'company/' | to_absoluteurl }}">{% t homepage.welcome_teaser.action_button %} <i class="fa fa-chevron-right"></i></a></p>
+			
+		</div>
+	</div>
+</div>

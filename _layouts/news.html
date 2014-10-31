@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+    <body class="general-page news local-scroll" id="page">
+        {% include privacy-message.html %}
+        
+        {% include top-scroller.html %}
+
+		<!-- container centers things -->
+		<div id="navigation" class="navbar-fixed-top">
+			<div class="container">
+				{% include navigation.html isMainNavigation=true %}
+			</div>
+		</div>
+                
+		<header id="teaser" class="hidden-xs">
+			<div class="teaser-image">&nbsp;</div>
+		</header>	
+
+		<div id="main">
+			{{ content }}
+		</div>
+
+		<footer>
+			{% include footer.html %}
+		</footer>
+		{% include tracking.html %}
+    </body>
+</html>
+

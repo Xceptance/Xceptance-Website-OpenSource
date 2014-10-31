@@ -1,0 +1,37 @@
+<!-- place all the stuff about the SD here -->
+<div id="script-developer-tab" class="tab {{include.row}}">
+	<div class="row">
+		<div class="container">
+			<div class="col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-3">	
+				<p class="lead">
+                    {% t xlt.features.ui.details.lead %}
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row featured">
+		<div class="container">
+			<div class="col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-3">	 
+                <h3>{% t xlt.features.ui.details.text.keyfeatures.headline %}</h3>
+				<p>
+                    {% t xlt.features.ui.details.text.keyfeatures.text %}
+                </p> 
+                
+                <ul>
+                    {% t xlt.features.ui.details.text.keyfeatures.list %}
+                </ul>
+			</div>
+		
+			<div class="col-sm-5">
+        		<img src="/images/xlt/script-developer.png" alt="Script Developer UI" width="93%" title="Example View of the Script Developer"/>
+        		<h3>{% t xlt.features.ui.details.text.download.headline %}</h3>
+				<p>
+                    {% t xlt.features.ui.details.text.download.text %}
+				</p>
+				<p>
+					<a href="{{ site.data.xlt.scriptdeveloper.download.link }}" class="btn btn-lg btn-primary">Download</a>
+				</p>
+        	</div>
+        </div>
+	</div>
+</div>

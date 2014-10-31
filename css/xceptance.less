@@ -1,0 +1,1825 @@
+---
+---
+
+@import "css/bootstrap.less";
+
+
+@fGeneral: 'Roboto', sans-serif;
+@fCondensed: 'Roboto Condensed', sans-serif;
+@fHeadline: @fGeneral;
+@font-family-base: 	@fGeneral;
+
+@baseFontSize: 16px;
+
+/* -------- Colors  -------*/
+/*-------------------------*/
+
+/* The default text everywhere */
+@cText: 				#333;
+@cQuotedText:			#666;
+@cLessImportantText: 	#888;
+
+/* Our X red */
+@cXRed:			rgb(230, 0, 0);
+
+@cNavigationIndicator: @cXRed;
+@cNavigationIndicatorHover: @cLightGray;
+
+@cLightGray:		rgb(241, 241, 241); /* was #F4F4F4 */
+@cDarkendLightGray:	darken(@cLightGray, 3%);
+@cDoubleDarkendLightGray: darken(@cLightGray, 10%);
+
+@cFooterGray:		rgb(94, 94, 94);
+@cCopyrightGray: 	darken(@cFooterGray, 10%);
+
+@cPrimaryButton:	rgb(0, 70, 130);
+
+@cLink:				@cPrimaryButton;
+@cLinkHover:		lighten(@cLink, 10%);
+@cLinkVisited:		darken(@cLink, 10%);
+
+@cMainNavigationLink: lighten(@cFooterGray, 25%);
+
+@darkBlue:			#2F3F4E;
+@homepageTeaserHeight: 250px;
+@generalTeaserHeight: 250px;
+@navBarHeight: 90px;
+@navBarHeightMobile: 54px;
+
+.floatingShadow {
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navigationShadow {
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.iconShadow {
+	-moz-text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+	-webkit-text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.iconShadowDarker {
+	-moz-text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+	-webkit-text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.iconShadowBrighter {
+	-moz-text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8), -1px -1px 5px rgba(255,255,255,0.8);
+	-webkit-text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8), -1px -1px 5px rgba(255,255,255,0.8);
+	text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8), -1px -1px 5px rgba(255,255,255,0.8);
+}
+
+.borderShadow {
+	-moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.licenseTableHeaderFooterShadow	{
+	-moz-box-shadow: 0px 0px 5px 2px rgba(150, 150, 150, 0.3);
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(150, 150, 150, 0.3);
+	box-shadow: 0px 0px 5px 2px rgba(150, 150, 150, 0.3);
+}
+
+/* ---------------------------------------------------------- */
+/* --- Grid adjustments -- */
+
+/* Define the maximum width of .container for different screen sizes.
+bootstrap's default for @screen-lg-min and up.: @container-large-desktop: ((1140px + @grid-gutter-width)); */
+@container-large-desktop: ((1000px + @grid-gutter-width));
+
+@grid-gutter-width: 40px;
+
+
+/* ---------------------------------------------------------- */
+/* --- Mixin -- */
+.row-padding {
+	padding: 2em 0 2em 0;
+}
+
+.transition-ease {
+	-webkit-transition: all 350ms ease;
+	transition: all 350ms ease;
+}
+
+.textLinkStyling {
+	a {
+		font-weight: 400;
+		color: @cLink;
+		border-bottom: 2px solid transparent;
+		.transition-ease;
+
+		&:hover {
+			color: @cLinkHover;
+			border-bottom: 2px solid @cLinkHover;
+			text-decoration: none;
+		}
+
+		&:focus {
+			text-decoration: none;
+		}
+	}
+
+	/* just to make sure, that btn do not get the above styling */
+	a.btn {
+		color: white;
+		border-bottom-width: 1px;
+
+		&:hover {
+			border-bottom-width: 1px;
+		}
+	}
+}
+
+/* Fancy ul list with our own bullet */
+.ourStyledList {
+	ul {
+		padding-left: 0em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+
+		li {
+			margin-left: 1.20em;
+			padding-bottom: 0.4em;
+			list-style: none;
+
+			&:before {
+			  font-family: 'FontAwesome';
+
+			  /* For a round bullet */
+			  content:'\f0c8';
+			  display: block;
+			  position: relative;
+			  max-width: 0px;
+			  max-height: 0px;
+			  left: -1.7em;
+			  top: 0.5em;
+			  color: @cLink;
+			  font-size: 50%;
+			}
+
+			.textLinkStyling;
+		}
+	}
+}
+
+/* -- For home, news, xlt, jobs -- */
+.thumbnailDefinition {
+	.thumbnail {
+
+		border-radius: 0;
+		border: none;
+		padding: 0;
+		background-color: transparent;
+		.textLinkStyling;
+
+		.caption {
+
+			padding: 0.3em;
+
+			.icon {
+				border-bottom: none;
+			}
+
+			i {
+				color: @cLink;
+				margin-right: 0.5em;
+				.iconShadowDarker;
+			}
+
+
+			p {
+				&.explanation {
+					margin: 0.5em 0 0 0;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+/* --- this is for the left and right headline
+	   with maybe an icon on top as well as the large section  with
+	   all the nice text--- */
+.headlineDefinition {
+	.headline {
+		padding-top: 1em;
+
+		p {
+			text-align: center;
+            margin-bottom: 1em;
+
+			i {
+				color: @cLink;
+				.iconShadowDarker;
+			}
+		}
+
+		h2 {
+			text-align: center;
+			margin-top: 0;
+			padding-bottom: 0.5em;
+			font-size: 1.6em;
+		}
+	}
+}
+
+/* --- this is to have the same text styling for carousels and teaser images
+	which use text--- */
+.teaserTextDefinition {
+	left: 10%;
+	right: 10%;
+
+	color: @cLightGray;
+	text-shadow: none;
+
+	&.left {
+		text-align: left;
+	}
+	&.center {
+		text-align: center;
+	}
+	&.right {
+		text-align: right;
+	}
+	&.no-button {
+		margin-bottom: 40px;
+	}
+	&.top {
+		margin-bottom: 80px;
+	}
+
+	h1 {
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+		font-family: @fCondensed;
+		line-height: 1.3em;
+		font-size: 2.5em;
+
+		@media (max-width: @screen-xs-max) {
+			 font-size: 1.8em;
+		}
+
+		@media (min-width: @screen-xs-max) and (max-width: @screen-sm-max) {
+			font-size: 2.3em;
+		}
+	}
+
+	.btn {
+		margin: 0.5em 0.2em 0 0.2em;
+	}
+
+	.ourStyledList;
+
+	ul {
+		padding-left: 0.1em;
+		font-size: 120%;
+
+		li {
+			padding: 0 0;
+		}
+	}
+}
+
+/* ---------------------------------------------------------- */
+/* --- Basic Components  --*/
+body {
+	font-family: @fGeneral;
+	font-size: @baseFontSize;
+	font-weight: 300;
+	line-height: 1.5;
+
+	color: @cText;
+	background-color: White;
+
+	padding: 0;
+	padding-top: @navBarHeight;
+
+	@media (max-width: @screen-xs-max) {
+       padding-top: @navBarHeightMobile;
+    }
+
+	overflow-x: hidden;
+}
+
+/* get rid off the focusing border */
+/* http://stackoverflow.com/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome */
+*:focus {
+    outline: 0 !important;
+}
+
+/* ---------------------------------------------------------- */
+/* --- reset a few things --- */
+.container {
+	padding: 0px;
+}
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h3, h4, h5, h6 {
+	font-family: @fHeadline;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+h2 {
+	font-family: @fCondensed;
+	font-size: 1.6em;
+	line-height: 1.3;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+/* we got some logos which shall not have a border */
+img {
+    &.no-decoration {
+        box-shadow: none !important;
+        border: none !important;
+    }
+}
+
+strong {
+	font-weight: 400;
+}
+
+.meta {
+	font-size: 80%;
+	color: @cLessImportantText;
+}
+
+.lead {
+	font-size: 150%;
+	font-weight: 300;
+	font-family: @fCondensed;
+	line-height: inherit;
+}
+
+a {
+	color: @cLink;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p {
+	.textLinkStyling;
+	font-size: @baseFontSize;
+}
+
+.btn {
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 0;
+	.transition-ease;
+	background-color: @cDarkendLightGray;
+	
+	&:hover {
+		background-color: @cDoubleDarkendLightGray;
+	}
+}
+
+.btn-primary {
+	background-color: @cPrimaryButton;
+	border: 1px solid @cPrimaryButton;
+
+	&:hover {
+		background-color: lighten(@cPrimaryButton,9%);
+		border: 1px solid lighten(@cPrimaryButton,6%);
+	}
+}
+
+.btn-link {
+	font-weight: 400;
+	color: @cLink;
+	border-bottom: 2px solid transparent;
+	.transition-ease;
+	margin: 0 0.5em;
+
+	&:hover {
+		color: @cLinkHover;
+		border-bottom: 2px solid @cLinkHover;
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+/* Defining how text looks like when selected */
+::selection {
+	background: #fef198; /* Safari */
+	color: #000;
+	}
+
+::-moz-selection {
+	background: #fef198; /* Firefox */
+	color: #000;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+/* Table for some address or other key value data */
+table {
+	&.keyValue {
+		.key {
+			font-weight: 400;
+
+			&:after {
+				/*  content: ':'; */
+			}
+		}
+		.value {
+			padding-left: 1em;
+		}
+	}
+}
+
+/* Reset the padding for col-* when left/right, great when nested */
+
+.col-left {
+	padding-left: 0;
+}
+.col-right {
+	padding-right: 0;
+}
+
+/* We need this extra tweek for the phone view */
+@media (max-width: @screen-xs-max) {
+	.col-left {
+		padding-right: 0;
+	}
+	.col-right {
+		padding-left: 0;
+	}
+}
+
+/* Make the quotes outside normal text nice */
+blockquote {
+	margin: 0;
+	padding: 0;
+
+    &.standalone {
+        border: none;
+        color: @cQuotedText;
+
+        &:before {
+            font-family: 'FontAwesome';
+            content: "\f10d";
+            font-size: 3em;
+            color: darken(@cLightGray, 12%);
+            position: relative;
+            z-index: -1;
+/*             left: -0.3em; */
+        }
+        p {
+            position: relative;
+            color: darken(@cLightGray, 25%);
+        }
+    }
+}
+
+/* ---------------------------------------------------------- */
+/* --- General --- */
+
+.alert-info {
+	border-radius: 0;
+	margin-bottom: 0;
+
+	a:hover {
+		border-bottom-color: #245269;
+	}
+}
+
+
+#privacy-message {
+	
+	#inner {
+		position: fixed;
+		z-index: 20;
+		bottom: 10px;
+		left: 0;
+		.floatingShadow;
+	}
+}
+
+/* Show the to the top scroller in the lower right corner */
+#top-scroller {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 100;
+
+    a {
+        font-size: 2em;
+        color: darken(@cFooterGray,5%);
+        .opacity(0.5);
+        .iconShadowBrighter;
+
+        &:before {
+            font-family: 'FontAwesome';
+            content: "\f139";
+        }
+        &:hover {
+            text-decoration: none;
+            .opacity(1);
+        }
+    }
+}
+/* but show it only on large enough screens */
+@media (max-width: @screen-xs-max) {
+    #top-scroller {
+        display: none;
+    }
+}
+
+/* Currency switching, EUR is off by default */
+.EUR-price {
+    display: none;
+}
+
+#navigation {
+	@cNavigation: rgba(255, 255, 255, 0.95);
+	background-color: @cNavigation;
+    .navigationShadow;
+
+    @media (min-width: @screen-sm-min) {
+    	height: @navBarHeight;
+    }
+
+	nav {
+		border: none;
+		background-color: inherit;
+		padding: 0;
+		margin: 0;
+
+        /* fixes some strange left alignment of drop down */
+        .navbar-right {
+        	.navbar-nav {
+	        	a {
+	        		font-size: 1em;
+	        		padding-right: 15px;
+	        		padding-left: 15px;
+
+	        		/* this is to push the nav links closer together to also have enough space for the logo
+	        		note: only for the sm view */
+		        	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			        	padding-left: 10px;
+			        	padding-right: 0px;
+			        }
+			    }	        	
+	         }
+
+	         .navbar-nav > li > a {
+	         
+	         	@media (min-width: @screen-sm-min) {
+		         	padding-bottom: 21px;
+		         	padding-top: 25px;
+		         }
+	         }
+	         
+	         /* to make sure nav and sub-nav are right-aligned; let's say we always want 8px padding on right of nav */
+	         .navbar-nav > li:last-child > a {
+	         	/* should not effect mobile */
+	         	@media (min-width: @screen-sm-min) {
+					padding-right: 8px;  
+				}   
+			 }
+
+        }
+	}
+
+	.navbar-brand {
+
+		/*background: url(/images/xceptance-logo-transparent-202px.png) no-repeat 0px 6px transparent; */
+		width: 242px;
+		height: 54px;
+        padding-top: 8px;
+        padding-bottom: 6px;
+
+        @media (min-width: @screen-sm-min) {
+        	padding-top: 25px;
+        	height: 80px;
+        }
+
+		a:hover {
+			border-bottom: none;
+		}
+	}
+
+	.navbar-toggle {
+		border: none;
+
+		&:hover {
+			background-color: @cDarkendLightGray;
+		}
+
+		.icon-bar {
+			background-color: @cPrimaryButton;
+		}
+	}
+
+    /* these are needed to avoid a scrollbar in the menu on phones */
+    .collapse-fixes {
+        text-align: center;
+        background-color: @cNavigation;
+        margin-top: @navBarHeightMobile + 1;
+
+        li {
+            width: 8em;
+            margin: 0 auto;
+        }
+
+        a {
+            padding: 0.25em 0;
+        }
+    }
+
+	.navbar-collapse {
+		&.collapsing {
+            .collapse-fixes;
+		}
+
+		&.collapse.in {
+            .collapse-fixes;
+		}
+	}
+
+	a {
+		text-transform: uppercase;
+	    font-weight: 400;
+	    color: @cMainNavigationLink;
+	    .transition-ease;
+	}
+
+    li {
+        &.active {
+            & > a {
+                background-color: transparent;
+                color: #222;
+            }
+        }
+	}
+
+	a:hover {
+		color: #222;
+	}
+}
+
+#language-switcher {
+    font-size: 0.7em;
+    line-height: 1.4;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+
+	@media (max-width: @screen-xs-max){
+        position: relative;
+		padding: 0px 0px 5px 0px;
+        top: auto;
+        right: auto;
+        text-align: right;
+        font-size: 1em;
+	}
+	
+	.language {
+        .textLinkStyling;
+
+		background-color: @cLightGray;
+        color: lighten(@cFooterGray, 15%);
+		border-bottom: 2px solid @cLightGray;
+		
+        letter-spacing: 1px;
+		text-align: center;
+        
+        a {
+            padding: 2px 5px;
+            text-transform: lowercase;
+        }
+
+        @media (max-width: @screen-xs-max) {
+            background-color: inherit !important;
+            border-bottom: none;
+            
+            a {
+                text-transform: uppercase;
+                color: @cMainNavigationLink;
+            }
+        }
+            
+    }
+}
+
+#sub-navigation {
+	@media (min-width: @screen-sm-min) {
+		position: fixed;
+		top: 44px;
+	}
+
+	z-index: 1030;
+	opacity: .95;
+	width: 100%;
+	background-color: transparent;
+
+	.navbar {
+
+		margin-bottom: 0;
+		border-radius: 0;
+		border: none;
+		background-color: transparent;
+		min-height: 0;
+
+		@media (min-width: @screen-sm-min) {
+			float: right;
+		}
+
+		.navbar-nav {
+			/* fix some odd mobile screen size problem */
+			@media (max-width: @screen-xs-max) {
+				margin: 7.5px 0;
+			}
+		}
+
+		li {
+
+			& > a:hover {
+            		background-color: transparent;
+            		color: #222;
+            }
+
+        	&.active {
+
+	        	background-color: transparent;
+	        	font-weight: 400;
+
+	        	a {
+	        		color: #222;
+	        	}
+            }
+        }
+
+		a {
+			text-align: center;
+			padding: 6px 8px;
+			font-size: 0.9em;
+			background-color: transparent;
+			font-weight: 400;
+			color: lighten(@cFooterGray, 25%);
+			.transition-ease;
+		}
+	}
+}
+
+
+/* ******************************************************************
+
+
+/* The teaser section of all pages, when smaller, it will be changed
+ * per page type */
+#teaser {
+	background-color: @cFooterGray;
+
+	.carousel {
+		height: @homepageTeaserHeight;
+		margin: 0px;
+
+		.carousel-inner {
+
+            .item {
+				height: @homepageTeaserHeight - 1;
+
+				img {
+					height: @homepageTeaserHeight;
+				}
+			}
+			.carousel-caption {
+				.teaserTextDefinition;
+                padding: 0 0 2.3em;
+            }
+		}
+
+		.carousel-indicators {
+            bottom: 10px;
+
+			li {
+				border-color: @cCopyrightGray;
+				&.active {
+					background-color: @cCopyrightGray;
+				}
+			}
+		}
+
+		.carousel-control {
+			width: 8%;
+			padding-top: 114px;
+		}
+
+		.right {
+			background: none;
+
+			span {
+				/* get the icon a little closer to the left or right border */
+				padding-right: 20px;
+				color: white;
+			}
+		}
+		.left {
+			background: none;
+
+			span {
+				/* get the icon a little closer to the left or right border */
+				padding-left: 20px;
+				color: white;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------------- */
+/* --- Homepage --- */
+
+/*  --- This is the homepage carousel teaser --- */
+.homepage {
+
+	#teaser {
+		background: url(/images/teasers/carousels/grey.png) center @navBarHeight no-repeat @cFooterGray;
+		background-attachment: fixed;
+
+		#first {
+
+			img {
+				height: 200px;
+				position: relative;
+				top: 19px;
+				left: 38px;
+				
+				@media (max-width: @screen-sm-max) {
+					left: -40px;	
+				}
+				
+				@media (min-width: @screen-md-max) {
+					left: -5px;	
+				}
+			}
+		}
+	}
+
+	/* --- The main service offerings --- */
+	#service-areas {
+
+        padding-top: 3em;
+        padding-bottom: 3em;
+
+        .thumbnailDefinition;
+
+        .thumbnail {
+	        .caption {
+	        	text-align: center;
+
+	        	/* reset the global style because this is an icon above and not next to the text */
+	        	i {
+					margin-right: 0 !important;
+					.transition-ease;
+				}
+
+				a.icon {
+					&:hover > i {
+						color: @cLinkHover;
+					}
+				}
+
+				h2 {
+					color: @cText;
+				}
+
+				a.more {
+					float: left;
+				}
+	        }
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .lead {
+            padding-bottom: 1em;
+        }
+
+        #product-logo {
+			padding: 8px 0;
+		}
+	}
+
+	/* the decoration images of xlt */
+	#xlt-background {
+		padding-top: 3em;
+		padding-bottom: 3em;
+		color: @cLightGray;
+		background-color: @cFooterGray;
+		background: url(/images/homepage/floor_large.jpg) repeat 42% 48%;
+		background-attachment: fixed;
+
+		.lead {
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+			font-size: 2.5em;
+            font-weight: 400;
+            font-family: @fCondensed;
+            color: @cLightGray;
+		}
+	}
+}
+
+/* ---------------------------------------------------------- */
+/* --- This is on the xlt page -- */
+
+.xlt-landing {
+
+	#teaser {
+		background: url(/images/teasers/carousels/grey.png) center @navBarHeight no-repeat @cFooterGray;
+		background-attachment: fixed;
+	}
+
+	.tab {
+        .row-padding;
+        .ourStyledList;
+        .thumbnailDefinition;
+		.headlineDefinition;
+
+		.headline {
+			margin: 0;
+			padding-top: 0em;
+
+			/* to easily control the icons */
+			p {
+				text-align: center;
+				font-size: 120%;
+			}
+		}
+
+		img {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			.floatingShadow;
+		}
+
+		/* this is for easy handling of images within paragraphs */
+		p {
+	            img:first-of-type {
+                &.pull-left {
+                    margin-top: 0;
+                    margin-right: 1em;
+                }
+            }
+            img:first-of-type {
+                &.pull-right {
+                    margin-top: 0;
+                    margin-left: 1em;
+                }
+            }
+        }
+
+        &.even {
+            background-color: @cLightGray;
+        }
+        &.odd {
+            background-color: White;
+        }
+	}
+}
+
+.xlt-subpages {
+
+	#teaser {
+		background: url(/images/teasers/grey_border.jpg) center @navBarHeight no-repeat @cFooterGray;
+		background-attachment: fixed;
+		
+		.teaser-image {
+			height: 12px;
+		}
+	}
+}
+
+#xlt-overview {
+	.row-padding;
+	.headlineDefinition;
+	.ourStyledList;
+	
+	#product-logo {
+		padding-bottom: 0.25em;
+	}
+}
+
+#xlt-areas {
+	.row-padding;
+	.thumbnailDefinition;
+	padding-top: 3em;
+
+	#feature-overview {
+		.thumbnailDefinition;
+
+		.thumbnail {
+
+	        .caption {
+	        	text-align: center;
+
+	        	a {
+		        	h2 {
+			        	padding-bottom: 1.3em;
+		        	}
+
+		        	i {
+						margin-right: 0 !important;
+						border: 1px solid white;
+						border-radius: 50%;
+						padding: .7em;
+						color: @cLink;
+						border: 2px solid @cLink;
+
+						&:hover {
+							border: 2px solid darken(@cLightGray, 20%);
+						}
+					}
+				}
+	        }
+        }
+	}
+}
+
+/* --- Sub-pages of XLT --- */
+#licensing-pricing {
+	.row-padding;
+}
+
+#support-and-training {
+	.row-padding;
+	.ourStyledList;
+
+	ul {
+		padding-left: 0.5em;
+
+		li {
+			list-style: none;
+		}
+	}
+}
+
+#feature-areas {
+	.thumbnailDefinition;
+	.row-padding;
+	padding-bottom: 0;
+	.textLinkStyling;
+	
+	.feature-row {
+		margin-top: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px solid @cDarkendLightGray;
+		.borderShadow;
+		
+		@media (min-width: @screen-md-min) {
+			margin-top: 1.5em;
+			padding-bottom: 1.5em;
+		}
+		
+		/*
+&:hover {
+			cursor: pointer;
+		
+			h2 > a {
+				color: @cLinkHover;
+				border-bottom: 2px solid @cLinkHover;
+			}
+			
+			.btn {
+				background-color: @cDoubleDarkendLightGray;
+				
+				i {
+					color: @cLinkHover;
+				}
+			}
+		}
+*/
+
+		.iconLarge > i {
+			
+			.iconShadow;
+			color: @cLink;
+			font-size: 3.5em;
+			padding-top: 0.2em;
+			float: right;
+		}
+		
+		h2 {
+			margin-top: 0;
+			font-size: 1.6em;
+			
+			i {
+				margin-right: 0.7em;
+			}
+		}
+		
+		.explanation {
+		
+			@media (min-width: @screen-sm-min) {
+				padding-right: 2em;
+			}
+			
+			@media (min-width: @screen-md-min) {
+				padding-right: 10em;
+			}
+			
+			.btn {
+				position: relative;
+				bottom: -1.2em;
+				
+				@media (min-width: @screen-sm-max) {
+					right: -55px;
+				}
+				
+				@media (min-width: @screen-md-min) {
+					bottom: -24px;
+				}
+				
+				i {
+					color: @cLink;
+				}
+			}
+		}
+	}
+	
+	.tab {
+		border-bottom: 2px solid @cDarkendLightGray; 
+	}
+}
+
+
+#documentation {
+	.row-padding;
+	.ourStyledList;
+
+	img {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		.floatingShadow;
+	}
+}
+
+
+table {
+
+    &.license {
+
+    	.textLinkStyling;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        @cHeaderTable: @cLightGray;
+        @cHeaderBorders: darken(@cLightGray, 20%);
+
+        thead {
+            border: 1px solid @cHeaderBorders;
+
+            th {
+                background-color: @cHeaderTable;
+                border: 1px solid @cHeaderBorders;
+                text-align: center;
+                font-size: 120%;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 1em;
+            }
+        }
+
+        tbody {
+            border: none;
+        }
+
+        tfoot {
+            border: none;
+        }
+
+        td {
+            width: 20%;
+
+            background-color: @cHeaderTable;
+            font-size: 90%;
+            text-align: center;
+            border: 1px solid @cHeaderBorders;
+
+            padding: 0.75em !important; /* important to get over the default bootstrap one */
+
+            ul {
+                text-align: left;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+
+        .price {
+            font-size: 130%;
+            font-weight: 400;
+
+            td {
+                background-color: @cDarkendLightGray;
+            }
+
+            .em	{
+                color: White;
+                background-color: @cPrimaryButton;
+            }
+
+            .currency, .time {
+                font-weight: normal;
+                vertical-align: top;
+                font-size: 80%;
+            }
+        }
+
+        .em {
+            width: 25%;
+            background-color: White;
+        }
+
+        .name {
+            .licenseTableHeaderFooterShadow;
+        }
+        .price {
+            .licenseTableHeaderFooterShadow;
+        }
+        .users {
+            td i {
+                color: @cLessImportantText;
+                margin-bottom: 0.5em;
+            }
+        }
+        .motivation {
+            color: @cLessImportantText;
+        }
+    }
+}
+
+#pricing-details {
+	padding-top: 2em;
+}
+
+/* ---------------------------------------------------------- */
+/* --- about page and  other general pages */
+.general-page {
+
+	#teaser {
+		height: @generalTeaserHeight;
+
+		.teaser-image {
+			height: @generalTeaserHeight;
+		}
+	}
+
+	#main {
+		.ourStyledList;
+		.headlineDefinition;
+	}
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* ---About is similar to the general setup */
+.about {
+	#teaser {
+		.teaser-image {
+ 			background: url(/images/teasers/floor.jpg) fixed center @navBarHeight no-repeat @cFooterGray;
+		}
+	}
+	
+	#main {
+		.row-padding;
+		padding-bottom: 3em;
+	}
+
+    .informational-col {
+        padding-top: 2em;
+    }
+
+    .facts-col {
+        .informational-col;
+    }
+
+	.facts-table {
+		border-spacing: 0 1em;
+		border-collapse: separate;
+
+		td {
+			vertical-align: top;
+			padding: 0.5em 0.5em 0.5em 0em;
+		}
+		.key {
+			border-bottom: 2px solid @cDarkendLightGray;
+
+			@media (min-width: @screen-sm-max) {
+				width: 47%;
+			}
+		}
+		.value {
+			border-bottom: 4px solid @cDarkendLightGray;
+			font-weight: 400;
+		}
+	}
+
+	#management {
+        /* this is darn ugly */
+        .row {
+            &.profile {
+                margin-top: 1em;
+            }
+        }
+		.profile {
+            img {
+                margin: 0.25em auto 1em;
+            }
+            h2 {
+                margin-top: 0em;
+            }
+        }
+	}
+
+	#team {
+		.team-image {
+			margin-top: 2em;
+
+            img {
+                width: 16.5%;
+                float: left;
+
+                &:last-child {
+	                margin-bottom: 1.5em;
+                }
+            }
+        }
+	}
+
+	#references {
+
+		.company-info {
+			margin-bottom: 1em;
+			margin-top: 1em;
+
+				img {
+					margin: 0 auto;
+				}
+		}
+
+		.client-list ul {
+			text-align: center;
+
+			li {
+				display: inline-block;
+				list-style: none;
+				margin: 0 10px;
+				font-size: 1.2em;
+
+				&:before {
+					content: none;
+				}
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------------- */
+/* --- The services page details that are different compared to
+ * the general one */
+.services {
+
+	#teaser {
+
+		@media (min-width: @screen-xs-max) {
+            height: @homepageTeaserHeight;
+            background: url(/images/teasers/whiteboard.png) fixed center @navBarHeight no-repeat @cFooterGray;
+        }
+
+        background-color: @cDarkendLightGray;
+
+		.teaser-image {
+
+			#teaser-text {
+
+				@media (min-width: @screen-xs-max) {
+					margin-top: 35px;
+					.teaserTextDefinition;
+					left: 0;
+					right: 0;
+				}
+
+				h1 {
+					font-family: @fHeadline;
+				}
+			}
+		}
+	}
+
+	.service-section {
+		.row-padding;
+		.ourStyledList;
+		.headlineDefinition;
+	}
+
+	#performance-testing {
+		background-color: @cDarkendLightGray;
+	}
+}
+
+#demandware {
+	.row-padding;
+    .ourStyledList;
+    .thumbnailDefinition;
+	.headlineDefinition;
+}
+
+/* ---------------------------------------------------------- */
+/* --- out news page, this is the overview and not the single post */
+.news {
+
+	#teaser {
+		.teaser-image {
+			background: url(/images/teasers/xceptance-text.png) fixed center @navBarHeight no-repeat @cFooterGray;
+		}
+	}
+
+	#news-overview {
+		.row-padding;
+
+        i {
+			color: @cDoubleDarkendLightGray;
+        }
+
+        .news-headline {
+			color: @cLessImportantText;
+		}
+	}
+	
+	.highlighted {
+		background-color: @cLightGray;
+		padding: 5% 5% 8%;
+	}
+
+	.news-post {
+		.ourStyledList;
+		.textLinkStyling;
+
+		blockquote {
+			font-size: 110%;
+			color: @cQuotedText;
+			background-color: #f5f5f5;
+			padding: 1em 2em 1em 1em;
+			margin: 2em 2em;
+			.floatingShadow;
+			border: none;
+
+			&:before {
+				font-family: 'FontAwesome';
+				content: "\f10d";
+				float: left;
+				font-size: 120%;
+			}
+
+			p {
+				margin-left: 2em;
+			}
+		}
+
+		h1 {
+			line-height: 1.3;
+		}
+		
+		img {
+			.floatingShadow;
+		}
+
+        p {
+            img {
+
+            	&.more-space {
+            		margin-top: 1em;
+            		margin-bottom: 1em;
+            	}
+
+                &.pull-right {
+                    margin-left: 1em;
+                }
+                &.pull-left {
+                    margin-right: 1em;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 130%;
+            margin-top: 1.5em;
+        }
+
+        h4 {
+            margin-top: 1.5em;
+        }
+    }
+
+	.news-post-minis {
+        /* when the minis are below the latest news */
+        @media (max-width: @screen-sm-min) {
+            border-top: 1px solid @cDoubleDarkendLightGray;
+        }
+
+		.news-post-mini {
+			padding-top: 1em;
+			padding-bottom: 1em;
+
+			border-bottom: 1px solid @cDoubleDarkendLightGray;
+			margin-bottom: 0.5em;
+
+			.textLinkStyling;
+
+			h2 {
+				margin-top: 0;
+			}
+
+			i {
+				line-height: 2.3em;
+			}
+
+			.pull-left {
+				i {
+					margin-right: 0.15em;
+				}
+				
+			}
+			.pull-right {
+				i {
+					margin-left: 0.15em;
+				}
+			}
+			
+		}
+
+        .news-newer {
+            .text {
+                margin-left: 1.6em;
+            }
+            h2 {
+                margin-bottom: 0;
+                
+                @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	                font-size: 1.2em;
+	            }
+            }
+        }
+		.news-older {
+		
+			.text {
+                margin-left: 1.6em;
+                margin-right: 0.5em;
+            }
+
+            h2 {
+                margin-bottom: 0;
+                
+                @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	            	font-size: 1.2em;
+	            }
+            }
+		}
+		
+		#preview-end {
+			text-align: center;
+			border-bottom: 1px solid @cDoubleDarkendLightGray;
+			padding-bottom: 0.5em; 
+		}
+	}
+
+	#news-archive {
+
+		.row-padding;
+		.headlineDefinition;
+
+		.news-post {
+			margin-bottom: 1em;
+		}
+	}
+}
+
+
+/* ---------------------------------------------------------- */
+/* --- out news page, this is the overview and not the single post */
+.jobs {
+	#teaser {
+		.teaser-image {
+			background: url(/images/teasers/coffee.jpg) fixed center @navBarHeight no-repeat @cFooterGray;
+		}
+	}
+
+	#jobs-overview {
+
+		.row-padding;
+
+		.job-area {
+			.thumbnailDefinition;
+		}
+
+		ul {
+			&.jobs-plain-list {
+				padding-left: 1.1em;
+			}
+		}
+	}
+
+	.job-listing-row {
+		&.odd {
+			background-color: @cDarkendLightGray;
+			padding: 1em 0;
+		}
+		&.even {
+			background-color: White;
+			padding: 1em 0;
+		}
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		p {
+			&.excerpt {
+				font-size: 138%;
+			}
+		}
+
+	}
+
+	p {
+        &.locations {
+			i {
+				color: @cXRed;
+				margin-right: 0.2em;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------------------- */
+/* --- contact page ----------------------------------------- */
+
+.contact {
+
+	#teaser {
+		.teaser-image {
+			background: url(/images/teasers/map-pins-text.jpg) fixed center 60px no-repeat #bfbfbf;
+		}
+	}
+
+	.maps {
+		margin-bottom: 1.5em;
+		margin-top: 1em;
+	}
+}
+
+/* ---------------------------------------------------------- */
+/* --- 404 page ----------------------------------------- */
+
+#pageNotFound {
+	.row-padding;
+}
+
+/* ---------------------------------------------------------- */
+/* --- the footer, more on the dark side */
+footer {
+	background-color: @cFooterGray;
+	color: darken(#fff, 20%);
+/*     box-shadow: 0px -1px 2px rgba(190, 190, 190, 0.80); */
+
+	#footer-information {
+		padding: 2.5em 0 1em;
+
+		h3 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		i {
+			margin-right: 0.2em;
+		}
+
+		.vcard {
+			white-space: nowrap;
+
+			.fn {
+				&.org {
+					display: none;
+				}
+			}
+			.type {
+				display: none;
+			}
+			.adr {
+				margin-bottom: 1em;
+			}
+			.note {
+				display: none;
+			}
+		}
+
+		#addresses {
+			.footer-contact {
+
+				padding-bottom: 1.5em;
+
+				&:first-child {
+					padding-bottom: 1.8em;
+				}
+
+				&:last-child {
+					@media (max-width: @screen-xs-max) {
+						padding-bottom: 2.3em;
+					}
+				}
+			}
+		}
+
+		ul {
+
+			text-align: left;
+			padding-left: 0;
+
+			li {
+				list-style: none;
+				padding-bottom: .4em;
+				color: inherit;
+
+				.textLinkStyling;
+
+				a {
+					color: lighten(@cFooterGray, 30%);
+
+					&:hover {
+						color: lighten(@cFooterGray, 30%);
+						border-color: lighten(@cFooterGray, 30%);
+					}
+				}
+			}
+		}
+
+		#news-section {
+
+			@media (max-width: @screen-xs-max) {
+				padding-top: 1.5em;
+				padding-bottom: 1em;
+			}
+
+			.newsdate {
+				margin-bottom: 0;
+			}
+
+			.textLinkStyling;
+
+				a {
+					color: lighten(@cFooterGray, 30%);
+
+					&:hover {
+						color: lighten(@cFooterGray, 30%);
+						border-color: lighten(@cFooterGray, 30%);
+					}
+				}
+		}
+	}
+
+	#copyright {
+		background-color: @cCopyrightGray;
+		color: lighten(@cCopyrightGray, 40%);
+		font-size: 80%;
+		text-align: center;
+		padding: 0.5em 0;
+
+		a {
+			color: lighten(@cCopyrightGray, 40%);
+
+			&:hover {
+				border: none;
+			}
+		}
+	}
+}

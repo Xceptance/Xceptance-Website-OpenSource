@@ -1,0 +1,87 @@
+{% comment %} isMainNavigation : are we within the main nav 					{% endcomment %}
+{% comment %} forcedName : force to mark that name instead of the auto mode 	{% endcomment %}
+
+{% if include.isMainNavigation == true %}
+    {% assign navigation = site.sitenavigation %}
+{% else %}
+    {% for e in site.sitenavigation %}
+        {% if e.name == page.parent and e.secondarynav%}
+            {% assign navigation = e.secondarynav %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+<nav class="navbar navbar-default" role="navigation">
+	{% if include.isMainNavigation == true %}
+        <div class="navbar-brand navbar-left">
+            <a rel="home" title="Home" href="{{ '/'  | to_absoluteurl }}">
+            <img src="/images/xceptance-logo-transparent-202px.png" title="Xceptance company logo" alt="Xceptance company logo" />
+            </a>
+        </div>
+
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+	{% endif %}
+
+    <ul class="nav {% if isMainNavigation == false %}nav-stacked{%else%}navbar-nav{% endif %}">
+        {% for e in navigation %}
+
+            {% comment %}
+            <!--
+                For debugging only!
+                ===================
+                isMainNavigation: {{include.isMainNavigation}}
+                navigation: {{navigation}}
+                include.forcedName: {{include.forcedName}}
+                page.mainNavLinkName: {{page.mainNavLinkName}}
+                page.name: {{page.name}}
+                page.navName: {{page.navName}}
+                e.parent: {{e.parent}}
+                e.name: {{e.name}}
+            -->
+            {% endcomment %}
+
+            {% if include.isMainNavigation %}
+                {% if e.name == page.navName or e.name == page.parent or e.name == include.forcedName %}
+                    <li class="active">{% include getPageLink.html name=e.name isMainNavigation=true active=true %}</li>
+                {% else %}
+                    {% comment %}## Might be external ##{% endcomment %}
+                    {% if e.name  == ':External' %}
+                        <li><a href="{{e.url}}">{{e.title}}</a></li>
+                    {% else %}
+                        <li>{% include getPageLink.html name=e.name isMainNavigation=true active=false %}</li>
+                    {% endif %}
+                {% endif %}
+            {% else %}
+                {% if e.name == page.navName  %}
+                    <li class="active">{% include getPageLink.html name=e.name isMainNavigation=false active=true %}</li>
+                {% else %}
+                    <li>{% include getPageLink.html name=e.name isMainNavigation=false active=false %}</li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+
+    </ul>
+
+    {% if include.isMainNavigation == true %}
+		<div id="language-switcher">
+            {% if site.lang == "en" %}
+                {% capture link1 %}{{ site.baseurl_root }}de{{ page.url }}{% endcapture %}
+                <span class="language"><a href="/{{ link1 }}">DE</a></span>
+            {% else if site.lang == "de" %}
+                {% capture link2 %}{{ site.baseurl_root }}en{{ page.url }}{% endcapture %}
+                <span class="language"><a href="/{{ link2 }}">EN</a></span>
+            {% endif %}
+		</div>
+    </div> <!-- from collapse div -->
+    </div> <!-- from navbar-header -->
+    {% endif %}
+
+</nav>

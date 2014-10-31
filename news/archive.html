@@ -1,0 +1,36 @@
+---
+layout: news
+title: news.archive.title
+description: news.archive.description
+
+navName: News Archive
+mainNavLinkName: 
+subNavLinkName: Archive
+parent: News
+---
+<div id="news-archive">
+	<div class="row">
+		<div class="container">
+			<div class="col-sm-3 col-md-2 headline">
+				<p><i class="fa fa-comment-o fa-3x"></i></p>
+				<h2>{% t news.archive.headline %}</h2>
+			</div>
+			<div class="col-sm-9 col-md-5">
+				{% for news in site.categories.news limit:10%}
+				<div class="news-post news-post-{{forloop.index}}">
+					<h2><a href="{{ news.url | to_absoluteurl }}">{% t news.title %}</a></h2>
+					<p class="meta">{% t news.when %}</p>
+				</div>	
+				{% endfor %}								
+			</div>
+			<div class="col-sm-9 col-sm-offset-3 col-md-5 col-md-offset-0">
+				{% for news in site.categories.news limit:10 offset:10%}
+				<div class="news-post news-post-{{forloop.index}}">
+					<h2><a href="{{ news.url | to_absoluteurl }}">{% t news.title %}</a></h2>
+					<p class="meta">{% t news.when %}</p>
+				</div>	
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

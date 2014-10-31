@@ -1,0 +1,16 @@
+<div id="privacy-message" class="row" style="display: none;">
+	<div class="container">
+		<div id="inner" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 alert alert-info alert-dismissable">
+	    	<button type="button" class="close" onclick="$('#privacy-message').hide();">&times;</button>
+	    	
+	        <p class="explaination">{% t message.cookies %}</p>
+			
+	        <p class="explaination">{% t message.tracking %}</p>
+			
+	        <p class="text-right">
+				<button type="button" class="btn-link" onclick="$.cookie('privacy', 'true', { expires: 365, path: '/{{site.lang}}' }); $('#privacy-message').hide();">{% t message.btn.opt-out %}</button>
+	            <button type="button" class="btn btn-primary" onclick="$('#privacy-message').hide();">{% t message.btn.understand %}</button>
+			</p>
+		</div>
+	</div>
+</div>

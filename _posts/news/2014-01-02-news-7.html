@@ -1,0 +1,29 @@
+---
+layout: news-post
+title:  posts.news.7.title
+when:   posts.news.7.when
+categories: news
+excerpt: posts.news.7.excerpt
+image: <img src="/images/news/cute-new-year.jpg" class="img-responsive" />
+---
+{% if site.lang == 'en' %}
+<p class="lead">
+	Happy New Year for all of us from Xceptance.
+</p>
+
+<!-- that is regular content -->
+<p>
+	<img src="/images/news/cute-new-year.jpg" class="pull-right img-responsive" alt="Champagne Glasses and New Year's Decoration" title="Happy New Year To Everyone!"/>
+	May the year 2014 give you the opportunity to realize your dreams, rediscover your strengths, muster your willpower and rejoice the simple pleasures that life would bring your way.
+</p>
+{% else %}
+<p class="lead">
+	Xceptance wünscht allen ein frohes neues Jahr 2014!
+</p>
+
+<!-- that is regular content -->
+<p>
+	<img src="/images/news/cute-new-year.jpg" class="pull-right img-responsive" alt="Champagne Glasses and New Year's Decoration" title="Happy New Year To Everyone!"/>
+	Möge 2014 ein gesundes Jahr für uns alle werden, begleitet von vielen Momenten und Stunden der Freude, die uns Kraft geben für die Umsetzung unserer Wünsche und Träume. 
+</p>
+{% endif %}

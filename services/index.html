@@ -1,0 +1,90 @@
+---
+layout: services
+title: services.title
+description: services.description
+
+navName: Services
+mainNavLinkName: navigation.main.Services
+subNavLinkName: navigation.sub.Services
+parent: Services
+
+permalink: /services/
+---
+
+<div id="introduction" class="row service-section visible-xs">
+	<div class="container">
+		<div class="text-center col-md-offset-1 col-md-10">
+			<h1>{% t services.intro.headline %}</h1>
+			<p class="lead">
+                {% t services.intro.details %}
+            </p>
+		</div>
+	</div>
+</div>
+
+<div class="row service-section" id="functional-testing">
+	<div class="container">
+		<div class="col-md-2 col-sm-4 headline">
+			<p><i class="fa fa-eye fa-3x"></i></p>
+			<h2>{% t services.manual.headline %}</h2>
+		</div>
+		<div class="col-md-4 col-sm-8">		
+			<p class="lead">{% t services.manual.teaser %}</p> 
+			<p>{% t services.manual.description %}</p>
+		</div>
+		<div class="col-md-2 col-sm-4 headline" id="test-automation">
+			<p><i class="fa fa-cogs fa-3x"></i></p>
+			<h2>{% t services.automated.headline %}</h2>
+		</div>
+		<div class="col-md-4 col-sm-8">	
+			<p class="lead">{% t services.automated.teaser %}</p>
+			<p>{% t services.automated.description %}</p>
+		</div>
+	</div>
+</div>
+
+<div class="row service-section" id="performance-testing">
+	<div class="container">
+		<div class="col-md-2 col-sm-4 headline">
+			<p><i class="fa fa-tachometer fa-3x"></i></p>
+			<h2>{% t services.load.headline %}</h2>
+		</div>
+		
+		<div class="col-sm-8 col-md-10">	
+			<p class="lead">{% t services.load.teaser %}</p>
+			
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-left">
+					<h3>{% t services.load.server.headline %}</h3>
+					<p>{% t services.load.server.description %}</p>
+					<ul>
+						<li>{% t services.load.server.list.li1 %}</li>
+						<li>{% t services.load.server.list.li2 %}</li>
+						<li>{% t services.load.server.list.li3 %}</li>
+						<li>{% t services.load.server.list.li4 %}</li>
+						<li>{% t services.load.server.list.li5 %}</li>
+						<li>{% t services.load.server.list.li6 %}</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-6 col-right">
+					<h3>{% t services.load.client.headline %}</h3>
+					<p>{% t services.load.client.description %}</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row service-section" id="test-guidance">
+	<div class="container">
+		<div class="col-sm-4 col-md-2 headline">
+			<p><i class="fa fa-compass fa-3x"></i></p>
+			<h2>{% t services.support.headline %}</h2>
+		</div>
+		
+		<div class="col-sm-8 col-md-10">		
+			<p class="lead">{% t services.support.teaser %}</p>
+			<p>{% t services.support.description %}</p>
+		</div>
+	</div>
+</div>

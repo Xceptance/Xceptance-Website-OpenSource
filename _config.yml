@@ -1,0 +1,59 @@
+name: global.website.name
+highlighter: pygments
+url:
+    de: http://www.xceptance.de
+    en: http://www.xceptance.com
+
+include: [.htaccess]
+exclude: [bin,README.md]
+
+timezone: UTC
+
+languages: ["en", "en", "de"]
+
+description: global.website.description
+
+excerpt_separator: N/A-------N/A... Workaround for https://github.com/mojombo/jekyll/issues/1401
+
+### Disabled for now. Default is nice.
+# permalink: :categories/:year-:month-:day-:title.html
+
+lessc: /usr/local/bin/lessc
+
+# The navigation to include, everything here is meant to be
+# a key to find the correct page. The name and link titles are
+# taken from every page itself as well as the relation to its parent.
+
+# Each name has to be unique and the page has to have the same name 
+# Check the area in -- and the name attribute for that.
+# Same name, same page. URLs here are also the default built urls. 
+# Custom works different.
+sitenavigation:
+  - name: Services
+    secondarynav:
+        - name: Services
+        - name: Demandware
+  - name: XLT
+    secondarynav:
+        - name: XLT
+        - name: Features
+        - name: Licensing & Pricing
+        - name: Documentation
+        - name: Download
+  - name: Company
+    secondarynav:
+        - name: Company
+        - name: Management
+        - name: Team
+        - name: References
+        - name: Press
+  - name: News
+  - name: Jobs
+  - name: Contact
+    secondarynav:
+        - name: Contact
+        - name: Privacy
+  - name: :External
+    title: Blog
+    url: http://blog.xceptance.com/
+

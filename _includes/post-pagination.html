@@ -1,0 +1,21 @@
+
+{% assign found = false %}
+{% assign wasfound = false %}
+
+{% for news in site.categories.news %}
+
+	{% if news.id == page.id %}
+		{% assign found = true %}
+		{% assign wasfound = true %}
+		
+		{% if last %}<h3><a href="{{ last.url | to_absoluteurl }}" title="{{ last.title }}">Previous</a></h3>{% endif %}
+	{% endif %} 
+
+	{% if news.id != page.id and wasfound %}
+		{% assign wasfound = false %}
+		
+		<h3><a href="{{ news.url | to_absoluteurl }}" title="{{ news.title }}">Next</a></h3>
+	{% endif %} 
+	
+	{% assign last = news %}
+{% endfor %}	

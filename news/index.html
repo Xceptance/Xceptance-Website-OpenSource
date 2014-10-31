@@ -1,0 +1,56 @@
+---
+layout: news
+title: news.title
+description: news.description
+
+navName: News
+mainNavLinkName: navigation.main.News
+subNavLinkName: 
+parent: News
+
+permalink: /news/
+---
+<div id="news-overview">
+	<div class="row">
+		<div class="container">
+			<div class="col-sm-8">
+				<h1 class="news-headline">News</h1>				
+				<!-- the latest -->
+				{% for news in site.categories.news limit:1 %}
+				<div class="news-post">
+					<h1>{% t news.title %}</h1>
+					<p class="meta">{% t news.when %}</p>
+					{{news.content}}
+				</div>	
+				{% endfor %}	
+			</div>		
+
+			<div class="col-sm-4 news-post-minis">
+				<h3 class="news-headline">{% t news.previous.headline %}</h3>
+				{% for news in site.categories.news limit:3 offset:1%}
+				<div class="news-post news-post-mini news-post-{{forloop.index}}">
+					<h2><a href="{{ news.url | to_absoluteurl }}">{% t news.title %}</a></h2>
+					<p class="meta">{% t news.when %}</p>
+					<p class="excerpt">{% t news.excerpt %}</p>
+					{{news.image}}
+				</div>	
+				{% endfor %}				
+
+				
+				<p id="preview-end">
+					<a href="{{ 'news/archive.html' | to_absoluteurl }}">{% t news.previous.all %}</a>
+				</p>
+				
+				<div class="highlighted text-center">
+					<div class="headline ">
+	                	<p><i class="fa fa-edit fa-4x"></i></p>
+	                	<h2>{% t news.blog.headline %}</h2>
+	                </div>
+	                <p>{% t news.blog.details %}</p>
+	                <a class="btn btn-primary" href="http://blog.xceptance.com/" role="button">{% t news.blog.btn %}</a>
+				</div>				
+			</div>
+			
+		</div>
+	</div>
+</div>

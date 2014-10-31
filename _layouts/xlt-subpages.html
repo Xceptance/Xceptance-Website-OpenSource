@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+
+    <body class="xlt-subpages xlt-landing local-scroll" id="page">
+        {% include privacy-message.html %}
+        
+        {% include top-scroller.html %}
+
+        <div id="navigation" class="navbar-fixed-top">
+			<div class="container">
+				{% include navigation.html isMainNavigation=true %}
+			</div>            
+		</div>
+		
+        <div id="sub-navigation">
+			<div class="container">
+                {% include navigation.html isMainNavigation=false %}
+            </div>
+        </div>
+        
+        <!--
+<header id="teaser" class="hidden-xs">
+			<div class="teaser-image">&nbsp;</div>
+		</header>
+-->
+		
+		<div id="main">
+			{{ content }}
+		</div>
+
+		<footer>
+			{% include footer.html %}
+		</footer>
+
+		{% include tracking.html %}
+    </body>
+</html>

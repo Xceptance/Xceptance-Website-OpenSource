@@ -1,0 +1,34 @@
+{% comment %}parent: the context we are in. used together with the name for data lookup{% endcomment %}
+{% comment %}name : what name is current to find the right page{% endcomment %}
+{% comment %}isMainNavigation : are we talking about the main navigation{% endcomment %}
+{% comment %}active : active link, aka we are on that one right now{% endcomment %}
+
+{% for p in site.pages %}
+
+    {% comment %}
+    <!--
+        getPageLinkName: {{include.getPageLinkName}}
+        isMainNavigation: {{include.isMainNavigation}}
+        active: {{include.active}}
+        dropdown: {{include.dropdown}}
+        name: {{p.name}}
+    -->
+    {% endcomment %}
+
+	{% if p.navName == include.name %}
+		
+        {% comment %}Determine Link title first{% endcomment %}
+        {% if include.isMainNavigation %}
+			{% assign title = p.mainNavLinkName %}
+		{% else %}
+			{% assign title = p.subNavLinkName %}
+	    {% endif %}
+
+		{% if include.active %}
+            <a href="{{ p.url | to_absoluteurl }}" class="active">{% t title %}</a>
+		{% else %}
+			<a href="{{ p.url | to_absoluteurl }}">{% t title %}</a>
+		{% endif %}
+	{% endif %}
+
+{% endfor %}

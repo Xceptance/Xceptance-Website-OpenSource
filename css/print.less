@@ -1,0 +1,74 @@
+//
+// Basic print styles
+// --------------------------------------------------
+// Source: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+
+@media print {
+
+  * {
+    text-shadow: none !important;
+    color: #000 !important; // Black prints faster: h5bp.com
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  body {
+	  padding-top: 0 !important;
+  }
+  
+  @page {
+    margin: 1.5cm 0.7cm 1.5cm 0.7cm;
+  }
+
+  // Don't show links for images, or javascript/internal links
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  .btn-primary {
+	  border: 2px solid #000 !important;
+  }
+  
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; // h5bp.com/t
+  }
+
+  tr, img, li {
+    page-break-inside: avoid;
+  }
+  
+  li:before {
+	  color: #000 !important; // is not covered by global color re-set above
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  // Chrome (OSX) fix for https://github.com/twbs/bootstrap/issues/11245
+  // Once fixed, we can just straight up remove this.
+  select {
+    background: #fff !important;
+  }
+
+  // Bootstrap components
+  #navigation, #sub-navigation, #top-scroller, #teaser, #footer-information {
+    display: none;
+  }
+  
+  footer, #copyright {
+	  border-top: 2px solid;
+  }
+
+}

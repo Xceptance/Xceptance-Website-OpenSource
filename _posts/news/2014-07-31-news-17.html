@@ -1,0 +1,150 @@
+---
+layout: news-post
+title: posts.news.17.title
+when: posts.news.17.when
+categories: news
+excerpt: posts.news.17.excerpt
+---
+{% if site.lang == 'en' %}
+    <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">
+	    Xceptance released version 4.4.0 of its load testing and test automation product Xceptance LoadTest. It features a wide range of improvements and new functionality.
+    </p>
+
+    <!-- that is regular content -->
+    <p>
+	    As always, this update is free of charge for every user. You can use XLT freely for your daily automation work, regression testing, and performance validation. If you are an eligible Open Source project, you can get a full XLT license for your load and performance testing needs for free.
+    </p>
+
+    <h3>New Features and Improvements</h3>
+
+    <h4>Script Developer</h4>
+    <p>
+	    New commands are available in Script Developer. Some of them let you control the mouse, so you can simulate drag&drop operations in your test scenarios now. Others allow for an easier page validation. With package-level test data it is now possible to manage test data items in different scopes.
+    </p>
+
+    <h4>Load and Performance Testing</h4>
+    <p>
+        Load testing got even more convenient. With the new load factor setting you can easily scale a pre-configured load profile up or down. To speed up the download of results, you can limit the number of result browsers generated during the load test. Last but not least, the load test report has been extended to show even more information.
+    </p>
+
+    <h4>Framework</h4>
+    <p>
+        As mentioned above, Script Developer introduces some new commands and the ability to define test data on package level. The XLT framework has been extended to support these new features as well when replaying script test cases.
+    </p>
+    <p>
+        As usual for a major release, the technology stack the XLT framework is built upon has been updated to provide an improved browser emulation and latest WebDriver support.
+    </p>
+
+    <h4>Measuring Client-Side Performance</h4>
+    <p>
+        As an addition to server-side performance testing, you can now also assess the client-side performance. XLT uses an instrumented Firefox browser to measure values, such as page loading and rendering times, to help you judge whether or not the user experience is acceptable.
+    </p>
+
+    <h4>XLT Plug-In for Jenkins</h4>
+    <p>
+        If you are into continuous integration, you might find our new plug-in for Jenkins valuable. This plug-in makes it easy to include XLT load tests in your Jenkins-based build and deployment processes and provides the means to automatically evaluate the results and visualize the trend.
+    </p>
+
+    <h4>"NoCoding" Test Suite and XLT Proxy Recorder</h4>
+    <p>
+        The NoCoding test suite is another approach to model test scenarios for load testing. The test scenarios are defined in CSV files as list of URLs that will be requested one after another. This approach addresses the common use case of quickly replaying only a few URLs for basic load testing without scripting. At the same time, you can leverage the already known features of XLT, like advanced load profiles, scalability, and powerful reporting.
+    </p>
+    <p>
+        To create test cases for the NoCoding test suite, use XLT Proxy Recorder to record test scenarios on HTTP level and export them as CSV files.
+    </p>
+    <p>
+        The NoCoding test suite is released under the Apache license, so you can easily share, build-upon, and further enhance it. You can find it on <a href="https://github.com/Xceptance/testsuite-nocoding">GitHub</a> too.
+    </p>
+
+    <h4>New Demo Application</h4>
+    <p>
+        XLT ships with a new demo application, the "Posters" store. It is an online shopping application that perfectly demonstrates how to use XLT when testing complex business processes in web applications. Of course, there is also a new demo test suite.
+    </p>
+
+    <h3>Where to Get it</h3>
+    <ul>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.4.0/releasenotes.html">Release Notes</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.4.0/xlt-4.4.0.zip">Download</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.4.0/user-manual.html">User Manual</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/xltportal/">XLT Self Service Center</a>
+	    </li>
+    </ul>
+{% else %}
+    <p class="lead">
+        Xceptance hat Version 4.4 seines Last- und Testautomationswerkzeugs XLT veröffentlicht. Freuen Sie sich auf neue Features und eine Vielzahl von Verbesserungen. Selbstverständlich ist dieses Update für alle Nutzer kostenfrei verfügbar.
+    </p>
+
+    <!-- that is regular content -->
+    <p>
+	    Bitte vergessen Sie nicht, XLT ist mit seiner Basislizenz kostenlos nutzbar für Ihre tägliche Testautomatisierung und auch Performanceüberprüfung. Ausgewählte Open-Source-Projekte können eine volle XLT-Lizenz kostenfrei für Last- und Performancetests erhalten, wenn sie sich bei Xceptance bewerben.
+    </p>
+
+    <h3>Neue Features und Verbesserungen</h3>
+
+    <h4>Script Developer</h4>
+    <p>
+	    Neue Kommandos erlauben die Kontrolle der Maus, so dass Drag'n'Drop-Operationen in Testszenarien verwendet werden können. Ebenfalls neu sind Kommandos zur vereinfachten Validierung. Besonders hervorheben möchten wir das neue Feature Package-Level-Testdaten. Damit können Packages eigene Testdaten erhalten und gestatten eine detailliertere Gestaltung von Testdaten.
+    </p>
+
+    <h4>Last- und Performance Tests</h4>
+    <p>
+        Mit der Einführung eines Loadfaktors lassen sich jetzt Testeinstellungen einfach nach oben oder unten skalieren, ohne dass Neuberechnungen der einzelnen Lastparameter notwendig werden. Um die Testauswertung zu beschleunigen, lassen sich jetzt Fehleraufzeichnungen (Resultbrowser) in ihrer Menge einschränken, ohne an Aussagekraft einzubüßen.
+    </p>
+
+    <h4>Framework</h4>
+    <p>
+        Selbstverständlich sind alle neuen Script Developer Features auch im Framework umgesetzt, so dass diese bei Tests via WebDriver ebenfalls angewendet werden können.
+    </p>
+
+    <h4>Client-Side Performance Tests</h4>
+    <p>
+        Zusätzlich zu Serverperformancetests können Sie jetzt auch die Clientperformance messen. XLT nutzt dazu einen instrumentierten Firefox-Browser. Es werden Seitenladezeiten und Renderingzeiten gemessen. Damit können Sie einfacher beurteilen, wie sich die Nutzererfahrung während eines Lasttests gestaltet.
+    </p>
+
+    <h4>XLT-Plugin für Jenkins</h4>
+    <p>
+        Ein neues Plugin für Jenkins hilft Ihnen, XLT in den Continuous-Integration-Prozess einzubinden. Tests werden nicht nur ausgeführt, sondern deren Ergebnisse werden auch überwacht, so dass sich Kriterien definieren lassen, die den Test als erfolgreich kennzeichnen.
+    </p>
+
+    <h4>"NoCoding"-Testsuite und der XLT Proxy Recorder</h4>
+    <p>
+        Mit der "NoCoding"-Testsuite fügen wir eine einfache Möglichkeit hinzu, Lasttests zu definieren und auszuführen. Diese Tests sind in CSV-Dateien definiert und erlauben die Nutzung aller XLT-Features. Der neue XLT-Proxy-Recorder erlaubt es, schnell eine "NoCoding"-basierte Testsuite zu erstellen.
+    </p>
+
+    <p>
+        Xceptance hat die "NoCoding"-Testsuite als Open-Source-Projekt auf <a href="https://github.com/Xceptance/testsuite-nocoding">GitHub</a> veröffentlicht. Alle Nutzer sind herzlich eingeladen, sie zu teilen, zu erweitern, zu verbessern und ihren eigenen Wünschen anzupassen.
+    </p>
+
+    <h4>Neue Demoapplikation</h4>
+    <p>
+        Eine neue Demoapplikation hilft, XLT schneller und besser kennen zu lernen. Die Applikation ist eine E-Commerce-Anwendung, an der sich typische Geschäftsprozesse im Testablauf besser demonstrieren lassen.
+    </p>
+
+    <h3>Wo finde ich XLT?</h3>
+    <ul>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.4.0/releasenotes.html">Release-Notes</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.4.0/xlt-4.4.0.zip">Download</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/releases/xlt/4.4.0/user-manual.html">Benutzerhandbuch</a>
+	    </li>
+	    <li>
+		    <a href="https://lab.xceptance.de/xltportal/">XLT Self Service Center</a>
+	    </li>
+    </ul>
+{% endif %}

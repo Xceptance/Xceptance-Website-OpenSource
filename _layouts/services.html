@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html hashBasedTabbing=true %}
+
+    <body class="general-page services local-scroll" id="page">
+        {% include privacy-message.html %}
+        
+        {% include top-scroller.html %}
+
+		<!-- container centers things -->
+		<div id="navigation" class="navbar-fixed-top">
+			<div class="container">
+				{% include navigation.html isMainNavigation=true %}
+			</div>
+		</div>
+		
+        <!--
+		 <div id="sub-navigation">
+			<div class="container">
+                {% include navigation.html isMainNavigation=false %}
+            </div>
+        </div>
+        -->
+
+		<header id="teaser" class="hidden-xs">
+			<div class="container">
+				<div class="teaser-image">
+					<div class="text-center col-md-offset-1 col-md-10" id="teaser-text">
+						<h1>{% t services.intro.headline %}</h1>
+						<p class="lead">{% t services.intro.details %}</p>
+					</div>
+				</div>
+			</div>
+		</header>	
+
+		<div id="main">
+			{{ content }}
+		</div>
+
+		<footer>
+			{% include footer.html %}
+		</footer>
+		
+        {% include tracking.html %}
+    </body>
+</html>

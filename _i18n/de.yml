@@ -1,0 +1,988 @@
+###############################################################################
+# Couple of important things about localization.
+#
+# * This is the localization plugin
+#   https://github.com/screeninteraction/jekyll-multiple-languages-plugin/
+# * No tabs in yaml de/en file, spaces make the hierarchy
+# * Use speaking names for keys and feel free to have hierarchies where
+#   appropriate
+# * For missing keys, you will see exceptions during compile until
+#   the project released again with my pull request incorporated
+# * Keep en and de in sync!
+# * Global is for everything that is repeated everywhere such as buttons or
+#   certain link texts
+# * {% t page.area.name %} that is the text for an html page
+#   to refer to something here like that in yaml.
+#   page:
+#       area:
+#           name: The text to display on the page.
+#
+###############################################################################
+
+
+
+########################################################################
+# Global stuff such as buttons
+global:
+    website:
+        name: Xceptance Website - Die Softwaretest-Experten.
+        description: Xceptance, die Softwaretest-Experten. Performancetests, Testautomatisierung, QA-Prozessunterstützung, Security.Tests, funktionales Testen. Wir kennen Ecommerce-QA.
+    link:
+        learnmore: Mehr
+        contact: Kontaktieren Sie uns
+        top: Nach oben
+    button:
+        download: Herunterladen
+        buy: Kaufen
+    label:
+        phone-label: Telefon
+        email-label: Email
+        
+########################################################################
+# 404
+404:
+    title: "Die Seite wurde leider nicht gefunden."
+    description: "Sie wollten nicht wirklich hier her, oder?"
+    
+    headline: "404 - Die berühmte Zahl"
+    apology: "Es tut uns wirklich leid, aber das, wonach Sie suchen, ist nicht hier. Vielleicht war es ja mal hier oder vielleicht haben Sie sich vertippt? Egal, springen Sie einfach auf unsere Hauptseite zurück und wir sind sicher, da ist alles, was Sie suchen."
+    startover: "Hier geht es lang: <a href=\"//www.xceptance.de/\">www.xceptance.de</a>."      
+   
+########################################################################
+# privacy message
+message:
+    cookies: Wir setzen Cookies ein. Für mehr Information lesen Sie bitte <a href="/de/contact/privacy.html">unsere Daten&shy;schutz&shy;informationen</a>.
+    tracking: Wir nutzen auch Webanalytics. Wenn Sie auf <em>Kein WebAnalytics</em> klicken, speichern wir einen unpersonalisierten Cookie in Ihrem Browser, der Ihren Wunsch zum Ausdruck bringt, dass Ihr Besuch nicht von unserem Webanalytics erfasst werden soll.  
+
+    btn: 
+        opt-out: Kein Webanalytics
+        understand: Ich stimme zu  
+
+########################################################################
+# Navigation translation
+navigation:
+    main:
+        Home: Home
+        Services: Services
+        XLT: XLT
+        News: News
+        Company: Unternehmen
+        Jobs: Jobs
+        Contact: Kontakt
+    sub:
+        Services: Überblick
+        Demandware: Demandware
+        XLT: Überblick
+        Features: Features
+        Documentation: Dokumentation
+        Download: Download
+        LicensingAndPricing: Preise
+        Company: Über uns
+        Management: Management
+        Team: Team
+        References: Referenzen
+        Press: Presse
+        General: Allgemein
+        Privacy: Datenschutz
+
+########################################################################
+# The homepage
+homepage:
+    title: Willkommen bei Xceptance - Qualitätssicherung von Software
+    description: Xceptance, die Experten für Qualitätssicherung von Software.
+
+    carousel:
+        service_slide: Wir testen Software.<br/>Weil Qualität entscheidet.
+        dw_slide: Wir sind Demandware Partner. Seit 2005.
+        load_slide: Xceptance LoadTest. Für die perfekte Verbindung von Entwicklung und Automation.
+
+    intro:
+        headline: Der Qualitätssicherung von Software verpflichtet
+        details: Wir begleiten Sie auf Ihrem Weg zum best&shy;möglichen Produkt.
+
+    offer:
+        manual:
+            headline: Manuelle Tests &amp; Testautomatisierung
+            details: Wir arbeiten mit einem ide&shy;alen Mix aus ma&shy;nu&shy;ellen und auto&shy;ma&shy;ti&shy;sierten Test&shy;ver&shy;fah&shy;ren, ganz nach Ihren per&shy;sön&shy;lichen Wün&shy;schen und Vor&shy;stel&shy;lungen.
+        load:
+            headline: Last- &amp; Performancetests
+            details: Wir simulieren jede Benutzer- und Transaktions&shy;menge und liefern umfassende Test&shy;reports. Erfahren Sie, was Ihre Website leistet.
+        support:
+            headline: Testunterstützung
+            details: Wir teilen unsere Erfahrungen und helfen Ihnen, QS-Prozesse zu etablieren und zu optimieren. Lassen Sie sich von uns inspirieren.
+        product:
+            headline: Xceptance LoadTest
+            details: Testen Sie das Verhalten Ihrer Website unter realistischen Be&shy;din&shy;gungen und entwickeln Sie au&shy;to&shy;ma&shy;ti&shy;sierte Test&shy;suites für einen umfassenden Test&shy;prozess.
+
+    welcome_teaser:
+        headline: Willkommen bei Xceptance.<br/>Besuchen Sie uns.
+        action_button: Hier entlang
+########################################################################
+# Company pages
+company:
+    title: Xceptance - Wer wir sind
+    description: Über uns.
+
+    intro:
+        headline: Über uns
+        description: "Wir sind spezialisiert auf die Qualitätssicherung von Software: Zusammen bringen wir es auf mehr als 200 Jahre Testerfahrung und wir lieben, was wir tun."
+
+    facts:
+        headline: Auf einen Blick
+        founded: Gegründet
+        size:
+            key: Größe
+            value: 30 Angestellte
+        headquarters:
+            key: Hauptsitz
+            value: "Jena (Deutschland)"
+        dw:
+            key: Demandware Partner
+            value: Seit 2005
+        offices:
+            key: Niederlassungen
+            value: "Jena (Deutschland) & Cambridge (USA)"
+        customers: Kunden
+
+    know:
+        headline: Wir wissen, wie man testet
+        details: "Jeder von uns verfügt über einen reichen und praxisnahen Erfahrungsschatz in der Qualitätssicherung von Software. Trotzdem ist niemand perfekt: Um unsere eigenen Ansprüche und die Bedürfnisse unserer Kunden zu befriedigen, evaluieren und verbessern wir kontinuierlich unsere Testmethoden und -prozesse."
+    flexible: 
+        headline: Wir arbeiten flexibel und effizient
+        details: Wir passen uns flexibel und effizient Ihren Bedürfnissen an, von der Mitarbeit in agilen Teams bis zur Konzeption und Durchführung von Testprojekten im Enterprise-Umfeld. Wir bearbeiten gern Projektumfänge von einigen wenigen bis zu mehreren tausend Personentagen.
+    trusted:
+        headline: Viele vertrauen uns
+        details: Zu unseren Kunden zählen zahlreiche internationale Unternehmen aus verschiedenen Branchen, insbesondere <strong>E-Commerce</strong>, <strong>Telekommunikation</strong>, <strong>Optische Industrie</strong>, und <strong>Finanzen</strong>. Derzeit betreuen wir vor allem Unternehmen aus Deutschland, den USA, Großbritannien, Österreich und der Schweiz.
+    language:
+        headline: Wir sprechen Deutsch und Englisch 
+        details: Jeder von uns spricht Deutsch und Englisch, sodass auch Projekte mit vollständig in Englisch geführter Kommunikation und Dokumentation kein Problem für uns darstellen
+    collaborate:
+        headline: Wir kooperieren
+        details: Als Tester ist es nicht unser Anliegen, pedantisch unsere Finger in offene Wunden zu legen, sondern ein verlässlicher <strong>Partner</strong> zu sein. Zu unseren Kunden pflegen wir eine konstruktive Arbeitsbeziehung, in deren Rahmen ihre Bedürfnisse im Zentrum stehen und die gegründet ist auf offener und respektvoller Kommunikation. Hinter den Kulissen fühlen wir uns am wohlsten und wir sind glücklich, wenn wir unsere Klienten auf ihrem Weg zum Erfolg begleiten dürfen.
+    share:
+        headline: Wir teilen und unterstützen die Testcommunity
+        details: "Für uns ist es wichtig, unser Wissen und unsere Erfahrungen zu teilen, weshalb wir uns in der Entwicklung von <strong>Software Test Tools</strong> engagieren. Xceptance LoadTest (XLT) haben wir nicht nur entwickelt, um unseren eigenen Testprozess zu verbessern, sondern auch Anderen unserer Profession diese Möglichkeit zu bieten. Open Source Projekte helfen uns in unserer täglichen Arbeit immens und wir sind stets bemüht, etwas zurückzugeben, beispielsweise durch unsere <a href=\"/de/xlt/licensing-and-pricing.html\">Community-Lizenz</a> oder unseren <strong>Open Source</strong> E-Mail-Service<a href=\"https://github.com/Xceptance/XCMailr\" target=\"_blank\"> XCMailr</a> zur Generierung temporärer E-Mail-Adressen.</i>"
+    atmosphere:
+        headline: Wir sind ein Team
+        details: Wir sind der Überzeugung, dass eine <strong>positive und unterstützende Arbeitsatmosphäre</strong> entscheidend ist, um wirklich gut zu sein in dem, was man tut. Flache Hierarchien, Freude und Regenerationsmöglichkeiten schaffen das Umfeld, in dem wir uns am wohlsten fühlen, in dem wir kreativ werden und unsere Aufgaben engagiert erledigen.
+        
+##################################
+    management:
+        title: Xceptance - Das Management
+        description: Unser Management
+
+        quote: Testen besteht nicht in der Suche nach Fehlern, sondern in der Suche nach Verbesserungsmöglichkeiten.
+        intro:
+            headline: Management
+            details: "Unser Management steht für die Überzeugung, dass Qualität und Erfolg miteinander verbunden sind. Qualität bestimmt Erfolg."
+        simone: "Simone ist Firmengründer von Xceptance. Von 1998 bis 2004 war Simone Quality Assurance Manager bei der Intershop Communications AG in Jena, bis sie sich schließlich der Gründung der Xceptance GmbH verschrieb. Als Quality Assurance Manager bei Xceptance ist sie vor allem zuständig für die Überwachung und Koordinierung unserer Serviceleistungen für  Demandware, Inc. Simone hat ein Studium der Informatik an der Fachhochschule Schmalkalden absolviert."
+        roy: "Roy ist Firmengründer und Geschäftsführer von Xceptance und hat die Unternehmensphilosophie und das Selbstverständnis der Firma entscheidend geprägt. Von 1998 bis 2004 war er Corporate Counsel bei der Intershop Communications AG. Roy hat seine juristischen Staatsprüfungen an der Humboldt-Universität zu Berlin abgelegt. Seine langjährigen Erfahrungen in den Bereichen Recht und Management sowie seine umfassende Kenntnis der E-Commerce-Branche tragen zum gesunden Wachstum der Firma bei und machen Xceptance zu einem verlässlichen Geschäftspartner."
+        rene: "René ist Firmengründer und mit seinem technischen Fachwissen wertvoller Bestandteil des Managements. Seit der Firmengründung 2004 ist er stellvertretender Geschäftsführer und spielt eine große Rolle in der Definition des Firmenprofils, einschließlich der Entwicklung und Evaluation der hauseigenen Testwerkzeuge und Serviceleistungen. Seit 2006 ist René zudem leitender Geschäftsführer der Xceptance, Inc. in Cambridge, MA, USA. Vor der Gründung von Xceptance war er Technischer Leiter der Abteilung für Qualitätssicherung bei der auf E-Commerce spezialisierten Intershop Communications AG und verfügt so über einen umfassenden Erfahrungsschatz in den Bereichen E-Commerce und web-basierter Software. René hat ein Studium der Informatik an der Brandenburgischen Technischen Universität Cottbus absolviert."
+        ronny: "Ronny ist Firmengründer. Von 1998 bis 2004 war Ronny als Quality Assurance Manager bei der Intershop Communications AG tätig, wo er Simone, René und Roy traf und sich 2004 schließlich an der Gründung von Xceptance beteiligte. Ronny hat ein Studium der Informatik an der Technischen Universität Chemnitz absolviert und verfügt über fundierte technologische Sachkenntnisse. So wirkte er vor Xceptance auch als wissenschaftlicher Mitarbeiter an der TU Chemnitz."
+        sara: "Sara kam 2006 zu Xceptance. Als Geschäftsführerin der Xceptance, Inc. hat sie entscheidend dazu beigetragen, die Firma auch auf dem nordamerikanischen Markt zu etablieren. Mit ihrem Qualitäts- und Markenverständnis sorgt sie dafür, dass dieses Wachstum ein nachhaltiges ist und Xceptance als internationales Unternehmen stets in der Lage ist, Kundenbedürfnisse angemessen zu befriedigen. An der Georgetown University Washington D.C. und der Ohio State University erlangte Sara einen Bachelorabschluss in Deutsch, Chinesisch und International Business. Nach einem Jahr in Deutschland als Fulbright-Stipendiatin absolvierte sie ein Masterstudium in Deutscher Literaturwissenschaft an der University of Wisconsin-Madison."
+
+##################################
+    references:
+        title: Xceptance - Unsere Referenzen
+        description: Eine Auswahl unserer Kunden.
+
+        quote: Gute Qualität ist kein Zufallsprodukt, sondern das Ergebnis intelligenter Anstrengung. (John Ruskin)
+        intro:
+            headline: Referenzen
+            details: Eine Auswahl von Firmen, mit denen wir gearbeitet haben.
+
+##################################
+    press:
+        title: Xceptance - Presse
+        description: Logos and Marketingmaterial
+
+        info: "Nicht, wonach Sie gesucht haben? Schreiben Sie uns:"
+        intro:
+            headline: Presse und Veröffentlichungen
+            details: Eine Auswahl unserer Pressematerialien.
+        logos-headline: Logos
+        colors:
+            headline: Farben
+            red: Rot
+            grey: Grau
+        fonts:
+            headline: Schriftart
+            xceptance: "<strong>Xceptance</strong>, <strong>XLT</strong>: Individuelles Design, kein Standard-Font."
+            software-technologies: "<strong>Software Technologies</strong>: Titillium (TitilliumMaps26L-250wt); kann auch als Text in Dokumenten und auf Webseiten verwendet werden. Sie wird von <a href=\"http://www.google.com/fonts/specimen/Titillium+Web\">Google Fonts</a> angeboten."
+        copyright:
+            headline: Urheberschutz und Nutzungsrichtlinie
+            details: Die Marke Xceptance umfasst und ist nicht beschränkt auf den Namen Xceptance, das Xceptance Logo, den Namen XLT sowie das XLT Logo. Es ist untersagt, die genannten Marken zu verändern oder in uneindeutigen Kontexten zu verwenden, einschließlich solcher, die irgendeine Form des Sponsoring oder der Befürwortung durch Xceptance suggerieren oder Xceptance in die Nähe anderer Marken rücken. Die vorliegenden Bilder und Logos können frei verwendet werden für Presse- und Marketingmaterialien. Größe und Dateiformat dürfen modifiziert werden. Nicht verändert werden darf hingegen das Bildseitenverhältnis. Gleichermaßen ist es nicht gestattet, inhaltliche Veränderungen vorzunehmen, mit Ausnahme der Entfernung des transparenten Hintergrundes. Gern können Sie uns kontaktieren, wenn Sie Marken oder Bilder verändern wollen oder zusätzliches Pressematerial benötigen.
+        publications:
+            headline: Präsentationen und Veröffentlichungen
+            list:
+                li1: "<strong>Stress mit Methode - Methodisches Vorgehen bei Lasttests</strong><br/>April 2004, Roadshow der C.U.S.S. GmbH &amp; Co. KG Hamburg and Frankfurt; René Schwietzke, Ronny Vogel"
+                li2: "<strong>Gründung eines Unternehmens am Beispiel der Xceptance GmbH</strong><br/>Oktober 2005, Ernst-Abbe-Fachhochschule Jena, Fachbereich Betriebswirtschaft; Roy Sarnoch"
+                li3: "<strong>Performance-Messungen im Demo- und Testcenter der GODYO AG mit Xceptance LoadTest</strong><br/>November 2007, Konferenz <i>Insight E-Commerce</i> Jena; Roy Sarnoch"
+                li4: "<strong>Protect Your Online Business with Test Automation</strong><br/>Mai 2010, Demandware Xchange Workshop in Cambridge, USA; René Schwietzke"
+                li5: "<strong>Rückblick auf 18 Jahre Informatik</strong><br/>Juni 2010, Brandenburgische Technische Universität Cottbus, Absolvententreff; René Schwietzke"
+                li6: "<strong>Load Testing Web Applications - Do It on the DOM Level!</strong><br/>July 2010, <i>Testing Experience</i>, Ausgabe 10, S.20; Ronny Vogel"
+                li7: "<strong>Geschwindigkeit ist Umsatz</strong><br/>November 2011, Conversion Rate Forum in München; René Schwietzke"
+                li8: "<strong>Lasttests von Webanwendungen</strong><br/>Januar 2011, Friedrich-Schiller-Universität Jena, Vortrag am Institut für Informatik; René Schwietzke, Ronny Vogel"
+                li9: "<strong>Einführung in die Qualitätssicherung von Software</strong><br/>Vorlesung, Wintersemester 2013/14, Friedrich-Schiller-Universität Jena, Institut für Informatik; Ronny Vogel"
+                li10: "<strong>Minimizing Garbage Collection Latencies on a Load Testing Software</strong><br/>Juni 2014, <i>Testing Experience</i>, Ausgabe 26, S.39; Michael Aleithe"
+
+##################################
+    team:
+        title: Xceptance - Das Team
+        description: Unser Team.
+
+        quote: Ein Tester muss zur Komplexität vordringen, die sich hinter der Illusion der Einfachheit verbirgt. (James Bach)
+        intro:
+            headline: Hinter den Kulissen
+            details: Von vier Freunden 2004 gegründet, ist Xceptance inzwischen ein Unternehmen mit 30 leidenschaftlichen Testern und Firmensitz in Jena und in Cambridge, MA, USA.
+        teams:
+            headline: Dezidierte Teams leisten viel, um Ihre Anforderungen zu erfüllen 
+            functional:
+                headline: Manuelles Testen und Testautomatisierung
+                details: Unsere Experten für das Aufspüren funktionaler und visueller Schwachstellen sowie für die Automatisierung funktionaler Tests, die wir gern zur Verfügung stellen.
+            load:
+                headline: Lasttesten und Entwicklung
+                details: Hier werden die von unseren Kunden gewünschten Lasttests konzipiert und ausgeführt. Gleichzeitig sind unsere Entwickler für die permanente Weiterentwicklung unseres Testwerkzeugs XLT verantwortlich.
+            security:
+                headline: Sicherheit
+                details: Unsere Security-Spezialisten suchen Schwachstellen in Ihrer Anwendung, bevor es Angreifer tun und sorgen dafür, dass Ihr Produkt grundlegende Sicherheitsstandards erfüllt.
+            client:
+                headline: Kundenspezifische Teams
+                details: Mit unseren Kunden wollen wir in engem Austausch stehen, um ihren Wünschen gerecht zu werden. Spezialisierte Teams sind zuständig für die Betreuung langjähriger Kunden wie Demandware, Inc. oder Carl Zeiss SMS GmbH, wodurch es uns gelingt, eine vertrauensvolle und konstruktive Arbeitsbeziehung aufzubauen und zu erhalten.
+########################################################################
+# Jobs
+jobs:
+    title: Xceptance- Stellenangebote
+    description: Wir suchen Mitarbeiter für unsere Niederlassungen in Jena und Cambridge, MA.
+
+    intro:
+        headline: Wir stellen ein
+        details: Xceptance ist auf der Suche nach motivierten Menschen, die uns unterstützen wollen. Wir freuen uns auf Sie!
+
+    positions:
+        headline: Aktuelle Stellenangebote
+
+    career:
+        headline: Karrieremöglichkeiten
+        details: Stellen Sie sich interessanten Aufgaben und Herausforderungen und nutzen Sie die Möglichkeit beruflicher und persönlicher Weiterentwicklung.
+    start-up:
+        headline: Start-Up Atmosphäre
+        details: Wir pflegen eine offene Unternehmenskultur mit flachen Hierarchien, enger Kommunikation und schnellen Entscheidungsprozessen.
+    balance:
+        headline: Work-Life Balance
+        details: Profitieren Sie von gesunden Arbeitsbedinungen mit flexiblen Arbeitszeiten, Obst- und Getränkeversorgung sowie Sport- und Erholungsmöglichkeiten.
+    integrity:
+        headline: Integrität und Verantwortungsbewusstsein
+        details: Arbeiten Sie in einem Unternehmen, das sich um die Einhaltung firmeninterner Werte und Normen bemüht und den zusätzlichen Aufwand betreibt, Dinge richtig zu machen.
+    international:
+        headline: Internationale Projekte
+        details: Partizipieren Sie in internationalen Projekten und arbeiten Sie mit Kunden aus verschiedenen Ländern.
+    creativity:
+        headline: Raum für Kreativität
+        details: Genießen Sie die Freiheit, eigene Ideen und Lösungen zu entwickeln und Ihr ganz persönliches Erfolgsrezept zu entdecken.
+    surrounding:
+        headline: Attraktives Umfeld
+        details: Wie bieten attraktive Arbeitsplätze mitten im Jeaner Stadtzentrum und in Cambridge, MA, USA.
+    internships:
+        headline: Spannende Praktika
+        details: Wir investieren in Bildung und heißen Praktikanten jederzeit willkommen. Dazu gehören auch die professionelle Betreuung von Bachelor-/Masterarbeiten sowie die Möglichkeit einer späteren Festanstellung.
+
+########################################################################
+# Services
+services:
+    title: Xceptance - Unsere Serviceleistungen
+    description: Serviceleistungen der Xceptance GmbH. Was wir tun und was Sie bekommen.
+
+    intro:
+        headline: Wie können wir helfen?
+        details: Ob manuelle Tests, Test&shy;automatisierung, Last- & Performancetests oder Test&shy;unterstützung – Wir helfen Ihnen gern.
+
+    manual:
+        headline: Manuelle Tests
+        teaser: Lassen Sie nicht Ihre Nutzer testen. Testen ist mehr als nur Klicken.
+        description: Wir halten manuelles Testen für einen essentiellen Bestand&shy;teil der Qualitäts&shy;sicherung von Soft&shy;ware. Kreative und erfahrene Tester, die weiter denken, Perspektiven wechseln und abstrahieren können, sehen mehr Möglichkeiten zur Verbesserung Ihrer Services und Produkte.
+
+    automated:
+        headline: Test&shy;au&shy;to&shy;ma&shy;ti&shy;sie&shy;rung
+        teaser: Machen Sie Ihre Tests vorhersagbar und reproduzierbar. Nutzen Sie Automatisierung für wiederkehrende Funktionstests.
+        description: Wo manuelles Testen an seine Grenzen stößt, ergänzen wir es mit au&shy;to&shy;ma&shy;ti&shy;sierten Test&shy;prozessen. Regressions&shy;tests nach Fehler&shy;behebung? Daten&shy;ge&shy;triebene Tests? Tests auf ver&shy;schiedenen Platt&shy;formen und mit unter&shy;schiedlichen Kon&shy;fi&shy;gu&shy;ra&shy;ti&shy;onen? Test&shy;au&shy;to&shy;mat&shy;isierung ist das, wonach Sie suchen!
+
+    load:
+        headline: Last- &amp; Performance&shy;tests
+        teaser: In der Welt des Internet entscheiden Geschwindigkeit und Zuverlässigkeit. Verlieren Sie Ihre Kunden nicht an die Konkurrenz, weil Ihre Webseite nicht schnell genug ist.
+        server:
+            headline: Serverseitige Performance
+            description: "Professionelle und umfassende Last&shy;tests sind un&shy;ver&shy;zicht&shy;bar, wenn es darum geht, die best&shy;mögliche Qualität Ihres Produktes zu ge&shy;währ&shy;leisten. Wir sind Last&shy;test-Experten. Mit unserem firmen&shy;eigenen Werkzeug Xceptance LoadTest (XLT) können wir Last&shy;tests ganz nach Ihren in&shy;di&shy;vi&shy;du&shy;ellen Wünschen konfigurieren und ausführen sowie genaues und umfassendes Feed&shy;back zur Leistungs&shy;fähigkeit Ihres Produktes geben. Unser Service umfasst unter anderem:"
+            list:
+                li1: Analyse von Lastanforderungen
+                li2: Auswahl von Nutzerszenarien
+                li3: Festlegung der Daten- und Transaktionsmengen
+                li4: Skripten der Testfälle
+                li5: Ausführen von Last- & Performancetests
+                li6: Auswertung der Ergebnisse und Identifizierung von Problemen
+        client:
+            headline: Clientseitige Performance
+            description: "Der Webauftritt eines Unternehmens ist mehr als nur ein einfacher Kommunikations&shy;kanal, er ist Marketing&shy;instrument und kann signifikante Einnahmen generieren. Je besser Ihr Webauftritt Kunden&shy;bedürfnisse addressiert, desto erfolgreicher ist Ihr Unternehmen. Gern helfen wir Ihnen, Ihren Web&shy;auftritt zu optimieren, insbesondere in entscheidenden Bereichen wie Benutzer&shy;freundlichkeit, Geschwindigkeit, Browser&shy;kompatibilität und Standard&shy;konformität."
+
+    support:
+        headline: Test&shy;unterstützung
+        teaser: Wir beraten Sie hinsichtlich Ihrer eigenen Test&shy;prozesse und -maßnahmen. Profitieren Sie von unserer Erfahrung.
+        description: Wir bieten kunden&shy;spezifische Test&shy;unterstützung ganz nach Ihrem Bedarf. Sie benötigen eine professionelle Ein&shy;führung in die Bereiche Test&shy;management und Test&shy;design? Sie haben Interesse an einem QS-Training für Ihre Mitarbeiter? Sie möchten Test&shy;abteilungen etablieren oder erweitern? Wir helfen Ihnen gern.
+        
+##################################
+    demandware:
+        title: Demandware Partner
+        description: We are Demandware Partner.
+        
+########################################################################
+# Contacts
+contact:
+    title: Xceptance - Kontakt
+    description: Adressen, Namen, Management, Datenschutz und Rechtliches.
+
+    quote: Qualitätssicherung kann den kleinen Unterschied machen zwischen einem gutem Produkt und einem besserem Produkt.
+    intro:
+        headline: Kontakt
+        details: Sprechen Sie mit uns - jederzeit.
+    germany:
+        country: Deutschland / Europa
+        head: <small>Hauptsitz</small>
+        address-country: Deutschland
+        management:
+            label: Geschäftsführer
+        registry:
+            label: Registergericht
+            details: "Amtsgericht Jena<br/>Registernummer: HRB 210087"
+        vat:
+            label: Umsatzsteueridentifikationsnummer
+    usa:
+        country: USA / Nordamerika
+        address: One Broadway, 14th Floor<br/>Cambridge, MA 02142<br/>United States
+        management:
+            label: Management
+            details: René Schwietzke, Leitender Geschäftsführer<br/>Roy Sarnoch, Finanzchef<br/>Sara B. Young, Geschäftsführer, USA
+    trademarks:
+        headline: Marken
+        details: Xceptance und XLT sind eingetragene Marken der Xceptance Software Technologies GmbH.
+    disclaimer:
+        headline: Haftungshinweis
+        details: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+
+##################################
+    privacy:
+        title: Xceptance - Datenschutz
+        description: Datenschutzerklärung
+
+        info: "Haben Sie Fragen? <a href=\"/de/contact/\">Kontaktieren Sie uns</a>!"
+        intro:
+            headline: Datenschutz
+            lead: Wir gehen sorgsam mit Ihren Daten um.
+        collect:
+            headline: Geltungsbereich 
+            details: "<p>Wir freuen uns über Ihr Interesse an unserer Website und unserem Unternehmen. Der Schutz Ihrer personenbezogenen Daten bei der Erhebung, Verarbeitung und Nutzung anlässlich Ihres Besuchs auf unserer Homepage ist uns ein wichtiges Anliegen. Ihre Daten werden im Rahmen der gesetzlichen Vorschriften geschützt.</p><p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten auf. Sie gilt nur für diese Website und Domäne. Für externe Links zu fremden Inhalten können wir trotz sorgfältiger inhaltlicher Kontrolle keine Haftung übernehmen.</p>"
+        use:
+            headline: Erhebung und Verarbeitung von Daten 
+            details: "<p>Jeder Zugriff auf unsere Homepage und jeder Abruf einer auf der Homepage hinterlegten Datei werden protokolliert. Die Speicherung dieser Daten ohne direkten Personenbezug dient internen systembezogenen und statistischen Zwecken. Weitergehende personenbezogene Daten werden nur erfasst, wenn Sie diese Angaben freiwillig, etwa im Rahmen einer Anfrage oder Registrierung, machen. Protokolliert werden:</p>"
+            list: " 
+                <li>Ihre IP-Adresse,</li>
+                <li>Name der abgerufenen Datei sowie Datum und Uhrzeit des Abrufs,</li>
+                <li>übertragene Datenmenge,</li>
+                <li>Meldung über erfolgreichen Abruf,</li>
+                <li>sowie Webbrowser und anfragende Domain.</li>"
+        thirdparty:
+            headline: Personenbezogene Daten
+            details: "<p>Soweit Sie uns personenbezogene Daten zur Verfügung gestellt haben, verwenden wir diese nur zur Beantwortung Ihrer Anfragen, zur Abwicklung mit Ihnen geschlossener Verträge und für die technische Administration.</p>
+                     <p>Ihre personenbezogenen Daten werden an Dritte nur weitergegeben oder sonst übermittelt, wenn dies zum Zwecke der Vertragsabwicklung – insbesondere Weitergabe von Bestelldaten an Lieferanten – erforderlich ist, zu Abrechnungszwecken oder wenn Sie zuvor eingewilligt haben.</p>"
+        cookies:
+            headline: Einsatz von Cookies
+            details: "<p>Cookies sind kleine Dateien, die es ermöglichen, auf dem Zugriffsgerät der Nutzer (PC, Smartphone o.ä.) spezifische, auf das Gerät bezogene Informationen zu speichern.</p><p>Cookies helfen uns, unsere Website und deren Benutzerfreundlichkeit zu optimieren und unser Angebot zu personalisieren. Sie können auf den Einsatz von Cookies Einfluss nehmen. Die meisten Browser verfügen über eine Option mit der das Speichern von Cookies eingeschränkt oder vollständig verhindert wird.</p>"
+        links:
+            headline: Sicherheitshinweis
+            details: "<p>Wir sind bemüht, Ihre personenbezogenen Daten durch Ergreifung aller technischen und organisatorischen Möglichkeiten so zu speichern, dass sie für Dritte nicht zugänglich sind. Bei der Kommunikation per E-Mail kann die vollständige Datensicherheit von uns nicht gewährleistet werden, sodass wir Ihnen bei vertraulichen Informationen den Postweg empfehlen.</p>"
+        privacy-protection:
+            headline: Vertraulichkeit von E-Mails
+            details: "<p>Wenn Sie uns eine E-Mail senden, so verwenden wir Ihre E-Mail-Adresse nur für die Korrespondenz mit Ihnen. Auf andere Zwecke würden wir explizit hinweisen und Ihre Einwilligung erbeten.</p>"
+        privacy-policy:
+            headline: Widerruf und Löschung
+            details: "<p>Ihre Daten werden nur für die jeweiligen genannten Zwecke verwendet. Sie haben das Recht, eine erteilte Einwilligung mit Wirkung für die Zukunft jederzeit zu widerrufen.</p>
+                    <p>Die Löschung der gespeicherten personenbezogenen Daten erfolgt, wenn Sie Ihre Einwilligung zur Speicherung widerrufen, wenn ihre Kenntnis zur Erfüllung des mit der Speicherung verfolgten Zwecks nicht mehr erforderlich ist oder wenn ihre Speicherung aus sonstigen gesetzlichen Gründen unzulässig ist.</p>"
+        privacy-changes:
+            headline: Änderungen dieser Erklärung
+            details: "<p>Sollten wir unsere Datenschutzerklärung in irgendeiner Form verändern, so werden wir Sie darüber an dieser Stelle benachrichtigen. Diese Datenschutzerklärung wurde zuletzt am 31.Juli 2014 aktualisiert.</p>"
+        sites:
+            headline: Webseiten
+            details: "<p>Dieses Impressum gilt für 
+                <a href=\"http://www.xceptance.de/\">www.xceptance.de</a>, 
+                <a href=\"http://www.xceptance.com/\">www.xceptance.com</a>, 
+                <a href=\"http://www.xceptance-loadtest.de/\">www.xceptance-loadtest.de</a>, 
+                <a href=\"http://www.xceptance-loadtest.com/\">www.xceptance-loadtest.com</a>,                 
+                <a href=\"http://blog.xceptance.com/\">blog.xceptance.com and .de</a>, 
+                <a href=\"https://twitter.com/Xceptance\">Xceptance Twitter</a>, 
+                <a href=\"https://www.xing.com/companies/xceptancesoftwaretechnologiesgmbh\">Xceptance auf Xing</a>,
+                <a href=\"https://www.linkedin.com/company/xceptance\">Xceptance auf LinkedIn</a>,
+                <a href=\"https://github.com/Xceptance/\">Xceptance auf GitHub</a>,
+                <a href=\"https://plus.google.com/+Xceptance/posts\">Xceptance auf Google+</a>, 
+                <a href=\"https://lab.xceptance.de/xltportal/\">XLT Self Service Center</a> und alle Inhalte unter 
+                <a href=\"https://lab.xceptance.de/\">lab.xceptance.de</a>, wie z.B. Software Releases und Dokumentationen.</p>"
+            
+########################################################################
+# News
+news:
+    title: Xceptance News
+    description: Neuigkeiten bei Xceptance
+    previous:
+        headline: Ältere News
+        all: Alle News
+    blog:
+        headline: Xceptance Blog
+        details: Interessante Informationen rund um das Testen, technische Neuigkeiten und themenrelevante Links gibt es in unserem Blog.
+        btn: Hier Entlang
+    latest: Aktuelles        
+
+    archive:
+        title: News Archiv
+        description: Übersicht aller Neuigkeiten
+        headline: News Archiv
+
+########################################################################
+# XLT
+xlt:
+    title: XLT - Xceptance LoadTest - Testautomatisierung und Lasttests
+    description: Das flexible Last- und Performancetest Tool für die Softwareentwicklung
+
+    carousel:
+        license:
+            headline: Kostenfrei für funktionale Tests. Lasttest-Lizenzen auf monatlicher Basis.
+            btn: Preise &amp; Lizenzen
+        webdriver: Schon vertraut mit WebDriver und Selenium-Syntax? Legen Sie sofort los!
+        report:
+            headline: Umfassende Reports. Schnell, detailreich, präzise, anpassbar.
+            btn: Reports anschauen
+    intro:
+        headline: Xceptance LoadTest
+        details: Das Testautomations- und Lasttestwerkzeug für die Softwareentwicklung
+        
+    testautomation:
+        headline: Testautomatisierung mit XLT
+        lead: Sie sind vertraut mit Selenium? Dann werden Sie funktionales Testen mit XLT lieben! XLT erweitert das Konzept um wertvolle Komponenten wie Testdatenverwaltung, Module und Makros.
+        text1: Erstellen Sie Testfälle ganz nach Ihren Vorlieben. Nutzen Sie den XLT Script Developer oder programmieren sie Ihre Szenarien in Java mit der WebDriver-Syntax. Natürlich lässt sich XLT auch mit allen <a href="http://docs.seleniumhq.org/projects/webdriver"/>WebDrivern</a>, mit <a href="http://www.browserstack.com/">BrowserStack</a> und mit <a href="https://saucelabs.com/">Sauce Labs</a> kombinieren.
+        features:
+            headline: Die wichtigsten Features für die Testautomatisierung
+            details: "<li><strong>Script Developer</strong> als effiziente IDE zur Erstellung von Testfällen direkt in Firefox</li>
+                <li><strong>Module</strong> für bestmögliche Wiederverwendbarkeit</li>
+                <li><strong>Parameter</strong> zur Weitergabe von Daten an Module</li>
+                <li><strong>Variablen</strong> für den flexiblen Umgang mit Daten</li> 
+                <li><strong>Makros</strong> zur dynamischen Datengenerierung</li>
+                <li><strong>Offene Datenformate</strong> zur schnellen Integration in bestehende Infrastrukturen</li>
+                <li>Nutzung von <strong>Testdaten-Sets</strong></li>
+                <li><strong>Einfache Konfiguration von WebDrivern</strong> ohne Programmieraufwand</li>"
+        text2: Kostenlos für funktionale Tests! Einschließlich aller Updates!
+        
+    loadtesting:
+        headline: Lasttests mit XLT
+        lead: Die Qualität von Web-Anwendungen steht und fällt auch mit ihrer Performance. Sie wollen das bestmögliche Produkt liefern und sind interessiert an einer umfangreichen Performance-Analyse unter realistischen Bedingungen? Nutzen Sie XLT!
+        text1: "<p>Mit XLT lassen sich flexible Lasttests durchführen, die sich ganz an der tatsächlichen Nutzung ihres Produktes orientieren. Verschiedenste Möglichkeiten der Testfallerstellung stehen Ihnen zur Verfügung. Record & Replay eignet sich für weniger komplexe Tests. Flexible, realistische und datenunabhägige Szenarien entwickeln Sie ganz einfach mit Java.</p>
+
+            <p>XLT läuft mit beliebig vielen Lastmaschinen, Testszenarien und Lastprofilen. Die Testreports decken potentielle Problemstellen sofort auf, auch dadurch, dass sie Einblick in kleinste Zeitfenster gewährleisten und Requests gruppiert werden können.</p>
+
+            <p>Der Result Browser liefert Feedback schon während der Entwicklung der Testszenarien und stellt während des Testlaufs alle Informationen zur Verfügung, die für die Diagnose von Fehlersituationen nötig sind.</p>"
+        features:
+            headline: Die wichtigsten Features für Lasttests
+            details: "<li><strong>Realistische Lastprofile</strong> mit Lastmodellen wie Arrival Rate oder User Count, kombinierbar mit Ramp-Up Time und      
+                    variablen Startzeiten</li>
+                    <li>Testmöglichkeiten über <strong>URL-basiertes und DOM-basiertes</strong> Skripting</li>
+                    <li><strong>Java</strong> als optionale Skriptsprache</li>
+                    <li><strong>Umfassende Testreports</strong> direkt nach dem Testlauf. Vergleichbarkeit von Testläufen und Darstellung des Trends. Layout und Inhalt frei anpassbar.</li>
+                    <li><strong>Beliebig viele Szenarien, Nutzer und Lastmaschinen</strong></li>
+                    <li>Einfache Überprüfung der Einhaltung von <strong>SLAs</strong></li>
+                    <li><strong>Offline Testen</strong> durch Entkopplung des Controllers</li>
+                    <li>Messdaten in <strong>offenen Formaten</strong></li>
+                    <li><strong>Detaillierte Einblicke in das Testverhalten</strong> noch während des Testdesigns mit dem Result Browser</li>
+                    <li>Sammlung aller verfügbarer Daten bei Fehlern zur post-mortem Analyse</li>
+                    <li><strong>Vollständige Reports</strong> zu jeder Zeit der Testausführung</li>
+                    <li>Aufzeichnung und Integrierbarkeit <strong>externer Daten</strong></li>"
+        text2: Updates sind immer kostenlos! Keine Seat-Limits! Sie zahlen nur für die virtuellen Nutzer, die Sie benötigen!
+
+##################################
+    documentation:
+        title: XLT - Xceptance LoadTest - Dokumentation
+        description: Die Dokumentation zum flexiblen Last- und Performancetest Tool für die Softwareentwicklung
+
+        intro:
+            headline: Dokumentation
+            details: Entdecken Sie unsere umfassende Produktdokumentation.
+        list:
+            headline: Dokumentationslinks
+            manual: Benutzerhandbuch
+            quickstart: Quick Start Guide
+            docu: API Dokumentation
+            release: Release Notes
+            glossary: Glossar
+            faq: FAQ
+        mailinglist:
+            headline: E-Mail Newsletter
+            text: Verpassen Sie kein Update und keine Neuigkeiten für XLT und abonnieren Sie unseren Newsletter.
+            button: Newsletter abonnieren
+        linktodocumentation:
+            alt: Link zur Online Dokumentation
+            title: Die Online-Dokumentation von XLT            
+            
+##################################
+    download:
+        title: XLT - Xceptance LoadTest - Download
+        description: Das flexible Last- und Performancetest Tool für Softwareentwicklung
+
+        intro:
+            headline: Download
+            details: Laden Sie das komplette XLT-Paket kostenlos herunter. Es unterstützt MS Windows, OSX, Linux und FreeBSD. Läuft ein Oracle Java, dann läuft auch XLT.
+
+        license:
+            headline: Kostenfreie Basislizenz inklusive
+            details: Der Download beinhaltet unsere Basislizenz. Diese erlaubt Tests mit bis zu 5 virtuellen Nutzern, <strong> ganz ohne Zeit- und Nutzungsbeschränkungen</strong>.
+            price: Vollkommen kostenlos für Testautomatisierung und funktionale Regressionstests!
+            list:
+                release: Release Notes
+                older: Ältere Releases
+        amazon:
+            headline: Amazon Machine Images
+            details: "Mit Amazon Machine Images können Sie Ihre eigenen XLT Client-Rechner auf Amazon EC2 starten. Amazon erhebt Kosten für die Nutzung der Infrastruktur. Die Images werden bei XLT-Updates nicht aktualisiert, stattdessen werden neue zur Verfügung gestellt. Auf allen gestarteten Rechnern stehen die XLT Agents auf Port 8500 zur Verfügung. Bitte fügen Sie diesen Port zur genutzten Sicherheitsgruppe (Firewallregeln) hinzu."
+
+##################################
+    features:
+        title: XLT - Xceptance LoadTest - Features
+        description: Das flexible Last- und Performancetest Tool für die Softwareentwicklung
+        
+        intro:
+            headline: Features
+            details: In XLT steckt die ganze Testautomations- und Performancetest-Erfahrung von Xceptance. Es nutzt bekannte Technologien wie WebDriver, Apache HttpClient und HtmlUnit.
+        
+        technologies:
+            headline: Bekannte Technologien
+            lead: "XLT basiert auf bewährten Technologien: Java, JUnit4 und Selenium WebDriver. Absolut plattformunabhängig."
+            details:
+                lead: Weil Sie mit Ihren eigenen Tools und Arbeitsprozessen am besten vertraut sind und es zu lange dauert, Neues zu erlernen.
+                text: "<p>XLT ist leicht integrierbar, erweiterbar und bedienbar:</p>
+                
+                <ul>
+                    <li><strong>Java</strong> als mögliche Skriptsprache. Erstellen Sie Testfälle auch direkt in Java und nutzen Sie Ihre favorisierten IDEs, Profiler und Debugger</li>
+                    <li><strong>JUnit</strong> für die einfache Integration in automatisierte Regressions- und Lasttests</li>
+                    <li><strong>Messergebnisse als CSV-Datei</strong> für optionale Weiterverwendung</li>
+                    <li>Testreports in <strong>HTML</strong></li>
+                    <li><strong>Einfache Anpassung von Inhalt</strong> und Design der Reports durch Rendering von XML via XSL</li>
+                    <li><strong>Reportdaten auch als XML</strong> für maschinelle Auswertungen verfügbar</li>
+                    <li>Einfache Automation über <strong>Kommandozeile</strong></li>
+                    <li><strong>WebDriver</strong> für funktionale Tests und clientseitige Performancetests</li>
+                </ul>
+                
+                <p>
+                    XLT ist plattformunabhängig. Skripterstellung auf dem Mac, Steuerung über Windows, Lastagenten auf Linux - die Möglichkeiten sind endlos.
+                </p>" 
+                
+        ui:
+            headline: Intuitive Oberfläche 
+            lead: Der Script Developer bietet ein intuitives UI zur Erstellung und Pflege funktionaler Tests. Nutzen Sie das offene Dateiformat für den Export nach Java.
+            details:
+                lead: Der Script Developer ist Ihre IDE zur Erstellung funktionaler Tests. Er ist Ihr Werkzeug, um Tests direkt in Firefox aufzunehmen, zu editieren und abzuspielen. Die generierten Skripte können mit jedem WebDriver genutzt werden.
+                text:
+                    keyfeatures:
+                        headline: Die wichtigsten Features
+                        text: Script Developer ist ein Firefox-Plugin, mit dem Sie Skripte im Selenium-Stil ganz einfach aufnehmen, editieren und abspielen - kombiniert mit allen Vorzügen der XLT-Testautomatisierung.
+                        list:   "<li><strong>Record & Replay</strong> in Firefox</li>
+                                <li>Skripte <strong>bearbeiten</strong></li>
+                                <li><strong>Skript-Debugging</strong> mit integriertem Debugger und Highlighter sowie Assertion-Evaluierung</li>
+                                <li><strong>Kommentierung</strong> von Skripts</li>
+                                <li><strong>Wiederverwendbare Module</strong></li>
+                                <li><strong>Globales und lokales Testdatenmanagement</strong></li>
+                                <li>Ausführung von <strong>Batchtests</strong></li>"
+
+                    download:
+                        headline: Kostenloser Download 
+                        text: Sie können den XLT Script Developer unabhängig vom kompletten XLT-Paket herunterladen. <strong>Garantiert kostenlos und mit automatischen Updates!</strong>
+            
+        deployment:
+            headline: Deployment und Cloud
+            lead: XLT ist leicht zu installieren und zu starten, unabhängig vom Betriebssystem. Amazon-EC2 Images stellen wir kostenlos zur direkten Nutzung bereit.
+            details:
+                lead: XLT ist plattformunabhängig, zur Inbetriebnahme muss lediglich ein Archiv entpackt werden. Für den Fall, dass Sie Cloud-Images benötigen, gibt es kostenlose Amazon Web Services EC2-AMIs.
+                text:  "<p>XLT kann mit jedem Cloud-Anbieter genutzt werden und läuft auf jeder Plattform, für die ein JDK 7 zur Verfügung steht. Für die Erzeugung sehr hoher Lasten empfehlen wir Unix-Serverumgebungen.</p>
+                        <p>XLT kommuniziert via HTTPS. Sie können Proxies, Authentifizierung und gewohnte Tools weiterhin nutzen. Wir bieten maximale Flexibilität bei größtmöglicher Einfachheit.</p>"
+            
+        reporting:
+            headline: Erstklassige Testreports
+            lead: Vorgefertigte Reports, die passen. Ohne Vorab-Konfiguration alle Zahlen auf einen Blick sowie Vergleichs- und Trendreports.
+            details:
+                lead: Keine Lust mehr auf manuelles Konfigurieren Ihrer Testreports? Sind die Datensets einfach nicht das, was Sie brauchen oder verschleiern sie entscheidende Details? XLT generiert Best-Practice-Reports, in denen unsere langjährige Erfahrung mit Last- und Performancetests steckt.
+                text:
+                    loadtestreport:
+                        headline: Load Test Reports
+                        text: " <p>Der XLT Last- und Performancereport zeigt Ihnen alles, was Sie über die Performance Ihrer Applikation wissen müssen.</p>
+
+                                <p>Neben grundsätzlichen Daten wie Runtime Totals, Averages und Medians beinhaltet er umgerechnete Werte des stündlichen oder täglichen Traffic. Sie erfahren alles über die Einhaltung von SLAs, die Testkonfiguration sowie alle Fehler und Probleme. Links zum Result Browser ermöglichen eine schnelle Analyse. <a href=\"/demo-reports/report/\" target=\"_blank\">Hier anschauen</a>.</p>"
+                        link:
+                            alt: Bild eines Lasttestreports
+                            title: Überblicksseite eines Lasttestreports
+                    comparisonreports:
+                        headline: Comparison Reports
+                        text: " <p>Wenn Sie einen Test ein zweites Mal ausführen und wissen wollen, ob es Veränderungen gibt, generieren Sie einen Vergleichsreport. <a href=\"/demo-reports/comparison-report/\" target=\"_blank\">Hier anschauen</a>.</p>
+
+                                <p>Verbesserungen und Verschlechterungen zwischen beiden Testläufen werden numerisch und farblich dargestellt - für größtmögliche Anschaulichkeit.</p>"
+                        link:
+                            alt: Tabelle eines Vergleichsreports
+                            title: Farbcodes und Prozentwerte für leichte Vergleichbarkeit
+                    trendreports:    
+                        headline: Trend Reports
+                        text: " <p>Ein Trendreport zeigt die Entwicklung der Testergebnisse über mehrere Testläufe hinweg. Unterschiedliche Farben visualisieren die Veränderungen. <a href=\"/demo-reports/trend-report/\" target=\"_blank\">Hier anschauen</a>.</p>
+
+                                <p>Dargestellt werden zwei Performancetrends: Der Vergleich zur Baseline, der die Veränderungen im Vergleich zum ersten Testlauf illustriert, und  der Vergleich zum vorherigen Testlauf, der Ihnen zeigt, ob sich Ihre Optimierungsbemühungen bereits kurzfristig bezahlt gemacht haben.</p>"
+                        link:
+                            alt: Beispiel für Trendcharts
+                            title: Performancetrend über mehrere Testläufe gesehen 
+            
+        adjustable:
+            headline: Einfach anpassbar 
+            lead: Fügen Sie neue Datenquellen hinzu, modifzieren Sie Inhalt und Layout der Testreports, nutzen Sie effiziente Testsuites als Framework.
+            details:
+                lead: Ein gutes Tool muss sich in die Umgebung, in der es genutzt wird, problemlos einfügen können. XLT bietet viele Möglichkeiten der Anpassung und Erweiterung, um Ihren spezifischen Bedürfnissen gerecht zu werden.
+                reports:
+                    headline: Reports
+                    text: <p>Layout und Inhalt aller Reports können angepasst werden, weil CSS und die Rendering Templates Teil von XLT sind. Sie brauchen ein spezifisches Reportlayout? Sie wollen Ihren eigenen Datenüberblick? Sie wollen die Messwerte reduzieren? Kein Problem mit XLT!</p>
+                data:
+                    headline: Benutzerdefinierte und externe Daten
+                    text: "<p>Während eines Tests sammelt XLT umfangreiche und für den Testlauf relevante Daten. Manchmal kann es jedoch von Vorteil sein, zusätzliche Datenquellen zu konfigurieren.</p>
+                    <p>Für den Fall, dass auf externe Datenquellen während eines Testlaufs nicht direkt zugegriffen werden kann, integriert der XLT Report Generator externe Daten in die Testreports.</p>"
+                java:    
+                    headline: Java erledigt den Rest
+                    text: <p>Nutzen Sie Java, wenn es irgendetwas geben sollte, das XLT nicht bietet. Solange die Messungen nicht beeinflusst werden, ist so gut wie alles möglich!</p>
+                        
+        automation:
+            headline: Gemacht für Automation
+            lead: Java als Skriptsprache, offene Datenformate, Kommandozeile, Testprinzip JUnit, WebDriver-Support und vieles mehr.
+            details:
+                lead: XLT kann in alle möglichen Automationsprozesse eingebunden werden, ganz gleich, ob es sich um ein Shellskript oder einen ganzen Buildprozess handelt.
+                text: Wir haben XLT so gebaut, dass es perfekt mit Ihrer bevorzugten IDE und der Kommandozeile harmonisiert, unabhängig von Größe und Umfang Ihrer Vorhaben. Entwickler wollen es reibungslos und effizient - wir haben das im Hinterkopf. 
+            
+        profiles:
+            headline: Lastprofile
+            lead: Festes Lastprofil, geplante Ankunftsrate, Aufwärmphasen, freie Konfiguration. Realistisch oder prognostizierbar - Ihnen sind keine Grenzen gesetzt.
+            details:
+                lead: XLT kann ein festes Lastprofil oder eine geplante Ankunftsrate simulieren. Weiterhin lassen sich Aufwärm-, Mess-, und Anfahrphasen für jeden Nutzertyp einzeln konfigurieren. Erstellen Sie Ihr ganz persönliches Lastprofil, damit Ihnen kein Detail entgeht.
+                text: "<h3>Features</h3>
+                <ul>
+                    <li><strong>Ankunftsraten-Modell</strong> für realistische Simulationen</li>
+                    <li><strong>Nutzerzahl-Modell</strong> für vorhersagbaren Traffic</li>
+                    <li><strong>Anfahrphasen</strong> für graduell zunehmenden Traffic</li>
+                    <li><strong>Freie Lastprofil-Konfiguration</strong> für anspruchsvolle Testszenarien</li>
+                </ul>
+                
+                <h3>Völlig frei konfigurierbar</h3>
+                <p>
+                    Sie brauchen einen Test, bei dem die Last nach einer langsamen Anlaufphase innerhalb einer Minute ihren Höhepunkt erreicht, 10 Minuten auf diesem Niveau bleibt, um dann in Wellen zurückzukommen? Kein Problem mit XLT, ganz gleich, ob Ihre Tests auf Ankunftsrate oder Nutzeranzahl basieren.
+                </p>
+                
+                <p>
+                    <img src=\"/images/xlt/free-load-profile.png\" class=\"img-responsive\" alt=\"Bespielansicht einer Simulation\" title=\"Frei konfigurierbare Lastprofile\" />
+                </p>"
+            
+        scenarios:
+            headline: Nutzerszenarien
+            lead: Ein Testlauf kann beliebige Nutzerszenarien umfassen. Jedes Szenario kann dabei separat konfiguriert werden und ein eigenes Lastprofil haben.
+            details:
+                lead: Die Wirklichkeit ist vielfältig und Ihre Tests sollten das widerspiegeln. Mit XLT können Sie so viele verschiedene Szenarien entwickeln und ausführen, wie Sie wollen.
+                text: <p>Egal, ob ein einziger Pageview oder eine lang angelegte Call Center Operation - jedes Szenario kann individuell konfiguriert und mit einem spezifischen Lastprofil ausgeführt werden. Auch zeitlich versetzte Ausführungen sind möglich.</p>
+            
+        resultbrowser:
+            headline: Sehen Sie alles
+            lead: Der Result Browser zeigt Ihnen genau, was in einem Szenario passiert, einschließlich aller Fehlersituationen. 
+            details:
+                lead: Der Result Browser ist Ihr Werkzeug, um die geladenen Seiten zu überprüfen und nach dem Testlauf zu debuggen.
+                text:
+                    block1:
+                        image:
+                            alt: Ansicht des Resultbrowsers nach dem Öffnen
+                            title: Ansicht des Resultbrowsers nach dem Öffnen
+                        text: " <p>Während Sie Ihre Skripte entwickeln, zeigt Ihnen der Result Browser alle Details zum zuletzt ausgeführten Skript. So könnnen Sie sicherstellen, dass Ihre Skripte alles berücksichtigen und Ihre Requests mit dem wirklichen Traffic übereinstimmen.</p> 
+
+                                <p>Bei der Ausführung von WebDriver-Tests erscheint die Webseite als Screenshot. Laufen die Tests mit dem XLT-eigenen HtmlUnit, wird ein Offline-Rendering und damit eine angenäherte Darstellung der heruntergeladenen Daten angezeigt.</p>"
+                    block2:
+                        image:
+                            alt: Detailansicht von Daten im Resultbrowser
+                            title: Detailansicht von Daten im Resultbrowser zum Finden von Applikationsfehlern
+                        text: " <p>Stellen Sie sich einen Langzeittest vor, bei dem Tausende Transaktionen ohne Auffälligkeiten erfolgten, sich aber an ganz bestimmten Stellen einzelne Fehler zeigen. XLT gewährt Ihnen einen tiefen und differenzierten Einblick in genau die Momente, in denen sich die Applikation nicht korrekt verhält.</p>
+                                <p>Wenn während eines Lasttests Fehler auftreten, werden die letzten Momente der Transaktion gespeichert, inklusive der heruntergeladenen Daten und allen technischen Einzelheiten. Sie können exakt sehen, was gesendet und empfangen wurde. Mit dem Request-ID-Feature erhalten Sie eine spezifische ID, die Sie mit Ihren Server Logs vergleichen können.</p>"
+        
+        verify:
+            headline: Prüfen Sie alles
+            lead: Assertions ermöglichen Ihnen, jedes Detail zu überprüfen, um sicher nachweisen zu können, dass Ihre Applikation den Anforderungen entspricht.
+            details:
+                lead: Ein Test ist nur so gut wie die der Umfang dessen, was er prüft. XLT bietet ein Höchstmaß an Überprüfungsmöglichkeiten, damit Sie ganz sichergehen können.
+                text: <p>Die volle Syntax der Assertions von JUnit und Selenium ist nutzbar. Auch Hamcrest lässt sich einfach integrieren. Für noch detailliertere Assertions erlaubt XLT außerdem nicht nur den Zugriff auf den Hauptrequest einer Seite, sondern auch auf alle Subrequests. Mit der XLT Action API lassen sich Validierungen vor und nach jeder Aktivität einfügen.</p>
+
+        scalable:
+            headline: Skalierbarkeit
+            lead: Testen Sie mit beliebig vielen Lastmaschinen und nahezu unbegrenzter Nutzerzahl in verteilten Umgebungen.
+            details:
+                lead: Um die gewünschte Last zu erzeugen, können Sie nahezu unbegrenzt viele Lastmaschinen zu einem Test-Cluster zusammenschalten. XLT orchestriert die Lastverteilung sowie die Up- und Downloads.
+                text: "<p>XLT skaliert über Maschinen hinweg. Fügen Sie einfach weitere Maschinen hinzu. Für eine bessere Auslastung der Hardware einer Maschine können mehrere XLT-Prozesse statt nur einem gestartet werden. Uploads auf und Downloads von den Maschinen erfolgen parallel und gegebenenfalls differentiell für maximale Ablaufgeschwindigkeit.</p>
+
+                        <p>Die Last wird automatisch auf alle Agents verteilt. Bei heterogener Hardware lässt sich jede Maschine unterschiedlich gewichten, um Unterschiede in der Leistungsfähigkeit der Hardware auszugleichen.</p>
+
+                        <p>XLT lässt sich einfach und schnell installieren und schützt Ihre Agents durch HTTPS und Authentifizierung. Binden Sie XLT an jeden beliebigen Port.</p>
+
+                        <p>Vorkonfigurierte Amazon Web Service Images (AMIs) ermöglichen den schnellen Start auf Amazon EC2.</p>"           
+
+        configurable: 
+            headline: Konfigurierbarkeit
+            lead: Definieren Sie Timeouts, Keep-Alive, Kompression, das Laden von Bildern, erlaubte Hosts, Denkzeiten, Fehler-Handling und vieles mehr.
+            details:
+                lead: Viele Parameter lassen sich anpassen, damit jeder Test genau Ihren Bedürfnissen entspricht. 
+                text: " <p>XLT bietet Ihnen zahlreiche Möglichkeiten, das jeweilige Testverhalten zu konfigurieren und zu variieren.</p>
+                        <ul>
+                            <li>HTTP Keep-Alive</li>
+                            <li>Timeouts</li>
+                            <li>Kompression des Inhalts</li>
+                            <li>HTTP-Header</li>
+                            <li>Denkzeiten</li>
+                            <li>Laden statischer Inhalte</li>
+                            <li>Fehlerbehandlung</li> 
+                            <li>Maximale Fehlerzahl</li>
+                            <li>Erlaubte Hosts</li>
+                            <li>User Agent</li>
+                        </ul>
+                        <p>Sollte XLT nicht das gewünschte Property bieten, lassen sich viele Parameter in aller Regel auch selbst programmatisch beeinflussen.</p>"         
+
+        archivable:
+            headline: Archivierung
+            lead: Archivierung der Reports, Ergebnisse und Konfigurationsdateien. Für Wiederholbarkeit und Ergebnisanalyse - jederzeit.
+            details:
+                lead: XLT nutzt offene Datenformate für Ergebnisse und Reports. Das macht es leicht, alle Daten zu archiveren.
+                text: <p>Alle Ergebnisdaten werden im Dateisystem gespeichert und pro Testlauf in einem separaten Unterverzeichnis abgelegt. Das komplette Testergebnis ist damit einfach archivierbar. Die wichtigsten Konfigurationsdateien werden mit den Testergebnissen gemeinsam gespeichert. Sie können daher Ihren Test beliebig oft wiederholen oder analysieren.<p>
+
+        shareable: 
+            headline: Einfach teilen
+            lead: XLT Reports können einfach und schnell geteilt werden, weil Sie nach der Generierung nicht mehr mit XLT verknüpft sind. 
+            details:
+                lead: Reports können mit jedermann geteilt werden, da sie nicht mehr an eine XLT-Installation gebunden sind, nachdem sie erstellt wurden.
+                text: " <p>Alle Reports haben HTML-Format. Sie können sie zippen, e-mailen, anhängen und praktisch mit jedem System teilen, das Sie bevorzugen.</p>
+                        <p>Starten Sie Ihren Lasttest auf einer Maschine und sammeln sie die Messdaten auf einer anderen. Vielleicht will einer Ihrer Kollegen die Ergebnisse später einsehen und analysieren, weil Sie schon auf dem Weg ins nächste Meeting sind. XLT macht es möglich.</p>"           
+
+##################################
+    pricing:
+        title: XLT - Xceptance LoadTest - Preise und Lizenzen
+        description: Das flexible Last- und Performancetest Tool für Softwareentwicklung
+
+        intro:
+            headline: Preise &amp; Lizenzen
+            details: XLT bietet einfache und flexible Lizenzvarianten. Freie Testautomatisierung, freies Lasttesten mit bis zu fünf virtuellen Nutzern, keine Seat Limits, kostenlose Updates. Sie zahlen lediglich für virtuelle Nutzer. <a href="/de/xlt/licensing-and-pricing.html#support-and-training">Support</a> ist immer verfügbar.
+
+        switch:
+            currency: "Angezeigte Währung ändern:"
+            usd: In USD anzeigen
+            eur: In EUR anzeigen
+
+        basic:
+            head: Basic
+            price: Frei
+            motivation: Perfekt für Testautomatisierung und die Entwicklung einfacher Testszenarien.
+            features:
+                li1: Ohne Nutzungsbeschränkungen
+                li2: Kostenlose Updates
+                li3: Keine Seat Limits
+                li4: Support verfügbar
+            users: 5 virtuelle Nutzer
+            validity: Zeitlich unbegrenzte Gültigkeit
+            action: Im XLT Download inbegriffen
+
+        entry:
+            head: Entry
+            price:
+                p-usd: "6.999"
+                p-eur: "4.999"
+            motivation: Ideal für kontinuierliche Performancetests.
+            features:
+                li1: Ohne Nutzungsbeschränkungen
+                li2: Kostenlose Updates
+                li3: Keine Seat Limits
+                li4: Support verfügbar
+            users: 100 virtuelle Nutzer
+            validity: Einjährige Gültigkeit
+
+        standard:
+            head: Standard
+            price: Ab
+            month: Monat
+            motivation: Unsere beliebteste Lizenz. Wählen Sie Gültigkeitsdauer und Umfang selbst
+            features:
+                li1: Ohne Nutzungsbeschränkungen
+                li2: Kostenlose Updates
+                li3: Keine Seat Limits
+                li4: Support verfügbar
+            users: Mindestens 100 virtuelle Nutzer
+            validity: Frei wählbare Gültigkeitsdauer
+            action: oder
+
+        community:
+            head: Community
+            price: Frei
+            motivation: Wir unterstützen die Open-Source-Community und investieren in Bildung. Diese Lizenz ist für anerkannte Open-Source-Projekte, Schulen und Universitäten.
+            features:
+                li1: Keine kommerzielle Nutzung
+                li2: Kostenlose Updates
+                li3: Keine Seat Limits
+                li4: Support verfügbar
+            users: Unbegrenzte virtuelle Nutzerzahl
+            validity: Einjährige Gültigkeit
+
+        standard-details:
+            headline: Kostendetails unserer Standardlizenz
+            details: Die Standardlizenz setzt sich zusammen aus einem festen Grundpreis sowie einem variablen Preisanteil pro virtuellem Nutzer. Sie umfasst mindestens 100 virtuelle Nutzer und gilt für mindestens einen Monat. Entsprechend Ihrer Testanforderungen können natürlich auch individuelle Paketpreise vereinbart werden. Kontaktieren Sie uns einfach.
+            table:
+                headline: Preis pro Monat
+                base:
+                    key: Grundpreis
+                    usd: $ 750,00
+                    eur: € 500,00
+                step1:
+                    key: Preis pro virtuellem Nutzer, Nutzer 1-500
+                    usd: $ 2,00
+                    eur: € 1,50
+                step2:
+                    key: Preis pro virtuellem Nutzer, Nutzer 501-1000
+                    usd: $ 1,50
+                    eur: € 1,00
+                step3:
+                    key: Preis pro virtuellem Nutzer ab Nutzer 1001
+                    usd: $ 1,00
+                    eur: € 0,75
+
+        support:
+            intro:
+                headline: Support &amp; Training
+                details: Qualifizierter Support kann unabhängig von der Lizenzvariante erworben werden.
+            list:
+                headline: Support
+                li1: Standardsupport via E-Mail
+                li2: Reaktionszeit von 24 Stunden für alle während der Geschäftszeiten eingehenden Anfragen
+                li3: 24/7-Support nach Vereinbarung
+                li4: 8 Stunden Supportaufwand pro Monat
+            basic:
+                name: Basic
+                motivation: Eignet sich besonders für Testautomatisierung und die Entwicklung einfacher Testszenarien.
+                validity: Ein Monat
+            flat:
+                name: Flat
+                usd: "4.500"
+                eur: "3.000"
+                motivation: Unser beliebtestes Supportpaket
+                validity: Ein Jahr
+                action: oder
+            switch:
+                currency: "Angezeigte Währung ändern:"
+                usd: Anzeigen in USD
+                eur: Anzeigen in EUR
+            training:
+                headline: Training
+                details: Um Sie mit XLT bestmöglich vertraut zu machen, bieten wir individuelle Trainings von 4 Stunden und mit maximal 10 Teilnehmern.
+                contact: <a href="/de/contact/">Kontaktieren Sie uns</a>, um weitere Informationen zu erhalten. Gern bearbeiten wir Ihre Anfrage.
+
+########################################################################
+# Posts
+posts:
+    news:
+        1:
+            title: Xceptance unterstützt Universitäts-Sommerfest in Jena
+            when: "7. Juni 2013"
+            excerpt: Xceptance ist einer der Hauptsponsoren des Sommerfestes der Friedrich-Schiller-Universität am 28. Juni 2013 in Jena.
+        2:
+            title: Xceptance unterstützt Kulturarena Jena 2013
+            when: "15. Juli 2013"
+            excerpt: Uns liegt nicht nur das Geschäft am Herzen, sondern auch das regionale Kulturangebot. Wir freuen uns, die Kulturarena Jena 2013 unterstützen zu können.
+        3:
+            title: Xceptance auf Demandware XChange European Summit
+            when: "15. September 2013"
+            excerpt: Wir kommen mit der Europäischen Demandware Community zusammen, um uns über die neuesten Ideen und Verfahren im E-Commerce-Bereich auszutauschen.
+        4:
+            title: Xceptance beim 3. Jenaer Firmenlauf
+            when: "17. Mai 2013"
+            excerpt: Wir sind in Bestform und höchst zufrieden mit unseren Ergebnissen des 3. Jenaer Firmenlaufs.
+        5:
+            title: Xceptance auf der 1. Unternehmenskontaktmesse für Pendler und Rückkehrer
+            when: "16. Mai 2013"
+            excerpt: Am 15. Juni 2013 wird Xceptance mit einem Informationsstand auf der ersten Unternehmenskontaktmesse für Pendler und Rückkehrer in Erfurt vertreten sein.
+        6:
+            title: Xceptance fördert E-Commerce-Studiengang der FH Jena
+            when: "22. April 2013"
+            excerpt: Xceptance unterstützt, zusammen mit anderen lokalen Unternehmen und Privatpersonen, eine Stiftungsprofessur für E-Commerce und das entsprechende Bachelorstudium an der FH Jena.
+        7:
+            title: Happy new year!
+            when: "2. Januar 2014"
+            excerpt: Xceptance wünscht allen ein Frohes Neues Jahr 2014.
+        8:
+            title: XLT 4.3 jetzt verfügbar
+            when: "12. Januar 2014"
+            excerpt: Endlich ist sie da, die Xceptance LoadTest (XLT) 4.3 Version. Freuen Sie sich auf Verbesserungen und neue Features!
+        9:
+            title: Coding Contest Herbst 2012 mit Unterstützung von Xceptance
+            when: "5. Oktober 2012"
+            excerpt: IT talents can put their skills to the test at the Netresearch Leipzig Coding Contest from November 5 to 11, 2012.
+        10:
+            title: Xceptance unterstützt das BarCamp Mitteldeutschland 2012
+            when: "11. August 2012"
+            excerpt: "Wir sind offizieller Sponsor des 4. BarCamp Mitteldeutschland, das vom 13.-14. Oktober 2012 in Jena stattfindet."
+        11:
+            title: Xceptance stiftet Deutschlandstipendien
+            when: "14. Februar 2012"
+            excerpt: Wir wollen unseren Beitrag für Jenas Zukunft leisten.
+        12:
+            title: "Wir unterstützen das \"Rock gegen Rechts\" Benefiz-Konzert"
+            when: "2. Dezember 2011"
+            excerpt: Setzen wir gemeinsam ein Zeichen gegen Rassismus am 2. Dezember 2011!
+        13:
+            title: Xceptance unterstützt CEOI 2014 in Jena
+            when: "19. Mai 2014"
+            excerpt: Xceptance ist Sponsor des 21. Informatikwettbewerbs CEOI an der Friedrich-Schiller-Universität Jena.
+        14:
+            title: Xceptance beim 4. Jenaer Firmenlauf
+            when: "21. Mai 2014"
+            excerpt: Am 21. Mai 2014 treffen sich lokale Firmen, Behörden, Vereine und Freizeitsportler in der Jenaer Innenstadt, um gemeinsam für einen guten Zweck zu laufen.
+        15:
+            title: Xceptance zeigt mehr Präsenz in Jena
+            when: "5. Juni 2014"
+            excerpt: "Endlich ist es soweit: Unser Firmenlogo ziert ab heute die Fassade unseres Bürogebäudes B59."
+        16:
+            title: Universitäts-Sommerfest 2014 in Jena
+            when: "25. Juni 2014"
+            excerpt: Bereits zum zweiten Mal ist Xceptance einer von drei Hauptsponsoren des traditionellen Universitäts-Sommerfestes 2014.
+        17:
+            title: XLT 4.4 ist verfügbar
+            when: "31. Juli 2014"
+            excerpt: Xceptance LoadTest (XLT) 4.4 wurde veröffentlich. Freuen Sie sich auf Verbesserungen und neue Features!
+        18:
+            title: Treffen Sie uns auf dem Demandware XChange‘14 European Summit vom 6.-7. Oktober 2014 in Barcelona
+            when: "22. September 2014"
+            excerpt: Wir freuen uns als langjähriger Demandware-Partner auch in diesem Jahr wieder mit dabei sein zu dürfen - im Arts Hotel in Barcelona vom 06.-07. Oktober 2014.
+
+    jobs:
+        1:
+            title: Praktikanten
+            when: "16. Juli 2014"
+            excerpt: Wir freuen uns auf jeden, der sich in den Bereichen von Software und Qualitätssicherung engagieren möchte. 
+        2:
+            title: Lasttester für Web-Anwendungen
+            when: "22. Juli 2014"
+            excerpt: Wir suchen Quality Assurance Engineers für Lasttests von Web-Anwendungen.
+        3:
+            title: Technische Tester für Testautomatisierung 
+            when: "25. Juli 2014"
+            excerpt: Wir suchen technische Tester oder Quality Assurance Engineers mit Erfahrung in Testautomatisierung. 
+        4:
+            title: Technische Tester in der Softwarequalitätssicherung 
+            when: "25. Juli 2014"
+            excerpt: Wir suchen technische Tester oder Quality Assurance Engineers für funktionale Softwaretests. 
+        5:
+            title: Java-Entwickler für Webapplikationen 
+            when: "26. Juli 2014"
+            excerpt: Wir suchen Java-Entwickler mit Fokus auf Applikationsentwicklung. 
+        6:
+            title: Quality Assurance Engineer
+            when: "26. Juli 2014"
+            excerpt: Unser Büro in Cambridge, USA, sucht technische Tester oder Quality Assurance Engineers für funktionale Softwaretests, Testautomatisierung oder Lasttessts.

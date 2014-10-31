@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+
+    <body class="general-page jobs local-scroll" id="page">
+        {% include privacy-message.html %}
+        
+        {% include top-scroller.html %}
+
+		<div id="navigation" class="navbar-fixed-top">
+			<div class="container">
+				{% include navigation.html isMainNavigation=true forcedName='Jobs' %}
+			</div>
+		</div>
+
+		<header id="teaser" class="hidden-xs">
+			<div class="teaser-image">&nbsp;</div>
+		</header>	
+
+		<div id="main">
+            <div class="row job-listing-row even">
+                <div class="container">
+                    <div class="col-sm-4 job-listing-col job-col-header">
+                        <h2 name="{{job.uid}}">{% t page.title %}</h2>
+                        <p class="meta">{{page.date | date: "%B %d, %Y"}}</p>
+                        <p class="lead excerpt">{% t page.excerpt %}</p>
+                        <p class="locations"><i class="fa fa-map-marker"></i>{{page.locations}}</p>
+                    </div>		
+                    <!-- that has to be valid and complete html TWO COLUMNS -->
+                    {{content}}
+                </div>	
+            </div>	
+		</div>
+
+		<footer>
+			{% include footer.html %}
+		</footer>
+		{% include tracking.html %}
+    </body>
+</html>
+

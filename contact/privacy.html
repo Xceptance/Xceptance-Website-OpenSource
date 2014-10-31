@@ -1,0 +1,59 @@
+---
+layout: contact
+title: contact.privacy.title
+description: contact.privacy.description
+
+navName: Privacy
+subNavLinkName: navigation.sub.Privacy
+parent: Contact
+---
+<div id="privacy">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-3 hidden-sm hidden-xs informational-col">
+            	<div class="headline">
+                	<p><i class="fa fa-edit fa-4x"></i></p>
+            	</div>
+                <p>{% t contact.privacy.info %}</p>
+            </div>	
+            
+            <div class="col-md-9">
+                <h1 class="text-center">{% t contact.privacy.intro.headline %}</h1>    
+                <p class="lead text-center">{% t contact.privacy.intro.lead %}</p>
+                   
+                <h2>{% t contact.privacy.collect.headline %}</h2>
+                {% t contact.privacy.collect.details %}
+                
+                <h2>{% t contact.privacy.use.headline %}</h2>
+                {% t contact.privacy.use.details %}
+                <ul>
+                    {% t contact.privacy.use.list %}
+                </ul>
+                
+                <h2>{% t contact.privacy.cookies.headline %}</h2>
+                {% t contact.privacy.cookies.details %}
+                
+                <h2>{% t contact.privacy.thirdparty.headline %}</h2>
+                {% t contact.privacy.thirdparty.details %}
+                
+                <h2>{% t contact.privacy.links.headline %}</h2>
+                {% t contact.privacy.links.details %}
+                
+                <h2>{% t contact.privacy.privacy-protection.headline %}</h2>
+                {% t contact.privacy.privacy-protection.details %}
+                
+                <h2>{% t contact.privacy.privacy-policy.headline %}</h2>
+                {% t contact.privacy.privacy-policy.details %}
+                
+                {% if site.lang == 'en' %}
+                    <h2>{% t contact.privacy.consent.headline %}</h2>
+                    {% t contact.privacy.consent.details %}
+                {% endif %}
+                
+                <h2>{% t contact.privacy.privacy-changes.headline %}</h2>
+                {% t contact.privacy.privacy-changes.details %}
+                
+            </div>
+        </div>
+    </div>
+</div>	

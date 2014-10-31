@@ -1,0 +1,47 @@
+---
+layout: news-post
+title:  posts.news.1.title
+when:   posts.news.1.when
+categories: news
+excerpt: posts.news.1.excerpt
+---
+<!-- headline comes automatic based on the filled out title -->
+
+{% if site.lang == 'en' %}
+<!-- that is a part that jumps as text, that can be the excerpt text again, but 
+also different text. The excerpt above is for automatic picking when embeeded into
+other pages, this here is for the visual stuff on the news post page -->
+<p class="lead">
+	Xceptance is one of the main sponsors of the Friedrich-Schiller-University's Summer Festival that will take place on June 28, 2013 in and around Jena's famous Planetarium and Botanical Gardens.
+</p>
+
+<!-- that is regular content -->
+<p>
+	<!-- an image to the right -->
+	<img src="/images/news/universitaets-sommerfest-jena.jpg" class="pull-right img-responsive" alt="Sommerfest Jena 2013 logo" title="Friedrich-Schiller-University's Summer Festival"/>
+	The „Sommerfest“ is a long-established event bringing the university's friends and patrons together. 5000 guests are invited to wander around the venue and enjoy a great night with all sorts of food, scientific exhibitions, and fireworks. The festival also hosts several performance stages and musicians spanning an exciting variety of genres. 
+</p>
+
+<!-- any subheadline is h3 -->
+<h3>Tickets</h3>
+<p>
+	For ticket info and the full outline of performances and exhibitions, explore the <a href="http://www.sommerfest.uni-jena.de/">Sommerfest Homepage</a>. Ticket sale starts today! 
+</p>
+{% else %}
+<p class="lead">
+	Am 28. Juni 2013 findet in Jena das traditionelle Sommerfest der Friedrich-Schiller-Universität statt.
+</p>
+
+<!-- that is regular content -->
+<p>
+	<!-- an image to the right -->
+	<img src="/images/news/universitaets-sommerfest-jena.jpg" class="pull-right img-responsive" alt="Sommerfest Jena 2013 logo" title="Friedrich-Schiller-University's Summer Festival"/>
+	Das Sommerfest ist ein seit vielen Jahren etabliertes Jeaner Großereignis, bei dem Angehörige, Freunde und Unterstützter der FSU Jena zusammen kommen, um bei Musik, Theater, wissenschaftlichen Ausstellungen, kulinarischen Genüssen und großem Feuerwerk einen ausgelassenen Abend zu verbringen. Das Festareal erstreckt sich über den Griesbachgarten, den Botanischen Garten und das Planetarium. Wir freuen uns, das Sommerfest erstmalig als einer der Hauptsponsoren unterstützen zu können.
+</p>
+
+<!-- any subheadline is h3 -->
+<h3>Eintrittskarten</h3>
+<p>
+	Informationen zum abwechslungsreichen Programm, zu den kulinarischen Angeboten und zum Ticketverkauf finden Sie unter <a href="http://www.sommerfest.uni-jena.de/">www.sommerfest.uni-jena.de</a>. Eintrittskarten sind ab sofort erhältlich.  
+</p>
+{% endif %}

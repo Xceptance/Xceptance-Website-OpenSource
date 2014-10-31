@@ -1,0 +1,61 @@
+---
+layout: news-post
+title: posts.news.18.title
+when: posts.news.18.when
+categories: news
+excerpt: posts.news.18.excerpt
+---
+{% if site.lang == 'en' %}
+    <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">
+	    As long-time Demandware partner, we are looking forward to attending this year's Demandware XChange European Summit on October 6-7 in Barcelona, Spain.
+    </p>
+
+    <!-- that is regular content -->
+    <p>
+    <img src="/images/news/xchange_logo.jpg" class="img-responsive pull-right" alt="Xchange logo" title="Xchange 2014" />
+	    You want to learn about the many possibilities of quality assurance for e-commerce applications? Get in touch with us! We are more than happy to share our long-term experience in the domains of load and regression testing, test automation, and test tools.
+    </p>
+
+    <h3>Schedule an Appointment</h3>
+    <p>
+        Please email us at <strong>kontakt@xceptance.de</strong> and leave your number to schedule an appointment. We are looking forward to meeting you and an interesting exchange of experiences!
+    </p>
+    
+    <h3>More Information</h3>
+    <p><a href="http://www.demandwarexchange-eu.com/" target="_blank">2014 Demandware XChange European Summit</a></p>
+    <ul>
+	    <li>Hotel Arts</li>
+	    <li>Barcelona, Spain</li>
+	    <li>October 6-7, 2014</li>
+    </ul>
+
+{% else %}
+
+    <p class="lead">
+	    Wir freuen uns als langjähriger Demandware-Partner auch in diesem Jahr wieder mit dabei sein zu dürfen - im Arts Hotel in Barcelona vom 06.-07. Oktober 2014.
+    </p>
+
+    <!-- that is regular content -->
+    <p>
+    <img src="/images/news/xchange_logo.jpg" class="img-responsive pull-right" alt="Xchange logo" title="Xchange 2014" />
+	    Sie interessiert, welche Möglichkeiten sich in der Qualitätssicherung von E-Commerce-Anwendungen eröffnen? Dann treten Sie mit uns in Kontakt. Gern teilen wir mit Ihnen unsere Erfahrungen im Bereich von Last- und Regressionstest, Testautomatisierung und Test Tools.
+    </p>
+
+    <h3>Vereinbaren Sie einen Termin</h3>
+    <p>
+        Unter <strong>kontakt@xceptance.de</strong> haben Sie die Möglichkeit einen Termin zu vereinbaren. Bitte hinterlassen Sie, neben einer Mail-Adresse und einer Telefonnummer, einfach einen Terminwunsch! Wir freuen uns auf den Austausch mit Ihnen!
+    </p>
+    
+    <h3>Weiterführende Informationen</h3>
+    <p><a href="http://www.demandwarexchange-eu.com/" target="_blank">2014 Demandware XChange European Summit</a></p>
+    <ul>
+	    <li>Hotel Arts</li>
+	    <li>Barcelona, Spanien</li>
+	    <li>06. - 07. Oktober 2014</li>
+    </ul>
+{% endif %}
