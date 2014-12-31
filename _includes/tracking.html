@@ -7,7 +7,7 @@
   _paq.push(["trackPageView"]);
   _paq.push(["enableLinkTracking"]);
 
-  (function() {
+  function reportAnalytics() {
         // sent this only, if the user did not opt-out and he has seen the privacy message once at least
         if ( ($.cookie('privacy-ack-displayed') == 'true') && ($.cookie('privacy') == undefined) ) {
             var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stats.xceptance.com/";
@@ -16,7 +16,8 @@
             var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
             g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
         }
-  })();
+  };
+  reportAnalytics();
 </script>
 <!-- End Piwik Code -->
 
@@ -28,6 +29,6 @@
     
     if ($.cookie('privacy-ack-displayed') == undefined && !isDNT) { 
         $('#privacy-message').show();
-        $.cookie('privacy-ack-displayed', 'true', { expires: 1, path: '/{{site.lang}}' });
+        $.cookie('privacy-ack-displayed', 'true', { expires: 7, path: '/{{site.lang}}' });
     }
 </script>

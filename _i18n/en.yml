@@ -53,7 +53,7 @@ global:
 # privacy message
 message:
     cookies: We use cookies. For more information please read <a href="/en/contact/privacy.html">our privacy section</a>.
-    tracking: We also use analytics. By clicking the <em>Opt-Out button</em>, we will place a non-personalized cookie on your machine that indicates that you don‘t wish to be tracked.
+    tracking: We also use analytics. By clicking <em>Opt-Out</em>, we will place a non-personalized cookie on your machine that indicates that you don‘t wish to be tracked.
     
     btn: 
         opt-out: Opt-Out
@@ -89,13 +89,15 @@ navigation:
 ########################################################################
 # The homepage
 homepage:
-    title: Welcome to Xceptance - The Software Testing Experts
+    title: Xceptance - The Software Testing Experts
     description: Xceptance, the software testing experts.
 
     carousel:
-        service_slide: We Test Software.<br/>Because Quality Matters.
-        dw_slide: Demandware Partner Since 2005.
-        load_slide: Xceptance LoadTest. Make Automation an Engineering Habit.
+        service_slide: 
+            text: We Test Software.<br/>Because Quality Matters.
+            btn: Learn More
+        dw_slide: Demandware Partner since 2005.
+        load_slide: XLT. The Tool to Make Automation an Engineering Habit.
 
     intro:
         headline: Committed to Software Quality
@@ -112,12 +114,13 @@ homepage:
             headline: Test Guidance &amp; Support
             details: We love to share our knowledge and can help you establish or improve your own quality assurance processes. Let us inspire you to test better!
         product:
-            headline: Xceptance LoadTest
-            details: You’ll love functional testing with XLT. You can realistically test the performance of your site and easily put together a suite of automated tests for your testing arsenal.
+            headline: Our Testing Tool Offer
+            details: You’ll love functional testing with XLT because it takes Selenium style testing to the next level. XLT also covers all your web performance testing needs.
 
     welcome_teaser:
         headline: Welcome to Xceptance!<br/>Get to know us.
         action_button: This way
+        
 ########################################################################
 # Company pages
 company:
@@ -257,7 +260,7 @@ company:
 ########################################################################
 # Jobs
 jobs:
-    title: Jobs and Open Positions at Xceptance
+    title: Xceptance – Jobs
     description: We are looking for people
 
     intro:
@@ -295,7 +298,8 @@ jobs:
 ########################################################################
 # Services
 services:
-    title: Our Services
+    teaser: Inspecting, Observing,<br>Reporting.
+    title: Xceptance – Our Services
     description: What we do and what you can get
 
     intro:
@@ -336,7 +340,7 @@ services:
         
 ##################################
     demandware:
-        title: Demandware Partner
+        title: Xceptance – Demandware Partner
         description: We are Demandware Partner.
 
 ########################################################################
@@ -422,7 +426,7 @@ contact:
                 <a href=\"http://www.xceptance.com/\">www.xceptance.com</a>, 
                 <a href=\"http://www.xceptance-loadtest.de/\">www.xceptance-loadtest.de</a>, 
                 <a href=\"http://www.xceptance-loadtest.com/\">www.xceptance-loadtest.com</a>,                
-                <a href=\"http://blog.xceptance.de/\">blog.xceptance.de</a>, 
+                <a href=\"https://blog.xceptance.de/\">blog.xceptance.de</a>, 
                 <a href=\"https://twitter.com/Xceptance\">Xceptance Twitter</a>, 
                 <a href=\"https://www.xing.com/companies/xceptancesoftwaretechnologiesgmbh\">Xceptance on Xing</a>,
                 <a href=\"https://www.linkedin.com/company/xceptance\">Xceptance on LinkedIn</a>,
@@ -434,7 +438,7 @@ contact:
 ########################################################################
 # News
 news:
-    title: Xceptance News
+    title: Xceptance – News
     description: What is going on at Xceptance
     previous:
         headline: Previous News
@@ -453,20 +457,21 @@ news:
 ########################################################################
 # XLT
 xlt:
-    title: XLT - Xceptance LoadTest - Test Automation and Load Testing
+    title: Xceptance - XLT for Test Automation and Load Testing
     description: The most flexible load and performance testing tool for Engineering.
 
     carousel:
+        intro: "One Tool for<br/>Test Automation and Performance Testing"
         license:
-            headline: Free for all functional testing. Load testing is user-based on a monthly basis.
+            headline: Always Free for Functional Testing.<br/>Always Free Updates.
             btn: Pricing &amp; Licensing
-        webdriver: Know WebDriver already? Selenium syntax? You’re good to go.
+        webdriver: Know WebDriver and Selenium already?<br/>You’re good to go.
         report:
-            headline: Awesome Reporting. Instant, rich, comprehensive, customizable.
+            headline: Awesome Reporting. Instant, Rich, Comprehensive, Customizable.
             btn: Browse Reports
     intro:
         headline: Xceptance LoadTest
-        details: The Test Automation and Load Test Tool 
+        details: The Test Automation and Load Test Tool for Software Development
         
     testautomation:
         headline: Test Automation
@@ -518,7 +523,7 @@ xlt:
         
 ##################################
     documentation:
-        title: XLT - Xceptance LoadTest - Documentation
+        title: Xceptance - XLT Documentation
         description: The most flexible load and performance testing tool for Engineering.
 
         intro:
@@ -542,12 +547,12 @@ xlt:
 
 ##################################
     download:
-        title: XLT - Xceptance LoadTest - Download
+        title: Xceptance - XLT Download
         description: The most flexible load and performance testing tool for Engineering.
 
         intro:
-            headline: Download
-            details: Download the complete XLT software package free of charge. It supports MS Windows, OSX, Linux, and FreeBSD. If it runs an Oracle Java, it runs XLT.
+            headline: XLT Download
+            details: Download the complete XLT software package free of charge. It supports MS Windows, OSX, Linux, and FreeBSD. If it runs  Java, it runs XLT.
 
         license:
             headline: Free Basic License included
@@ -562,7 +567,7 @@ xlt:
 
 ##################################
     features:
-        title: XLT - Xceptance LoadTest - Features
+        title: Xceptance - XLT Features
         description: The most flexible load and performance testing tool for Engineering.
         
         intro:
@@ -831,7 +836,7 @@ xlt:
 
 ##################################
     pricing:
-        title: XLT - Xceptance LoadTest - Pricing and Licensing
+        title: Xceptance - XLT Pricing and Licensing
         description: The most flexible load and performance testing tool for Engineering.
 
         intro:
@@ -1024,6 +1029,14 @@ posts:
             title: Meet us at the Demandware XChange‘14 European Summit on October 6-7, 2014 in Barcelona!
             when: September 22, 2014
             excerpt: As long-time Demandware partner, we are looking forward to attending this year‘s Demandware XChange European Summit on October 6-7 in Barcelona, Spain.
+        19:
+            title: Merry QA’ed Christmas and a Happy New Year!
+            when: December 18, 2014
+            excerpt: We wish you and your family happy holidays and health, happiness and success in the coming year.
+        20:
+            title: Xceptance Hosts 1st XLT Summit on January 20, 2015 in Jena
+            when: January 2, 2014
+            excerpt: We want to bring Xceptance and German XLT users even closer together and are looking forward to meeting you in Jena!
 
     jobs:
         1:

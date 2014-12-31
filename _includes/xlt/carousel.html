@@ -5,10 +5,23 @@
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#myCarousel" data-slide-to="1"></li>
 		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
 	</ol>
 
 	<div class="carousel-inner">
 		<div class="item active">
+			<div class="carousel-caption contrast">
+				<h1>{% t xlt.carousel.intro %}</h1>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="carousel-caption contrast">
+				<h1>{% t xlt.carousel.webdriver %}</h1>
+			</div>
+		</div>
+        
+        <div class="item">
 			<div class="carousel-caption contrast">
 				<h1>{% t xlt.carousel.license.headline %}</h1>
 				<a class="btn btn-primary" href="{{ 'xlt/licensing-and-pricing.html' | to_absoluteurl }}" role="button">{% t xlt.carousel.license.btn %}</a>			
@@ -17,14 +30,10 @@
 		
 		<div class="item">
 			<div class="carousel-caption contrast">
-				<h1>{% t xlt.carousel.webdriver %}</h1>
-			</div>
-		</div>
-
-		<div class="item">
-			<div class="carousel-caption contrast">
 				<h1>{% t xlt.carousel.report.headline %}</h1>
-				<a class="btn btn-primary" href="{{ 'xlt/features.html' | to_absoluteurl }}" role="button">{% t xlt.carousel.report.btn %}</a>
+				<!-- Temporary disabled, because jumping does not open the category on landing
+                    <a class="btn btn-primary" href="{{ 'xlt/features.html' | to_absoluteurl }}" role="button">{% t xlt.carousel.report.btn %}</a>
+                -->    
 			</div>
 		</div>
 

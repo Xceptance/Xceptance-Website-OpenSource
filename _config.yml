@@ -32,7 +32,6 @@ sitenavigation:
   - name: Services
     secondarynav:
         - name: Services
-        - name: Demandware
   - name: XLT
     secondarynav:
         - name: XLT
@@ -55,5 +54,5 @@ sitenavigation:
         - name: Privacy
   - name: :External
     title: Blog
-    url: http://blog.xceptance.com/
+    url: https://blog.xceptance.com/
 

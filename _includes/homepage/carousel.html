@@ -9,10 +9,10 @@
 
 	<div class="carousel-inner">
 		<div class="item active" id="first">
-			<img src="/images/teasers/carousels/x.png" alt="A red Xceptance X" title="The Single Red X">
+			<!-- <img src="/images/teasers/carousels/x.png" alt="A red Xceptance X" title="The Single Red X"> -->
 			<div class="carousel-caption">
-				<h1>{% t homepage.carousel.service_slide %}</h1>
-				<a class="btn btn-primary" href="{{ 'services/' | to_absoluteurl }}" role="button">{% t global.link.learnmore %}</a>
+				<h1>{% t homepage.carousel.service_slide.text %}</h1>
+				<a class="btn btn-primary" href="{{ 'services/' | to_absoluteurl }}" role="button">{% t homepage.carousel.service_slide.btn %}</a>
 			</div>
 		</div>
 
@@ -33,4 +33,7 @@
 
 	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="fa fa-chevron-left"></span></a>
 	<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="fa fa-chevron-right"></span></a>
+<!--
+	<img id="moose" src="/images/homepage/moose2.png" alt="Merry XMas" title="Christmas 2014" />
+-->
 </div><!-- /.carousel -->

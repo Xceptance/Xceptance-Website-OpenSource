@@ -25,7 +25,7 @@
 # Global stuff such as buttons
 global:
     website:
-        name: Xceptance Website - Die Softwaretest-Experten.
+        name: Xceptance - Die Softwaretest-Experten
         description: Xceptance, die Softwaretest-Experten. Performancetests, Testautomatisierung, QA-Prozessunterstützung, Security.Tests, funktionales Testen. Wir kennen Ecommerce-QA.
     link:
         learnmore: Mehr
@@ -88,13 +88,15 @@ navigation:
 ########################################################################
 # The homepage
 homepage:
-    title: Willkommen bei Xceptance - Qualitätssicherung von Software
+    title: Xceptance - Qualitätssicherung von Software
     description: Xceptance, die Experten für Qualitätssicherung von Software.
 
     carousel:
-        service_slide: Wir testen Software.<br/>Weil Qualität entscheidet.
-        dw_slide: Wir sind Demandware Partner. Seit 2005.
-        load_slide: Xceptance LoadTest. Für die perfekte Verbindung von Entwicklung und Automation.
+        service_slide:
+            text: Wir testen Software.<br/>Weil Qualität entscheidet.
+            btn: Erfahren Sie mehr
+        dw_slide: Wir sind Demandware Partner seit 2005.
+        load_slide: XLT. Für die perfekte Verbindung von Entwicklung und Automation.
 
     intro:
         headline: Der Qualitätssicherung von Software verpflichtet
@@ -111,12 +113,13 @@ homepage:
             headline: Testunterstützung
             details: Wir teilen unsere Erfahrungen und helfen Ihnen, QS-Prozesse zu etablieren und zu optimieren. Lassen Sie sich von uns inspirieren.
         product:
-            headline: Xceptance LoadTest
-            details: Testen Sie das Verhalten Ihrer Website unter realistischen Be&shy;din&shy;gungen und entwickeln Sie au&shy;to&shy;ma&shy;ti&shy;sierte Test&shy;suites für einen umfassenden Test&shy;prozess.
+            headline: Unser Testwerkzeug
+            details: Wir haben das Selenium-Test&shy;konzept weiter&shy;entwickelt. Erstellen Sie um&shy;fang&shy;reiche Test-Suiten für Ihre Web&shy;seiten. XLT deckt auch Ihre Last- und Performance&shy;test-Anfor&shy;de&shy;rungen ab.
 
     welcome_teaser:
         headline: Willkommen bei Xceptance.<br/>Besuchen Sie uns.
         action_button: Hier entlang
+        
 ########################################################################
 # Company pages
 company:
@@ -252,7 +255,7 @@ company:
 ########################################################################
 # Jobs
 jobs:
-    title: Xceptance- Stellenangebote
+    title: Xceptance - Stellenangebote
     description: Wir suchen Mitarbeiter für unsere Niederlassungen in Jena und Cambridge, MA.
 
     intro:
@@ -290,6 +293,7 @@ jobs:
 ########################################################################
 # Services
 services:
+    teaser: Prüfen, Beobachten,<br>Rückmelden.
     title: Xceptance - Unsere Serviceleistungen
     description: Serviceleistungen der Xceptance GmbH. Was wir tun und was Sie bekommen.
 
@@ -331,7 +335,7 @@ services:
         
 ##################################
     demandware:
-        title: Demandware Partner
+        title: Xceptance – Demandware Partner
         description: We are Demandware Partner.
         
 ########################################################################
@@ -416,7 +420,7 @@ contact:
                 <a href=\"http://www.xceptance.com/\">www.xceptance.com</a>, 
                 <a href=\"http://www.xceptance-loadtest.de/\">www.xceptance-loadtest.de</a>, 
                 <a href=\"http://www.xceptance-loadtest.com/\">www.xceptance-loadtest.com</a>,                 
-                <a href=\"http://blog.xceptance.com/\">blog.xceptance.com and .de</a>, 
+                <a href=\"https://blog.xceptance.com/\">blog.xceptance.com and .de</a>, 
                 <a href=\"https://twitter.com/Xceptance\">Xceptance Twitter</a>, 
                 <a href=\"https://www.xing.com/companies/xceptancesoftwaretechnologiesgmbh\">Xceptance auf Xing</a>,
                 <a href=\"https://www.linkedin.com/company/xceptance\">Xceptance auf LinkedIn</a>,
@@ -428,7 +432,7 @@ contact:
 ########################################################################
 # News
 news:
-    title: Xceptance News
+    title: Xceptance – News
     description: Neuigkeiten bei Xceptance
     previous:
         headline: Ältere News
@@ -447,14 +451,15 @@ news:
 ########################################################################
 # XLT
 xlt:
-    title: XLT - Xceptance LoadTest - Testautomatisierung und Lasttests
+    title: Xceptance - XLT Testautomatisierung und Lasttests
     description: Das flexible Last- und Performancetest Tool für die Softwareentwicklung
 
     carousel:
+        intro: "Nur ein Werkzeug für<br/>Testautomatisierung und Lasttests."
         license:
-            headline: Kostenfrei für funktionale Tests. Lasttest-Lizenzen auf monatlicher Basis.
+            headline: Immer kostenfrei für funktionale Tests.<br/>Immer kostenfreie Updates.
             btn: Preise &amp; Lizenzen
-        webdriver: Schon vertraut mit WebDriver und Selenium-Syntax? Legen Sie sofort los!
+        webdriver: "Schon vertraut mit WebDriver und Selenium?<br/>Legen Sie sofort los!"
         report:
             headline: Umfassende Reports. Schnell, detailreich, präzise, anpassbar.
             btn: Reports anschauen
@@ -505,7 +510,7 @@ xlt:
 
 ##################################
     documentation:
-        title: XLT - Xceptance LoadTest - Dokumentation
+        title: Xceptance - XLT Dokumentation
         description: Die Dokumentation zum flexiblen Last- und Performancetest Tool für die Softwareentwicklung
 
         intro:
@@ -529,16 +534,16 @@ xlt:
             
 ##################################
     download:
-        title: XLT - Xceptance LoadTest - Download
+        title: Xceptance - XLT Download
         description: Das flexible Last- und Performancetest Tool für Softwareentwicklung
 
         intro:
-            headline: Download
-            details: Laden Sie das komplette XLT-Paket kostenlos herunter. Es unterstützt MS Windows, OSX, Linux und FreeBSD. Läuft ein Oracle Java, dann läuft auch XLT.
+            headline: XLT - Download
+            details: Laden Sie das komplette XLT-Paket kostenlos herunter. Es unterstützt MS Windows, OSX, Linux und FreeBSD. Wo Java läuft, da läuft auch XLT.
 
         license:
             headline: Kostenfreie Basislizenz inklusive
-            details: Der Download beinhaltet unsere Basislizenz. Diese erlaubt Tests mit bis zu 5 virtuellen Nutzern, <strong> ganz ohne Zeit- und Nutzungsbeschränkungen</strong>.
+            details: Der Download beinhaltet unsere Basislizenz. Diese erlaubt Tests mit bis zu 5 virtuellen Nutzern, <strong>ganz ohne Zeit- und Nutzungsbeschränkungen</strong>.
             price: Vollkommen kostenlos für Testautomatisierung und funktionale Regressionstests!
             list:
                 release: Release Notes
@@ -549,7 +554,7 @@ xlt:
 
 ##################################
     features:
-        title: XLT - Xceptance LoadTest - Features
+        title: Xceptance - XLT Features
         description: Das flexible Last- und Performancetest Tool für die Softwareentwicklung
         
         intro:
@@ -767,7 +772,7 @@ xlt:
 
 ##################################
     pricing:
-        title: XLT - Xceptance LoadTest - Preise und Lizenzen
+        title: Xceptance - Preise und Lizenzen
         description: Das flexible Last- und Performancetest Tool für Softwareentwicklung
 
         intro:
@@ -960,6 +965,14 @@ posts:
             title: Treffen Sie uns auf dem Demandware XChange‘14 European Summit vom 6.-7. Oktober 2014 in Barcelona
             when: "22. September 2014"
             excerpt: Wir freuen uns als langjähriger Demandware-Partner auch in diesem Jahr wieder mit dabei sein zu dürfen - im Arts Hotel in Barcelona vom 06.-07. Oktober 2014.
+        19:
+            title: Fröhliche Weihnachten und ein gesundes neues Jahr!
+            when: "18. Dezember 2014"
+            excerpt: Wir wünschen Ihnen und Ihrer Familie ein frohes Weihnachtsfest sowie Gesundheit, Glück und Erfolg für das kommende Jahr.
+        20:
+            title: Xceptance lädt ein zum 1. XLT-Anwendertreffen am 20.01.2015 in Jena
+            when: "2. Januar 2014"
+            excerpt: Wir wollen unsere deutschen Anwender und Xceptance künftig noch näher zusammen bringen und freuen uns auf einen fruchtbaren Austausch.
 
     jobs:
         1:

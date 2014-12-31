@@ -858,9 +858,29 @@ blockquote {
 .homepage {
 
 	#teaser {
-		background: url(/images/teasers/carousels/grey.png) center @navBarHeight no-repeat @cFooterGray;
+		
+		background: url(/images/teasers/doors_open.jpg) center @navBarHeight no-repeat #802623;
 		background-attachment: fixed;
-
+		
+		@media (min-width: @screen-sm-max) {
+			#myCarousel {
+		 		margin-left: 104px;
+			    margin-right: 104px;
+		    }
+		}
+		
+		#moose {
+			position: absolute;
+			top: 90px;
+			right: 0px;
+		}
+		
+		@media (max-width: @screen-sm-min) {
+			#moose {
+				display: none;
+			}
+		}
+		
 		#first {
 
 			img {
@@ -929,13 +949,13 @@ blockquote {
 
 	/* the decoration images of xlt */
 	#xlt-background {
-		padding-top: 3em;
-		padding-bottom: 3em;
+		padding-top: 3.5em;
+		padding-bottom: 3.5em;
 		color: @cLightGray;
 		background-color: @cFooterGray;
 		background: url(/images/homepage/floor_large.jpg) repeat 42% 48%;
 		background-attachment: fixed;
-
+						
 		.lead {
 			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 			font-size: 2.5em;
@@ -952,7 +972,7 @@ blockquote {
 .xlt-landing {
 
 	#teaser {
-		background: url(/images/teasers/carousels/grey.png) center @navBarHeight no-repeat @cFooterGray;
+		background: url(/images/teasers/carousels/grey.png) center @navBarHeight no-repeat @cDoubleDarkendLightGray;
 		background-attachment: fixed;
 	}
 
@@ -1007,7 +1027,7 @@ blockquote {
 .xlt-subpages {
 
 	#teaser {
-		background: url(/images/teasers/grey_border.jpg) center @navBarHeight no-repeat @cFooterGray;
+		background: url(/images/teasers/grey_border.jpg) center @navBarHeight no-repeat #d1d1d1;
 		background-attachment: fixed;
 		
 		.teaser-image {
@@ -1306,7 +1326,7 @@ table {
 .about {
 	#teaser {
 		.teaser-image {
- 			background: url(/images/teasers/floor.jpg) fixed center @navBarHeight no-repeat @cFooterGray;
+ 			background: url(/images/teasers/floor.jpg) fixed center @navBarHeight no-repeat #bb1c1d;
 		}
 	}
 	
@@ -1413,7 +1433,7 @@ table {
 
 		@media (min-width: @screen-xs-max) {
             height: @homepageTeaserHeight;
-            background: url(/images/teasers/whiteboard.png) fixed center @navBarHeight no-repeat @cFooterGray;
+            background: url(/images/teasers/whiteboard.png) fixed center @navBarHeight no-repeat #969490;
         }
 
         background-color: @cDarkendLightGray;
@@ -1427,10 +1447,6 @@ table {
 					.teaserTextDefinition;
 					left: 0;
 					right: 0;
-				}
-
-				h1 {
-					font-family: @fHeadline;
 				}
 			}
 		}
@@ -1447,11 +1463,54 @@ table {
 	}
 }
 
-#demandware {
-	.row-padding;
-    .ourStyledList;
-    .thumbnailDefinition;
-	.headlineDefinition;
+
+.demandware-testing {
+
+	#teaser {
+
+		@media (min-width: @screen-xs-max) {
+            height: @homepageTeaserHeight;
+            background: url(/images/teasers/green_inverted.jpg) fixed center @navBarHeight no-repeat #6d9906;
+        }
+        
+        .dw-logo-header {
+	        width: 22%;
+	        position: relative;
+	        top: -65px;
+        }
+    }
+
+	#demandware {
+		.row-padding;
+	    .ourStyledList;
+	    
+	    #logo {
+		    padding-top: 1.7em;
+		    width: 80%;
+		    float: right;
+	    }	
+	    
+	    .facts-table {
+			border-spacing: 0 1em;
+			border-collapse: separate;
+	
+			td {
+				vertical-align: top;
+				padding: 0.5em 0.5em 0.5em 0em;
+			}
+			.key {
+				border-bottom: 2px solid @cDarkendLightGray;
+	
+				@media (min-width: @screen-sm-max) {
+					width: 47%;
+				}
+			}
+			.value {
+				border-bottom: 4px solid @cDarkendLightGray;
+				font-weight: 400;
+			}
+		}
+	}
 }
 
 /* ---------------------------------------------------------- */
@@ -1460,7 +1519,7 @@ table {
 
 	#teaser {
 		.teaser-image {
-			background: url(/images/teasers/xceptance-text.png) fixed center @navBarHeight no-repeat @cFooterGray;
+			background: url(/images/teasers/xceptance-text.jpg) fixed center @navBarHeight no-repeat #695961;
 		}
 	}
 
@@ -1630,7 +1689,7 @@ table {
 .jobs {
 	#teaser {
 		.teaser-image {
-			background: url(/images/teasers/coffee.jpg) fixed center @navBarHeight no-repeat @cFooterGray;
+			background: url(/images/teasers/coffee.jpg) fixed center @navBarHeight no-repeat #ac1215;
 		}
 	}
 
@@ -1708,7 +1767,7 @@ table {
 /* ---------------------------------------------------------- */
 /* --- the footer, more on the dark side */
 footer {
-	background-color: @cFooterGray;
+	background-color: @cCopyrightGray;
 	color: darken(#fff, 20%);
 /*     box-shadow: 0px -1px 2px rgba(190, 190, 190, 0.80); */
 
@@ -1808,7 +1867,7 @@ footer {
 	}
 
 	#copyright {
-		background-color: @cCopyrightGray;
+		background-color: @cText;
 		color: lighten(@cCopyrightGray, 40%);
 		font-size: 80%;
 		text-align: center;
