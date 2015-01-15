@@ -1,8 +1,8 @@
 name: global.website.name
 highlighter: pygments
 url:
-    de: http://www.xceptance.de
-    en: http://www.xceptance.com
+    de: https://www.xceptance.com
+    en: https://www.xceptance.com
 
 include: [.htaccess]
 exclude: [bin,README.md]
@@ -32,6 +32,7 @@ sitenavigation:
   - name: Services
     secondarynav:
         - name: Services
+        - name: Demandware
   - name: XLT
     secondarynav:
         - name: XLT

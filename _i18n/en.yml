@@ -141,7 +141,7 @@ company:
             key: Headquarters
             value: "Jena (Germany)"
         dw:
-            key: Demandware companion
+            key: Demandware partner
             value: Since 2005
         offices:
             key: Offices
@@ -168,7 +168,7 @@ company:
         details: "It is very important to us to share our knowledge and skills, which is why we work hard on developing <strong>software testing tools</strong>. Xceptance LoadTest (XLT) was created to not only enhance our own testing experience but also to serve others of our profession. Open source projects help us greatly in our efforts and we try to give something in return, such as a <a href=\"/en/xlt/licensing-and-pricing.html\">community license</a> or our <strong>open source</strong> email service<a href=\"https://github.com/Xceptance/XCMailr\" target=\"_blank\"> XCMailr</a> for testing.</i>"
     collaborate:
         headline: We Collaborate
-        details: We are not a testing squad made up of pedantic nit-pickers who are out to denigrate others’ work. Rather, our goal is to be a reliable, trusted <strong>partner</strong>. To that end, we foster a relationship with our clients that is based on respectful communication and consructive cooperation, and we always keep their needs front and center. We feel comfortable behind the scenes are are satisfied when we can accompany our clients on their road to success. s.
+        details: We are not a testing squad made up of pedantic nit-pickers who are out to denigrate others’ work. Rather, our goal is to be a reliable, trusted <strong>partner</strong>. To that end, we foster a relationship with our clients that is based on respectful communication and constructive cooperation, and we always keep their needs front and center. We feel comfortable behind the scenes and are satisfied when we can accompany our clients on their road to success.
     atmosphere:
         headline: We Are a Team
         details: "At Xceptance, we believe that a <strong>positive and supportive atmosphere</strong> is key to being good at what we do. A flat hierarchy, fun at work, and spending time together outside the office make for an environment in which we feel our best, are at our most creative, and are engaged and committed to our work."
@@ -339,10 +339,71 @@ services:
         description: We offer customized test support services tailored to fit your specific needs. Interested in professional advice on test management and test design? Thinking about workshops on testing for your employees? Establishing or extending your own internal quality assurance organization? We would love to help you.
         
 ##################################
-    demandware:
+    dw:
+        teaser: "10 Years of Quality Assurance Support for Demandware."
         title: Xceptance – Demandware Partner
-        description: We are Demandware Partner.
+        description: We are Demandware partner
+        
+        table:
+            headline: E-Commerce Testing
+            load:
+                key: Load Tests for DW platforms
+                value: "48 (in 2014)"
+            storefront:
+                key: Storefront QA for DW stores
+                value: "10 (in 2014)"
 
+        intro:
+            headline: Partnering For Success
+            teaser: We have been providing quality assurance services for both Demandware and its clients since 2005, shortly after Demandware was founded. Take advantage of our extensive first-hand knowledge of the Demandware platform.
+        history:
+            headline: We know Demandware
+            teaser: Rely on a partner who knows best how to test a Demandware site. We offer a wide range of QA services tailored to fit Demandware-based implementations.
+            description: With its flexible SaaS e-commerce platform, <a href="http://www.demandware.com/">Demandware</a> has become one of the leading providers of digital commerce solutions. As an official <em>Demandware LINK Affiliate Partner</em> we have received specialized training and gained professional expertise by testing both within Demandware and for Demandware’s clients.
+            numbers: Over the last decade, <strong>we have worked with more than 200 of Demandware’s clients</strong>, providing quality assurance designed for each one’s individual needs, helping them achieve the best possible quality for their e-commerce implementations.
+
+        functional:
+            headline: Functional Testing
+            teaser: "We ensure that your implementation meets today‘s high customer expectations. We test:" 
+            list:
+                li1: All storefront functionalities
+                li2: Browser and mobile device compatibility
+                li3: Internationalization and localization
+                li4: Third-party integrations
+
+        agile:
+            headline: Agile Feature Testing
+            teaser: We offer intensive feature testing to address immediate needs – prompt, fast and firsthand.
+            list:
+                li1: Functional assessment of new features
+                li2: Making sure related features interact properly
+                li3: Effective defect discovery
+                li4: On-the-fly test design
+
+        load:
+            headline: Load and Performance Testing with <a href="/en/xlt/">XLT</a>
+            teaser: We are the leading provider of load and performance tests for customers on the Demandware platform.
+            list:
+                li1: Comprehensive performance analysis before a site launch
+                li2: In-depth, precise test reports–not just the numbers, but also an explanation
+                li3: Discovery of load-related problems coming from third parties or system processes
+                li4: Optimization of your site for predictable, fast client performance
+
+        automate:
+            headline: Test Automation
+            teaser: Let us automate your testing to give you a solid quality baseline, speed up your deployment process, and lower business risk. 
+            list:
+                li1: Out-of-the-box <em>SiteGenesis</em> test cases to cover the basics
+                li2: Customized test cases to address the most important paths for your specific site
+                li3: Maintenance and expansion of the test suite as your site grows
+
+        secure:
+            headline: Security Testing
+            teaser: We’ve internalized established security standards for Demandware implementations and help you to apply them.
+            list:
+                li1: Compilation of code audits and reviews
+                li2: Appliance of latest security standards to your site
+                
 ########################################################################
 # Contacts
 contact:
@@ -423,7 +484,7 @@ contact:
             headline: Web Sites
             details: "<p>Xceptance owns, maintains, and contributes at: 
                 <a href=\"http://www.xceptance.de/\">www.xceptance.de</a>, 
-                <a href=\"http://www.xceptance.com/\">www.xceptance.com</a>, 
+                <a href=\"https://www.xceptance.com/\">www.xceptance.com</a>, 
                 <a href=\"http://www.xceptance-loadtest.de/\">www.xceptance-loadtest.de</a>, 
                 <a href=\"http://www.xceptance-loadtest.com/\">www.xceptance-loadtest.com</a>,                
                 <a href=\"https://blog.xceptance.de/\">blog.xceptance.de</a>, 

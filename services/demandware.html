@@ -1,7 +1,7 @@
 ---
 layout: services-demandware-testing
-title: services.demandware.title
-description: services.demandware.description
+title: services.dw.title
+description: services.dw.description
 
 navName: Demandware
 subNavLinkName: navigation.sub.Demandware
@@ -13,41 +13,81 @@ parent: Services
 	<div class="row">
 		<div class="container">
 			<div class="text-center col-md-10 col-md-offset-1">
-				<h1>Partnering For Success</h1>
-				<p class="lead">Ever since 2005, shortly after Demandware's foundation, we have been providing quality assurance services for both Demandware and its clients.</p>
+				<a href="http://www.demandware.com/"><img src="/images/demandware_logo_transp.png" alt="Demandware logo" title="Visit Demandware" class="dw-logo-phone visible-xs-block"></a>
+				<h1>{% t services.dw.intro.headline %}</h1>
+				<p class="lead">{% t services.dw.intro.teaser %}</p>
 			</div>
 		</div>
 	</div>
 	
-	<div class="row service-section" id="dw-overview">
+	<div class="row" id="dw-overview">
 		<div class="container">
-			<div class="col-sm-4 facts-col">
+			<div class="col-sm-4 facts-col hidden-xs">
             	<div class="headline">
                 	<p><i class="fa fa-shopping-cart fa-4x"></i></p>
-                	<h2>e-Commerce Testing</h2>
+                	<h2>{% t services.dw.table.headline %}</h2>
             	</div>
+                
                 <table class="facts-table">
-                    <tr><td class="key">Load Tests for DW platforms</td><td class="value">48 (in 2014)</td></li>
-                    <tr><td class="key">Storefront QA for DW stores</td><td class="value">10 (in 2014)</td></li>
+                    <tr><td class="key">{% t services.dw.table.load.key %}</td><td class="value">{% t services.dw.table.load.value %}</td></li>
+                    <tr><td class="key">{% t services.dw.table.storefront.key %}</td><td class="value">{% t services.dw.table.storefront.value %}</td></li>
                 </table>
+                
 		     	<a href="http://www.demandware.com/"><img id="logo" src="/images/demandware_logo_transp.png" alt="Demandware logo" title="Visit Demandware"></a>
 			</div>
+            
 			<div class="col-sm-8">
-				<h2>We know Demandware</h2>
-				<p class="lead">Take advantage of our extensive first-hand knowledge of the Demandware platform.</p>
-				<p>With its flexible SaaS e-commerce platform, <a href="http://www.demandware.com/">Demandware</a> has grown to be one of the leading providers of digital commerce solutions. We are official Demandware LINK Affiliate Partner. Thus, we have received specialized training and gained professional expertise in offering QA services to Demandware and in helping Demandware‘s clients to ensure the best possible quality of their commerce implementations.</p>
-				<p>Having been close to Demandware for <strong>over ten years</strong> now, we have served <strong>more than 200 of their clients</strong> by providing quality assurance tailored to meet the requirements of every single one of them.</p>
-				<h2>Your Benefits</h2>
-				<p class="lead">Rely on a partner that knows how to test Demandware effectively. We offer a wide range of QA capabilities tailored to fit Demandware-based implementations.</p>
-				<p>We are distinctly familiar with Demandware‘s site-model <em>SiteGenesis</em>, its standard behavior, the underlying deployment structure, and the continuous version updates. We also have great expertise in dealing with the backend system <em>Business Manager</em> which allows us to provide <strong>especially elaborate and effective QA service</strong>, ranging from manual testing to load and performance testing, including test automation, security testing, and test support.</p>
-				<h3>Feel free to contact us if you need specialized and flexible testing because you want to</h3>
+				<h2>{% t services.dw.history.headline %}</h2>
+				<p class="lead">{% t services.dw.history.teaser %}</p>
+                <p>{% t services.dw.history.description %}</p>
+				<p>{% t services.dw.history.numbers %}</p>
+
+				<h2>{% t services.dw.functional.headline %}</h2>
+                <p class="lead">{% t services.dw.functional.teaser %}</p>
 				<ul>
-					<li><strong>implement</strong> a brand new store using Demandware‘s SaaS,</li>
-					<li><strong>migrate</strong> to Demandware from another platform,</li>
-					<li><strong>expand</strong> to new locales,</li>
-					<li><strong>upgrade</strong> by implementing additional features and need agile feature testing or</li>
-					<li><strong>prepare</strong> for a marketing roll out or seasonal traffic peaks.</li>
+					<li>{% t services.dw.functional.list.li1 %}</li>
+					<li>{% t services.dw.functional.list.li2 %}</li>
+					<li>{% t services.dw.functional.list.li3 %}</li>
+					<li>{% t services.dw.functional.list.li4 %}</li>
 				</ul>
+
+                
+                <h2>{% t services.dw.agile.headline %}</h2>
+                <p class="lead">{% t services.dw.agile.teaser %}</p>
+                <ul>
+                    <li>{% t services.dw.agile.list.li1 %}</li>
+					<li>{% t services.dw.agile.list.li2 %}</li>
+					<li>{% t services.dw.agile.list.li3 %}</li>
+					<li>{% t services.dw.agile.list.li4 %}</li>
+                </ul>
+
+                
+                <h2>{% t services.dw.load.headline %}</h2>
+                <p class="lead">{% t services.dw.load.teaser %}</p>
+                <ul>
+                    <li>{% t services.dw.load.list.li1 %}</li>
+					<li>{% t services.dw.load.list.li2 %}</li>
+					<li>{% t services.dw.load.list.li3 %}</li>
+					<li>{% t services.dw.load.list.li4 %}</li>
+                </ul>
+
+                
+                <h2>{% t services.dw.automate.headline %}</h2>
+                <p class="lead">{% t services.dw.automate.teaser %}</p>
+                <ul>
+                    <li>{% t services.dw.automate.list.li1 %}</li>
+					<li>{% t services.dw.automate.list.li2 %}</li>
+					<li>{% t services.dw.automate.list.li3 %}</li>
+                </ul>
+
+                
+                 <h2>{% t services.dw.secure.headline %}</h2>
+                <p class="lead">{% t services.dw.secure.teaser %}</p>
+                <ul>
+                    <li>{% t services.dw.secure.list.li1 %}</li>
+					<li>{% t services.dw.secure.list.li2 %}</li>
+                </ul>
+                
 			</div>
 		</div>
 	</div>

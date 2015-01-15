@@ -744,6 +744,11 @@ blockquote {
 		border: none;
 		background-color: transparent;
 		min-height: 0;
+		
+		@media (max-width: @screen-xs-max) {
+			border-bottom: 1px solid @cDoubleDarkendLightGray;
+			background-color: @cLightGray;
+		}
 
 		@media (min-width: @screen-sm-min) {
 			float: right;
@@ -1456,6 +1461,7 @@ table {
 		.row-padding;
 		.ourStyledList;
 		.headlineDefinition;
+		.textLinkStyling;
 	}
 
 	#performance-testing {
@@ -1474,7 +1480,7 @@ table {
         }
         
         .dw-logo-header {
-	        width: 22%;
+	        width: 250px;
 	        position: relative;
 	        top: -65px;
         }
@@ -1488,7 +1494,12 @@ table {
 		    padding-top: 1.7em;
 		    width: 80%;
 		    float: right;
-	    }	
+	    }
+	    
+	    .dw-logo-phone {
+		    max-width: 280px;
+		    margin: 0 auto 10px;
+	    }
 	    
 	    .facts-table {
 			border-spacing: 0 1em;

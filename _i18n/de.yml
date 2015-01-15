@@ -46,7 +46,7 @@ global:
     
     headline: "404 - Die berühmte Zahl"
     apology: "Es tut uns wirklich leid, aber das, wonach Sie suchen, ist nicht hier. Vielleicht war es ja mal hier oder vielleicht haben Sie sich vertippt? Egal, springen Sie einfach auf unsere Hauptseite zurück und wir sind sicher, da ist alles, was Sie suchen."
-    startover: "Hier geht es lang: <a href=\"//www.xceptance.de/\">www.xceptance.de</a>."      
+    startover: "Hier geht es lang: <a href=\"http://www.xceptance.de/\">www.xceptance.de</a>."      
    
 ########################################################################
 # privacy message
@@ -334,10 +334,71 @@ services:
         description: Wir bieten kunden&shy;spezifische Test&shy;unterstützung ganz nach Ihrem Bedarf. Sie benötigen eine professionelle Ein&shy;führung in die Bereiche Test&shy;management und Test&shy;design? Sie haben Interesse an einem QS-Training für Ihre Mitarbeiter? Sie möchten Test&shy;abteilungen etablieren oder erweitern? Wir helfen Ihnen gern.
         
 ##################################
-    demandware:
+    dw:
+        teaser: "10 Jahre Qualitäts&shy;sicherung für Demandware."
         title: Xceptance – Demandware Partner
-        description: We are Demandware Partner.
-        
+        description: We sind Demandware Partner 
+
+        table:
+            headline: E-Commerce Tests
+            load:
+                key: Lasttests für DW Plattformen
+                value: "48 (in 2014)"
+            storefront:
+                key: Storefront-QS für DW Stores
+                value: "10 (in 2014)"
+
+        intro:
+            headline: Wir sind Demandware Partner 
+            teaser: Seit 2005, direkt nach der Gründung von Demandware, übernehmen wir die Qualitätssicherung für Demandware und seine Kunden. Profitieren Sie von unserer umfassenden Kenntnis der Demandware Plattform. 
+        history:
+            headline: Wir kennen Demandware
+            teaser: Verlassen Sie sich auf einen Partner, der weiß, wie man Demandware effizient testet. Wir bieten eine breite Auswahl von QS-Services, die genau abgestimmt sind auf Demandware-basierte Implementierungen. 
+            description: Mit seiner flexiblen SaaS Plattform gehört <a href="http://www.demandware.com/">Demandware</a> zu den führenden Anbietern von E-Commerce-Lösungen. Wir sind <em>offizieller Demandware LINK Affiliate Partner</em> und geschulte E-Commerce-Experten im Bereich der Qualitätssicherung. Wir verfügen über fundiertes Wissen, das es uns ermöglicht, Sie in der Qualitätssicherung Ihrer Demandware Commerce-Implementierung zu unterstüzen.  
+            numbers: Seit <strong>mehr als zehn Jahren</strong> arbeiten wir mit Demandware zusammen und haben inzwischen <strong>mehr als 200</strong> Demandware-Kunden im Sinner ihrer spezifischen Wünsche betreut. 
+
+        functional:
+            headline: Manuelles Testen
+            teaser: Wir stellen sicher, dass das Einkaufserlebnis Ihrer Kunden auch deren  Ansprüche erfüllt.  
+            list:
+                li1: Überprüfung aller Storefront-Funktionalitäten
+                li2: Kontrolle von Browser- und Gerätekompatibilität
+                li3: Validierung von Internationalisierung und Lokalisierung
+                li4: Integrationstests von Drittsystemen 
+
+        agile:
+            headline: Agiles Testen einzelner Features in jeder Phase der Entwicklung 
+            teaser: Intensives Testen spezifischer Funktionalitäten – kurzfristig, schnell und direkt. 
+            list:
+                li1: Funktionsanalyse neuer Features
+                li2: Überprüfung des Zusammenspiels verschiedener Features
+                li3: Schnelle Fehlerfindung 
+                li4: Kurzfristiges Testdesign 
+
+        load:
+            headline: Last- und Performancetests mit <a href="/de/xlt/">XLT</a>
+            teaser: Wir sind Last- und Performance-Experten Demandware-basierter Commerce-Lösungen. 
+            list:
+                li1: Umfassende Performance-Analyse vorm geplanten Livegang
+                li2: Elaborierte und präzise Testreports
+                li3: Definition lastbasierter Drittanbieter- und Prozessprobleme
+                li4: Optimierung im Sinne vorhersagbarer und schneller Client-Performance
+
+        automate:
+            headline: Testautomatisierung 
+            teaser: Wir automatisieren. Für eine fundierte Qualitätsbasis, schnelleres Deployment und geringeres Geschäftsrisiko.
+            list:
+                li1: Out-of-the-box <em>SiteGenesis</em> Testfälle
+                li2: Definition und Untersuchung der für Sie wichtigsten Nutzerpfade
+                li3: Pflege und Erweiterung während Ihr Produkt wächst
+
+        secure:
+            headline: Security Tests
+            teaser: Wir kennen und teilen bewährte Sicherheitsstandards bei der Implementierung der Demandware Plattform. 
+            list:
+                li1: Zusammenstellung von Code Audits und Reviews
+                li2: Ausrichtung Ihrer Site entsprechend aktuellster Sicherheitsrichtlinien
+                
 ########################################################################
 # Contacts
 contact:
@@ -417,7 +478,7 @@ contact:
             headline: Webseiten
             details: "<p>Dieses Impressum gilt für 
                 <a href=\"http://www.xceptance.de/\">www.xceptance.de</a>, 
-                <a href=\"http://www.xceptance.com/\">www.xceptance.com</a>, 
+                <a href=\"https://www.xceptance.com/\">www.xceptance.com</a>, 
                 <a href=\"http://www.xceptance-loadtest.de/\">www.xceptance-loadtest.de</a>, 
                 <a href=\"http://www.xceptance-loadtest.com/\">www.xceptance-loadtest.com</a>,                 
                 <a href=\"https://blog.xceptance.com/\">blog.xceptance.com and .de</a>, 
