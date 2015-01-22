@@ -347,10 +347,10 @@ services:
         table:
             headline: E-Commerce Testing
             load:
-                key: Load Tests for DW platforms
+                key: Load Tests for DW implementations
                 value: "48 (in 2014)"
             storefront:
-                key: Storefront QA for DW stores
+                key: Storefront QA for DW-based stores
                 value: "10 (in 2014)"
 
         intro:
@@ -359,7 +359,7 @@ services:
         history:
             headline: We know Demandware
             teaser: Rely on a partner who knows best how to test a Demandware site. We offer a wide range of QA services tailored to fit Demandware-based implementations.
-            description: With its flexible SaaS e-commerce platform, <a href="http://www.demandware.com/">Demandware</a> has become one of the leading providers of digital commerce solutions. As an official <em>Demandware LINK Affiliate Partner</em> we have received specialized training and gained professional expertise by testing both within Demandware and for Demandware’s clients.
+            description: With its flexible SaaS e-commerce platform, <a href="http://www.demandware.com/">Demandware</a> has become one of the leading providers of digital commerce solutions. As an official Demandware LINK Affiliate Partner we have received specialized training and gained professional expertise by testing both within Demandware and for Demandware’s clients.
             numbers: Over the last decade, <strong>we have worked with more than 200 of Demandware’s clients</strong>, providing quality assurance designed for each one’s individual needs, helping them achieve the best possible quality for their e-commerce implementations.
 
         functional:
@@ -372,12 +372,12 @@ services:
                 li4: Third-party integrations
 
         agile:
-            headline: Agile Feature Testing
-            teaser: We offer intensive feature testing to address immediate needs – prompt, fast and firsthand.
+            headline: Agile Testing of Individual Features
+            teaser: No matter what phase of a project you find yourself in, we can help with intensive testing of specific functionalities. Even on short notice, we can offer fast, direct, effective feedback to help you proceed with development and launch.
             list:
-                li1: Functional assessment of new features
-                li2: Making sure related features interact properly
-                li3: Effective defect discovery
+                li1: Assessment of new features
+                li2: Verification that a site's features interact properly
+                li3: Rapid defect discovery
                 li4: On-the-fly test design
 
         load:
@@ -385,24 +385,25 @@ services:
             teaser: We are the leading provider of load and performance tests for customers on the Demandware platform.
             list:
                 li1: Comprehensive performance analysis before a site launch
-                li2: In-depth, precise test reports–not just the numbers, but also an explanation
-                li3: Discovery of load-related problems coming from third parties or system processes
+                li2: In-depth, precise test reports – not just the numbers, but also an explanation
+                li3: Discovery of load-related problems originating with third-party integrations or system processes
                 li4: Optimization of your site for predictable, fast client performance
 
         automate:
             headline: Test Automation
             teaser: Let us automate your testing to give you a solid quality baseline, speed up your deployment process, and lower business risk. 
             list:
-                li1: Out-of-the-box <em>SiteGenesis</em> test cases to cover the basics
+                li1: Out-of-the-box SiteGenesis test cases to cover the basics
                 li2: Customized test cases to address the most important paths for your specific site
                 li3: Maintenance and expansion of the test suite as your site grows
 
         secure:
             headline: Security Testing
-            teaser: We’ve internalized established security standards for Demandware implementations and help you to apply them.
+            teaser: We’re intimately familiar with established security standards for Demandware implementations and can help you apply them to your store.
             list:
-                li1: Compilation of code audits and reviews
-                li2: Appliance of latest security standards to your site
+                li1: Code audits and reviews
+                li2: Set-up of your site following proven security standards
+                li3: Review of planned changes to avoid introducing security risks
                 
 ########################################################################
 # Contacts
@@ -1096,8 +1097,12 @@ posts:
             excerpt: We wish you and your family happy holidays and health, happiness and success in the coming year.
         20:
             title: Xceptance Hosts 1st XLT Summit on January 20, 2015 in Jena
-            when: January 2, 2014
+            when: January 2, 2015
             excerpt: We want to bring Xceptance and German XLT users even closer together and are looking forward to meeting you in Jena!
+        21:
+            title: Xceptance Main Sponsor of TEDxFSU Jena on February 10, 2015
+            when: January 22, 2015
+            excerpt: We believe in the importance of education and are happy to support the first official university-based TEDx event in Jena. 
 
     jobs:
         1:

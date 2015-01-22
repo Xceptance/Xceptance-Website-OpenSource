@@ -342,10 +342,10 @@ services:
         table:
             headline: E-Commerce Tests
             load:
-                key: Lasttests für DW Plattformen
+                key: Lasttests für DW Implementierungen
                 value: "48 (in 2014)"
             storefront:
-                key: Storefront-QS für DW Stores
+                key: Storefront-QS für DW-basierte Stores
                 value: "10 (in 2014)"
 
         intro:
@@ -354,12 +354,12 @@ services:
         history:
             headline: Wir kennen Demandware
             teaser: Verlassen Sie sich auf einen Partner, der weiß, wie man Demandware effizient testet. Wir bieten eine breite Auswahl von QS-Services, die genau abgestimmt sind auf Demandware-basierte Implementierungen. 
-            description: Mit seiner flexiblen SaaS Plattform gehört <a href="http://www.demandware.com/">Demandware</a> zu den führenden Anbietern von E-Commerce-Lösungen. Wir sind <em>offizieller Demandware LINK Affiliate Partner</em> und geschulte E-Commerce-Experten im Bereich der Qualitätssicherung. Wir verfügen über fundiertes Wissen, das es uns ermöglicht, Sie in der Qualitätssicherung Ihrer Demandware Commerce-Implementierung zu unterstüzen.  
-            numbers: Seit <strong>mehr als zehn Jahren</strong> arbeiten wir mit Demandware zusammen und haben inzwischen <strong>mehr als 200</strong> Demandware-Kunden im Sinner ihrer spezifischen Wünsche betreut. 
+            description: Mit seiner flexiblen SaaS Plattform gehört <a href="http://www.demandware.com/">Demandware</a> zu den führenden Anbietern von E-Commerce-Lösungen. Wir sind offizieller Demandware LINK Affiliate Partner und geschulte E-Commerce-Experten im Bereich der Qualitätssicherung. Wir verfügen über fundiertes Wissen, das es uns ermöglicht, Sie in der Qualitätssicherung Ihrer Demandware Commerce-Implementierung zu unterstüzen.  
+            numbers: Seit <strong>mehr als zehn Jahren</strong> arbeiten wir mit Demandware zusammen und haben inzwischen <strong>mehr als 200</strong> Demandware-Kunden im Sinne ihrer spezifischen Wünsche betreut. 
 
         functional:
             headline: Manuelles Testen
-            teaser: Wir stellen sicher, dass das Einkaufserlebnis Ihrer Kunden auch deren  Ansprüche erfüllt.  
+            teaser: Wir stellen sicher, dass das Einkaufserlebnis Ihrer Kunden auch deren Ansprüche erfüllt.  
             list:
                 li1: Überprüfung aller Storefront-Funktionalitäten
                 li2: Kontrolle von Browser- und Gerätekompatibilität
@@ -367,11 +367,11 @@ services:
                 li4: Integrationstests von Drittsystemen 
 
         agile:
-            headline: Agiles Testen einzelner Features in jeder Phase der Entwicklung 
-            teaser: Intensives Testen spezifischer Funktionalitäten – kurzfristig, schnell und direkt. 
+            headline: Agiles Testen einzelner Features 
+            teaser: Wir bieten intensive Tests spezifischer Funktionalitäten, ganz gleich, in welcher Projektphase Sie sich befinden. Kurzfristig, schnell und effektiv liefern wir Feedback, sodass Sie bei Entwicklung und Launch keine Zeit verlieren. 
             list:
-                li1: Funktionsanalyse neuer Features
-                li2: Überprüfung des Zusammenspiels verschiedener Features
+                li1: Beurteilung neuer Features
+                li2: Überprüfung der Interaktion aller Features 
                 li3: Schnelle Fehlerfindung 
                 li4: Kurzfristiges Testdesign 
 
@@ -381,23 +381,24 @@ services:
             list:
                 li1: Umfassende Performance-Analyse vorm geplanten Livegang
                 li2: Elaborierte und präzise Testreports
-                li3: Definition lastbasierter Drittanbieter- und Prozessprobleme
+                li3: Definition lastbasierter Probleme bedingt durch Third-Party-Integrationen oder Systemprozesse 
                 li4: Optimierung im Sinne vorhersagbarer und schneller Client-Performance
 
         automate:
             headline: Testautomatisierung 
             teaser: Wir automatisieren. Für eine fundierte Qualitätsbasis, schnelleres Deployment und geringeres Geschäftsrisiko.
             list:
-                li1: Out-of-the-box <em>SiteGenesis</em> Testfälle
+                li1: Out-of-the-box SiteGenesis Testfälle
                 li2: Definition und Untersuchung der für Sie wichtigsten Nutzerpfade
                 li3: Pflege und Erweiterung während Ihr Produkt wächst
 
         secure:
             headline: Security Tests
-            teaser: Wir kennen und teilen bewährte Sicherheitsstandards bei der Implementierung der Demandware Plattform. 
+            teaser: Wir sind bestens vertraut mit etablierten Sicherheitsstandards für Demandware Implementierungen und prüfen, ob auch Ihr Store den Anforderungen entspricht.  
             list:
-                li1: Zusammenstellung von Code Audits und Reviews
-                li2: Ausrichtung Ihrer Site entsprechend aktuellster Sicherheitsrichtlinien
+                li1: Code Audits und Reviews
+                li2: Ausrichtung Ihrer Site entsprechend bewährter Sicherheitsrichtlinien
+                li3: Review geplanter Veränderungen, um mögliche neue Sicherheitsrisiken zu vermeiden 
                 
 ########################################################################
 # Contacts
@@ -408,7 +409,7 @@ contact:
     quote: Qualitätssicherung kann den kleinen Unterschied machen zwischen einem gutem Produkt und einem besserem Produkt.
     intro:
         headline: Kontakt
-        details: Sprechen Sie mit uns - jederzeit.
+        details: Sprechen Sie mit uns – jederzeit.
     germany:
         country: Deutschland / Europa
         head: <small>Hauptsitz</small>
@@ -1032,8 +1033,12 @@ posts:
             excerpt: Wir wünschen Ihnen und Ihrer Familie ein frohes Weihnachtsfest sowie Gesundheit, Glück und Erfolg für das kommende Jahr.
         20:
             title: Xceptance lädt ein zum 1. XLT-Anwendertreffen am 20.01.2015 in Jena
-            when: "2. Januar 2014"
+            when: "02. Januar 2015"
             excerpt: Wir wollen unsere deutschen Anwender und Xceptance künftig noch näher zusammen bringen und freuen uns auf einen fruchtbaren Austausch.
+        21:
+            title: Xceptance ist Hauptsponsor der TEDxFSU Jena am 10. Februar 2015
+            when: "22. Januar 2015"
+            excerpt: Bildung ist essentiell. Wir freuen uns, die erste offizielle TEDx-Konferenz an der Uni Jena unterstützen zu dürfen. 
 
     jobs:
         1:

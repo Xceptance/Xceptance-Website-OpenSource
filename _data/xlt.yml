@@ -1,23 +1,23 @@
-version: 4.4.4
+version: 4.4.5
 
 download:
-    link: https://lab.xceptance.de/releases/xlt/4.4.4/xlt-4.4.4.zip
+    link: https://lab.xceptance.de/releases/xlt/4.4.5/xlt-4.4.5.zip
     
 AMIs:
     - zone: eu-central-1
-      ID: ami-f0bf8eed
+      ID: ami-c44477d9
     - zone: eu-west-1
-      ID: ami-5464d823
+      ID: ami-25098a52
     - zone: us-east-1 
-      ID: ami-862e4aee
+      ID: ami-b884fdd0
     - zone: us-west-1
-      ID: ami-bf9487fa
+      ID: ami-02584147
     - zone: us-west-2
-      ID: ami-e791c7d7
+      ID: ami-a96b3599
     - zone: ap-southeast-2
-      ID: ami-c70169fd
+      ID: ami-839de8b9
 
 scriptdeveloper:
     download:
-        link: https://lab.xceptance.de/releases/xlt/4.4.4/xlt-scriptdeveloper-4.4.4.xpi
+        link: https://lab.xceptance.de/releases/xlt/4.4.5/xlt-scriptdeveloper-4.4.5.xpi
     
