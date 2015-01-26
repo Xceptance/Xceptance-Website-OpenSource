@@ -1,13 +1,13 @@
 ---
-layout: nil
+layout: 
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
   {% if site.lang == 'de' %} 
-    {% capture host %}http://www.xceptance.de/de{% endcapture %}
+    {% capture host %}https://www.xceptance.com/de{% endcapture %}
   {% else %}
-    {% capture host %}http://www.xceptance.com/en{% endcapture %}
+    {% capture host %}https://www.xceptance.com/en{% endcapture %}
   {% endif %}  
     
   {% for post in site.posts %}

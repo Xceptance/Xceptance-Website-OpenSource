@@ -114,7 +114,7 @@ homepage:
             headline: Test Guidance &amp; Support
             details: We love to share our knowledge and can help you establish or improve your own quality assurance processes. Let us inspire you to test better!
         product:
-            headline: Our Testing Tool Offer
+            headline: Our Testing Tool 
             details: You’ll love functional testing with XLT because it takes Selenium style testing to the next level. XLT also covers all your web performance testing needs.
 
     welcome_teaser:
@@ -318,7 +318,7 @@ services:
 
     load:
         headline: Load &amp; Performance Testing
-        teaser: Speed and reliability matter in the fast-paced world of the Internet. Don’t let the competition grab your customers because your website is not responsive enough.
+        teaser: Speed and reliability matter in the world of the Internet. Don’t let the competition grab your customers because your website is not fast enough.
         server:
             headline: Server-Side Performance
             description: "If you want to ensure the best possible quality for your product, there’s no getting around professional and extensive load testing. We are load testing specialists. With our in-house tool Xceptance LoadTest (XLT) we can set up and run any load test and deliver precise and comprehensive feedback on your platform’s behavior. We cover the following in particular:"
@@ -414,7 +414,7 @@ contact:
     quote: Quality assurance can make that little difference between good product and great product.
     intro:
         headline: Contact Information
-        details: Do not hesitate to call us or drop us an email if you have any questions.<br/>Get in touch.
+        details: Don't hesitate to call us or drop us an email if you have any questions.
     germany:
         country: Germany / Europe
         head: <small>Headquarters</small>
@@ -452,7 +452,7 @@ contact:
             headline: What Information Do We Collect?
             details: "<p>We collect information from you when you register on our site, subscribe to our newsletter or fill out a form. When registering on our site, as appropriate, you may be asked to enter your: name, e-mail address, mailing address or phone number. You may, however, visit our site anonymously. In order to improve the content and format of our site, Xceptance automatically captures technical information that is then stored in our servers’ log files. This information may include, but is not limited to, user domain, the type of Internet browser being used, which of our Web pages is visited, and the amount of time spent on our site. Xceptance uses an internal Web site analytics software that doesn't transfer the data to any third party.</p>"
         use:
-            headline: What Do We Use Your Information for
+            headline: How Do We Use Your Information
             details: "<p>Any of the information we collect from you may be used in one of the following ways:</p>"
             list: "
                 <li>To personalize your experience (your information helps us to better respond to your individual needs),</li>
@@ -462,10 +462,10 @@ contact:
                 <li>To send emails to answer your inquiries.</li>"
         cookies:
             headline: Do We Use Cookies?
-            details: "<p>Yes (cookies are small blocks of information that a site transfers to your computer - if you allow). Only our analytics software uses cookies activly to recognize your browser and capture and remember certain information. If you opt-out of analytics tracking, we will set a single unpersonalized cookie to remember your decision.</p>"
+            details: "<p>Yes (cookies are small blocks of information that a site transfers to your computer - if you allow). Only our analytics software uses cookies actively to recognize your browser and capture and remember certain information. If you opt-out of analytics tracking, we will set a single unpersonalized cookie to remember your decision.</p>"
         thirdparty:
             headline: Do We Disclose any Information to Outside Parties?
-            details: "<p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety.</p>"
+            details: "<p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours' or others rights, property, or safety.</p>"
         links:
             headline: Third Party Links
             details: "<p>Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</p>"
@@ -477,7 +477,7 @@ contact:
             details: "<p>This online privacy policy applies only to information collected through our website and not to information collected offline.</p>"
         consent:
             headline: Your Consent
-            details: "<p>By using our site, you consent to our websites privacy policy.</p>"
+            details: "<p>By using our site, you consent to our website's privacy policy.</p>"
         privacy-changes:
             headline: Changes to Our Privacy Policy
             details: "<p>If we decide to change our privacy policy, we will update the Privacy Policy modification date below.<br>This policy was last modified on July 31, 2014.</p>"
@@ -576,7 +576,7 @@ xlt:
                     <li><strong>Test offline</strong>. Start the test and decouple the controller.</li>
                     <li><strong>Open data formats</strong> for report and result data</li>
                     <li>The <strong>result browser</strong> shows detailed test behavior during design time. And supports error diagnosis during test time.</li>
-                    <li><strong>On failure reporting</strong> captures all available data for a post-mortem analysis.</li>
+                    <li><strong>On-failure reporting</strong> captures all available data for a post-mortem analysis.</li>
                     <li>Get <strong>full reports</strong> at any time during test execution.</li>
                     <li><strong>External data</strong> can be captured and added to the reports.</li>
             
@@ -835,7 +835,7 @@ xlt:
             details:
                 lead: You can utilize an unlimited number of machines for your load testing. Scale up across datacenters easily. XLT orchestrates the load distribution, uploads, and downloads on its own.
                 text: "<p>
-                            Scale up XLT per machine by bringing up more processes for perfect hardware utilization. Scale up across machines easily by adding more locations. XLT uses differential and concurrent up and downloads for maximum speed.
+                            Scale up XLT per machine by bringing up more processes for perfect hardware utilization. Scale up across machines easily by adding more locations. XLT uses differential and concurrent up- and downloads for maximum speed.
                         </p>
                         <p>
                             The load is automatically distributed across all agents. If you use heterogenous hardware, you can attach a weight to each machine to indicate a different speed or size.
@@ -1108,7 +1108,7 @@ posts:
         1:
             title: Software Testing Intern
             when: "July 16, 2014"
-            excerpt: We welcome anyone who wants to get experience with software quality assurance and software testing.
+            excerpt: We welcome anyone who wants to get experience in the field of software testing.
         2:
             title: QA Engineer, Web Application Load Testing
             when: "July 22, 2014"
@@ -1128,4 +1128,4 @@ posts:
         6:
             title: QA Engineer, Web Application Load Testing
             when: "July 26, 2014"
-            excerpt: Our office in Cambridge, MA is looking for a software engineers capable of load testing web applications.
+            excerpt: Our office in Cambridge, MA is looking for software engineers capable of load testing web applications.

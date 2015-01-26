@@ -1,3 +1,4 @@
+# from https://github.com/screeninteraction/jekyll-multiple-languages-plugin/blob/master/lib/jekyll/multiple/languages/plugin.rb
 
 module Jekyll
   @parsedlangs = {}
@@ -20,27 +21,35 @@ module Jekyll
       dest_org = self.dest
 
       #Loop
-      self.config['lang'] = languages.first
+      self.config['lang'] = self.config['default_lang'] = languages.first
       puts
       puts "Building site for default language: \"#{self.config['lang']}\" to: #{self.dest}"
       process_org
       languages.drop(1).each do |lang|
 
         # Build site for language lang
-        self.dest = self.dest + "/" + lang
+        @dest = @dest + "/" + lang
         self.config['baseurl'] = self.config['baseurl'] + "/" + lang
         self.config['lang'] = lang
         puts "Building site for language: \"#{self.config['lang']}\" to: #{self.dest}"
         process_org
 
         #Reset variables for next language
-        self.dest = dest_org
+        @dest = dest_org
         self.config['baseurl'] = baseurl_org
       end
       Jekyll.setlangs({})
       puts 'Build complete'
     end
 
+    alias :read_posts_org :read_posts
+    def read_posts(dir)
+      if dir == ''
+        read_posts("_i18n/#{self.config['lang']}/")
+      else
+        read_posts_org(dir)
+      end
+    end
   end
 
   class LocalizeTag < Liquid::Tag
@@ -62,12 +71,12 @@ module Jekyll
         Jekyll.langs[lang] = YAML.load_file("#{context.registers[:site].source}/_i18n/#{lang}.yml")
       end
       translation = Jekyll.langs[lang].access(key) if key.is_a?(String)
-      if translation == nil or translation.empty?
+      if translation.nil? or translation.empty?
+        translation = Jekyll.langs[context.registers[:site].config['default_lang']].access(key)
         puts "Missing i18n key: #{lang}:#{key}"
-        "*#{lang}:#{key}*"
-      else
-        translation
+        puts "Using translation '%s' from default language: %s" %[translation, context.registers[:site].config['default_lang']]
       end
+      translation
     end
   end
 

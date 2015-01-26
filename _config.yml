@@ -18,8 +18,6 @@ excerpt_separator: N/A-------N/A... Workaround for https://github.com/mojombo/je
 ### Disabled for now. Default is nice.
 # permalink: :categories/:year-:month-:day-:title.html
 
-lessc: /usr/local/bin/lessc
-
 # The navigation to include, everything here is meant to be
 # a key to find the correct page. The name and link titles are
 # taken from every page itself as well as the relation to its parent.
