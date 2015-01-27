@@ -15,7 +15,7 @@ The lack of internationalization capabilities is very annoying independent of th
 
 Our website runs under a .de and a .com domain, so we needed something that does not hard-code host names into the URLs. Therefore all URLs and links are relative or absolute but without a host name. For some of the URL problems in terms of being relative, we wrote a small helper to workaround Jekyll URLs generation problems, see `_plugins/URL-helper.rb`.
 
-By the way, later we decided to run the entire site HTTPS only and under a single host name. Therefore the .de domain is only redirecting to .com now and appends the language in the process. We could have save us some pain if we considered that in the beginning.
+By the way, later we decided to run the entire site HTTPS only and under a single host name. Therefore the .de domain is only redirecting to .com now and appends the language in the process. We could have saved us some pain if we considered that in the beginning.
 
 ## Two Languages
 
@@ -72,7 +72,7 @@ All components copied from the original projects such as Less and JavaScript fil
 ### Code
 
 * All code that has not been taken from other projects, is licensed under the MIT License - http://opensource.org/licenses/MIT
-* Some examples are our Less file `xceptance.less`, the pagination and menu code in `_includes`, the build script `bin/jenkins-build.sh`, `_plugins/URL-helper.rb`, and `.htaccess`.
+* Some examples are our Less file `xceptance.less`, the pagination and menu code in `_includes`, the build script `bin/jenkins-build.sh`, `_plugins/URL-helper.rb` and `.htaccess`.
 
 ### Textual Content
 
