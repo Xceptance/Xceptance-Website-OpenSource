@@ -1,4 +1,4 @@
-# Xceptance-WebSite-OpenSource
+# Open-Source-Version of Xceptance' WebSite
 
 This is the open source version of our company website to share how we used Jekyll, Less, and others. It also shows some tricks around localization as well as demonstrates some htaccess magic to route old URLs to new landing pages and make the entire website HTTPS only. But let's discuss the most important points in separate chapters.
 
