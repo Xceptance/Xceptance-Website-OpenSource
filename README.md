@@ -2,6 +2,9 @@
 
 This is the open source version of our company website to share how we used Jekyll, Less, and others. It also shows some tricks around localization as well as demonstrates some htaccess magic to route old URLs to new landing pages and make the entire website HTTPS only. But let's discuss the most important points in separate chapters.
 
+## Xceptance
+[Xceptance](https://www.xceptance.com/) is german-american company dedicated for software testing. We help our clients optimize their testing and enhance their final product. Recently we decided to revamp our public-facing website and put quite some effort into enhancing Jekyll. We want to show our work and encourage you to use it for your own projects.
+
 ##  The Basic Idea
 
 We wanted to have our new website statically generated to avoid the need for frequent software updates as well as to have everything in GIT for easy versioning. Only Jekyll offered that and of course its cousins as well. There was also HUGO (http://gohugo.io/), but we discovered the project too late to consider it. Maybe the next time.
