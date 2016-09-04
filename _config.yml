@@ -4,7 +4,7 @@ url:
     de: https://www.xceptance.com
     en: https://www.xceptance.com
 
-include: [.htaccess]
+include: [.htaccess,__Analytics*]
 exclude: [bin,README.md]
 
 timezone: UTC

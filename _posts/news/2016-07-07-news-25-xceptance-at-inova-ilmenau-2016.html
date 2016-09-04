@@ -1,0 +1,35 @@
+---
+layout: news-post
+title: posts.news.31.title
+when: posts.news.31.when
+categories: news
+excerpt: posts.news.31.excerpt
+---
+{% if site.lang == 'en' %}
+    <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">inova2016, Ilmenau University of Technology, Germany</p>
+
+    <p>This year Xceptance will join inova at the TU Ilmenau again, one of the largest career fairs in Germany with about 200 exhibitors and 5,200 visitors.</p>
+
+    <p>We cordially invite all who are interested to visit our stand on 2016-10-26. We'll be glad to inform you about our offers for internships, bachelor and master theses as well as our exciting job opportunities.</p>
+
+    <p>We look forward to many interesting conversations!</p>
+
+    <p><a href="https://inova-ilmenau.de/inova/"><img src="/images/news/inova_ilmenau_2015.jpg" /></a></p>
+
+{% else %}
+    <p class="lead">inova2016, TU Ilmenau</p>
+
+    <p>Dieses Jahr präsentiert sich Xceptance wieder auf der inova an der TU Ilmenau, einer der größten Karrieremessen in Deutschland mit inzwischen etwa 200 Ausstellern und mehr als 5200 Besuchern.</p>
+
+    <p>Wir laden alle Interessenten herzlich ein, am 26.10.2016 an unserem Stand vorbeizukommen, und sich einen Eindruck von Xceptance zu verschaffen. Gern informieren wir über unsere Angebote zu Praktika, Bachelor- und Masterarbeiten sowie unsere spannenden Stellenangebote.</p>
+
+    <p>Wir freuen uns auf viele interessante Gespräche!</p>
+
+    <p><a href="https://inova-ilmenau.de/inova/"><img src="/images/news/inova_ilmenau_2015.jpg" /></a></p>
+
+{% endif %}

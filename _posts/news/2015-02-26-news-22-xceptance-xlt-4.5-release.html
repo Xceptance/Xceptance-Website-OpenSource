@@ -1,0 +1,59 @@
+---
+layout: news-post
+title: posts.news.22.title
+when: posts.news.22.when
+categories: news
+excerpt: posts.news.22.excerpt
+---
+{% if site.lang == 'en' %}
+    <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">Xceptance released version 4.5 of its load testing and test automation product Xceptance LoadTest (XLT). This release enables you to write better test documentation, delivers more scripting capabilities, and shows really cool charts.</p>
+    
+    <p>Script Developer has been enhanced to let you maintain the documentation of your script library directly in Script Developer. This way you can create and maintain your test documentation together with the code and don’t need to be able to read the code to understand the test cases.</p>
+
+    <p>Load testing is even more fun now. XLT can send performance metrics to Graphite, a data collection and graphing tool. From now on you can thus watch the most important performance results in real time while a load test is still running.</p>
+
+    <p>We also did some fine-tuning of our reports. Most notably, the runtime charts now visualize the distribution of values and show how this distribution varies over time.</p>
+
+    <p>Users of Amazon’s EC2 cloud will be happy to hear that the ec2_admin tool can now also be used in scripted processes, making it possible to fully automate the starting and stopping of Amazon machines.</p>
+
+    <p>The scripting capabilities in Script Developer and the XLT framework have been extended. There are new commands to operate an application’s context menu. Package-level test data, a feature unique to XLT, which was previously accessible to test cases only, can now be used from script modules as well.</p>
+
+    <p>As usual for a major release, the technology stack the XLT framework is built upon has been updated and now provides the latest WebDriver support. Last but not least, the XLT Jenkins plug-in can now automatically start and stop agent machines in Amazon’s compute cloud.</p>
+
+    <p class="text-center">
+        <a class="btn btn-lg btn-primary" href="{{ 'xlt/download.html' | to_absoluteurl }}">
+            Download XLT now!
+        </a>
+    </p>
+
+    <p>As always, this update is free of charge for every user. You can use XLT freely for your daily automation work, regression testing, and performance validation. If you are an eligible Open Source project, you can get a full XLT license for your load and performance testing needs for free.</p>
+        
+{% else %}
+	<p class="lead">Xceptance hat Version 4.5 seines Lasttest- und Automationsproduktes XLT veröffentlicht. Diese Version vereinfacht die Erstellung von Testdokumentation, bietet zusätzliche Möglichkeiten zur Testskripterstellung und verbessert die grafische Darstellung von Testergebnissen.</p>
+
+    <p>Code und Dokumentation gehören zusammen. Mit dem XLT Script Developer kann man jetzt die Testdokumentation gemeinsam mit dem Testcode pflegen. Zur Kommunikation kann die Testdokumentation nach HTML exportiert werden. Inhalte und Styling lassen sich bei Bedarf leicht anpassen.</p>
+
+    <p>Last- und Performancetesten mit XLT lässt sich jetzt mit der populären Realtime-Graphing-Engine Graphite verbinden. Damit lassen sich Performancetests in Echtzeit beobachten. Besonders interessant ist das für Projektfirmen, die ihren Kunden einen Blick auf den laufenden Test gewähren möchten. Weiterhin lassen sich nun auch gesammelte Umgebungsdaten, wie CPU-, Memory- oder Applikationserver-Statistiken mit XLT-Daten kombinieren, um die Auswertung von Testergebnissen zu unterstützen.</p>
+
+    <p>Auch die Reports wurden weiter verfeinert. Die Verteilung von Laufzeiten und Werten ist jetzt noch übersichtlicher dargestellt.
+    Benutzer der Amazon Cloud werden sich besonders über den neuen nicht-interaktiven Modus des Kommandozeilen-Werkzeugs “EC2-Admin” freuen. Dadurch lassen sich noch mehr Prozesse vollständig automatisieren.</p>
+
+    <p>Erweiterungen gibt es auch für den Einsatz von XLT zur Testautomation. Neue Kommandos zum Testen von Applikationsmenüs stehen zur Verfügung; außerdem können Nutzer jetzt Kommentare direkt in den Code einfügen. Testdaten konnten bisher schon auf Paketebene verwaltet werden, nicht nur am Testfall oder global. Dieses einzigartige Feature von XLT wurde nun noch auf die Modulebene ausgeweitet.</p>
+
+    <p>Natürlich wurden auch die von XLT genutzten und unterstützten Bibliotheken auf den neuesten Stand gebracht. Das gilt vor allem für den Selenium Webdriver-Support.</p>
+
+    <p>Das XLT-Jenkins-Plugin kann jetzt automatisch Amazon Cloud-Maschinen starten und stoppen und verringert so die Kosten für die Testautomation.</p>
+    
+    <p class="text-center">
+        <a class="btn btn-lg btn-primary" href="{{ 'xlt/download.html' | to_absoluteurl }}">
+            XLT jetzt herunterladen!
+        </a>
+    </p>
+    
+	<p>Selbstverständlich ist dieses Release von XLT kostenfrei für alle Kunden verfügbar. Jeder kann XLT für seine tägliche Automationsarbeit einsetzen und benötigt weder eine Lizenz, noch muss er Daten mit Xceptance teilen. Die notwendige Lizenz für Last- und Performancetests kann jederzeit online für einen gewünschten Zeitraum gebucht werden. Für Open-Source-Projekte stellt sie Xceptance kostenfrei zur Verfügung.</p>
+{% endif %}

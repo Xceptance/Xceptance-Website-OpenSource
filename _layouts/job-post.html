@@ -2,9 +2,9 @@
 <html>
 	{% include head.html %}
 
-    <body class="general-page jobs local-scroll" id="page">
+    <body class="general-page jobs job-post local-scroll" id="page">
         {% include privacy-message.html %}
-        
+
         {% include top-scroller.html %}
 
 		<div id="navigation" class="navbar-fixed-top">
@@ -15,21 +15,56 @@
 
 		<header id="teaser" class="hidden-xs">
 			<div class="teaser-image">&nbsp;</div>
-		</header>	
+		</header>
 
 		<div id="main">
-            <div class="row job-listing-row even">
-                <div class="container">
-                    <div class="col-sm-4 job-listing-col job-col-header">
-                        <h2 name="{{job.uid}}">{% t page.title %}</h2>
-                        <p class="meta">{{page.date | date: "%B %d, %Y"}}</p>
-                        <p class="lead excerpt">{% t page.excerpt %}</p>
-                        <p class="locations"><i class="fa fa-map-marker"></i>{{page.locations}}</p>
-                    </div>		
-                    <!-- that has to be valid and complete html TWO COLUMNS -->
-                    {{content}}
-                </div>	
-            </div>	
+			<div id="job-post">
+
+				<div class="row">
+					<div class="container">
+						<div class="text-center col-md-10 col-md-offset-1">
+							<h1>{{ page.title }}</h1>
+							<p class="lead">{{ page.excerpt }}</p>
+						</div>
+					</div>
+				</div>
+
+	            <div class="row job-listing-row even">
+	                <div class="container">
+	                    <div class="col-sm-4 job-listing-col job-col-header">
+	                        <h2>{{ page.title }}</h2>
+	                        <p class="locations"><i class="fa fa-map-marker"></i>{{page.locations}}</p>
+	                    </div>
+	                    <!-- that has to be valid and complete html TWO COLUMNS -->
+	                    {{content}}
+	                </div>
+	            </div>
+
+				<div class="row job-listing-row odd">
+	                <div class="container">
+						<div class="col-sm-4 job-listing-col job-col-header">
+							<h2>{% t jobs.information.headline %}</h2>
+	                    </div>
+	                    <div class="col-sm-4">
+							<h3>{% t jobs.information.general.headline %}</h3>
+	                        {% t jobs.information.general.text %}
+	                    </div>
+						<div class="col-sm-4">
+	                        <h3>{% t jobs.information.material.headline %}</h3>
+							{% t jobs.information.material.text %}
+						</div>
+	                </div>
+	            </div>
+
+				<div class="row" id="xlt-background">
+					<div class="container">
+						<div class="col-sm-12">
+							<p class="lead">{% t jobs.image.welcome-message %}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<footer>
@@ -38,4 +73,3 @@
 		{% include tracking.html %}
     </body>
 </html>
-

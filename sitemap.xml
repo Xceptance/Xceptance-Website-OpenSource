@@ -1,15 +1,15 @@
 ---
-layout: 
+layout:
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-  {% if site.lang == 'de' %} 
+
+  {% if site.lang == 'de' %}
     {% capture host %}https://www.xceptance.com/de{% endcapture %}
   {% else %}
     {% capture host %}https://www.xceptance.com/en{% endcapture %}
-  {% endif %}  
-    
+  {% endif %}
+
   {% for post in site.posts %}
   <url>
     <loc>{{ host }}{{ post.url }}</loc>
@@ -21,13 +21,13 @@ layout:
     <priority>0.5</priority>
   </url>
   {% endfor %}
-  
+
   {% for page in site.pages %}
   <url>
     <loc>{{ host }}{{ page.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <priority>1.0</priority>
-  </url>  
+  </url>
 
   {%comment%}
   {% if page.sitemap != null and page.sitemap != empty %}
@@ -38,6 +38,6 @@ layout:
   </url>
   {% endif %}
   {%endcomment%}
-  
+
   {% endfor %}
 </urlset>

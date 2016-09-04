@@ -4,7 +4,7 @@ title: xlt.features.title
 description: xlt.features.description
 
 navName: Features
-mainNavLinkName: 
+mainNavLinkName:
 subNavLinkName: navigation.sub.Features
 parent: XLT
 
@@ -12,13 +12,13 @@ parent: XLT
 <div id="feature-areas" class="tab">
 	<div class="row">
 		<div class="container">
-			<div class="col-md-10 col-md-offset-1 text-center">	
+			<div class="col-md-10 col-md-offset-1 text-center">
 				<h1>{% t xlt.features.intro.headline %}</h1>
 				<p class="lead">{% t xlt.features.intro.details %}</p>
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#known-tech">
 		<div class="container">
 			<div class="iconLarge col-sm-2 hidden-xs col-md-offset-1">
@@ -31,13 +31,13 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
-    
+
 	<div id="known-tech" class="collapse">
 		{% include xlt/known-technologies.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#ui">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -50,12 +50,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="ui" class="collapse">
 		{% include xlt/intuitive-ui.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#deployment">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -68,12 +68,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="deployment" class="collapse">
 		{% include xlt/deployment-and-cloud.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#report">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -86,12 +86,31 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="report" class="collapse">
 		{% include xlt/awesome-reporting.html row='even' %}
 	</div>
-	
+
+	<div class="row feature-row" data-toggle="collapse" data-target="#realtime">
+		<div class="container">
+			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
+				<i class="fa fa-dashboard"></i>
+			</div>
+			<div class="col-sm-10 col-md-9">
+				<h2><i class="fa fa-edit hidden-sm hidden-md hidden-lg"></i>{% t xlt.features.realtime.headline %}</h2>
+				<p class="explanation">
+                    {% t xlt.features.realtime.lead %}
+                    <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="realtime" class="collapse">
+		{% include xlt/realtime-monitoring.html row='even' %}
+	</div>
+
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#adjustable">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -104,12 +123,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="adjustable" class="collapse">
 		{% include xlt/easily-adjustable.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#automation">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -122,12 +141,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="automation" class="collapse">
 		{% include xlt/made-for-automation.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#profiles">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -140,12 +159,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="profiles" class="collapse">
 		{% include xlt/load-profiles.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#scenarios">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -158,12 +177,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="scenarios" class="collapse">
 		{% include xlt/user-scenarios.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#resultbrowser">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -176,12 +195,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="resultbrowser" class="collapse">
 		{% include xlt/resultbrowser.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#verify">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -194,12 +213,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="verify" class="collapse">
 		{% include xlt/verify-everything.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#scalable">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -212,12 +231,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="scalable" class="collapse">
 		{% include xlt/scalable.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#configurable">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -230,12 +249,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="configurable" class="collapse">
 		{% include xlt/configurable.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#archivable">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -248,12 +267,12 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="archivable" class="collapse">
 		{% include xlt/archivable.html row='even' %}
 	</div>
-	
+
 	<div class="row feature-row" data-toggle="collapse" data-target="#shareable">
 		<div class="container">
 			<div class="iconLarge col-sm-2 col-md-offset-1 hidden-xs">
@@ -266,7 +285,7 @@ parent: XLT
                     <button type="button" class="btn pull-right"><i class="fa fa-chevron-down"></i></button>
 				</p>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div id="shareable" class="collapse">
 		{% include xlt/shareable.html row='even' %}
@@ -278,16 +297,16 @@ parent: XLT
     function toggleChevron(e) {
         var id = $(e.target).attr('id');
         var oIcon = $('div[data-target="#' + id + '"] p button i');
-        oIcon.toggleClass('fa-chevron-down fa-chevron-up');    
+        oIcon.toggleClass('fa-chevron-down fa-chevron-up');
     }
 
-    // find the right element and execute 
-    $('#feature-areas div.collapse').on('shown.bs.collapse', 
+    // find the right element and execute
+    $('#feature-areas div.collapse').on('shown.bs.collapse',
         function (element) {
-            toggleChevron(element);    
+            toggleChevron(element);
         });
 
-    $('#feature-areas div.collapse').on('hidden.bs.collapse', 
+    $('#feature-areas div.collapse').on('hidden.bs.collapse',
         function (element) {
             toggleChevron(element);
         });

@@ -1,0 +1,35 @@
+---
+layout: news-post
+title: posts.news.26.title
+when: posts.news.26.when
+categories: news
+excerpt: posts.news.26.excerpt
+---
+{% if site.lang == 'en' %}
+    <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">"ZWIK 2015", Stadthalle Zwickau, Germany</p>
+
+    <p>Xceptance is represented at the graduate and career fair "ZWIK 2015" as an exhibitor with an information stand and a company presentation.</p>
+
+    <p>Are you interested in an internship, a thesis or a career with us? Do you have questions about our corporate culture, our work areas, or our products? In any case, you are welcome to visit us at our booth on November 5, 2015.</p>
+
+    <p>We are looking forward to meeting you!</p><br/>
+
+    <p><a href="http://www.wikway.de/zwik"><img src="/images/news/zwik-2015.jpeg" /></a></p>
+
+{% else %}
+    <p class="lead">"ZWIK 2015" - Zwickauer Wirtschafts- und Industriekontakte, Stadthalle Zwickau</p>
+
+    <p>Xceptance ist auf der Absolventen- und Firmenkontaktmesse "ZWIK 2015" als Aussteller mit einem Informationsstand und einer kurzen Präsentation vertreten.</p>
+
+    <p>Sind Sie an einem Praktikum, einer Abschlussarbeit oder dem Berufseinstieg bei uns interessiert? Haben Sie Fragen zu unserer Unternehmenskultur, unseren Arbeitsgebieten oder unseren Produkten? In jedem Fall sind Sie herzlich eingeladen, am 05.11.2015 an unserem Stand in der Stadthalle Zwickau vorbeizukommen.</p>
+
+    <p>Wir freuen uns auf viele spannende Kontakte und persönliche Gespräche!</p><br/>
+
+    <p><a href="http://www.wikway.de/zwik"><img src="/images/news/zwik-2015.jpeg" /></a></p>
+
+{% endif %}

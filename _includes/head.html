@@ -2,7 +2,7 @@
         <meta charset="utf-8">
         <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
-        <title>{%t page.title %}</title>
+        <title>{% if page.categories contains 'jobs' %}{{page.title}}{% else %}{%t page.title %}{% endif %}</title>
 
         {% comment %}
             Make sure we put the right text into the field or none at all. Posts do not have descriptions.
@@ -10,37 +10,41 @@
         {% if page.description %}
             <meta name="description" content="{% t page.description %}">
         {% else if page.excerpt %}
-            <meta name="description" content="{% t page.excerpt %}">
+            {% if page.categories contains 'jobs' %}
+                <meta name="description" content="{{ page.excerpt }}">
+            {% else %}
+                <meta name="description" content="{% t page.excerpt %}">
+            {% endif %}
         {% endif %}
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta name="robots" content="index,follow" />
-    
+
         <!-- <base href="/{{ site.lang }}/"> -->
-    
-        {% if site.lang == 'de' %} 
+
+        {% if site.lang == 'de' %}
             {% capture host %}{{ site.url.de }}/de{% endcapture %}
         {% else %}
             {% capture host %}{{ site.url.en }}/en{% endcapture %}
-        {% endif %}     
+        {% endif %}
         <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ host }}/feed.xml">
-    
+
         <!-- link to alternate version language wise -->
-        {% if site.lang == 'de' %} 
+        {% if site.lang == 'de' %}
             <link rel="alternate" hreflang="en" href="/en{{ page.url }}" />
         {% else %}
             <link rel="alternate" hreflang="de" href="/de{{ page.url }}" />
-        {% endif %}     
-    
+        {% endif %}
+
         <!-- Google Fonts -->
         <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
         <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet" type="text/css">
 
         <link href="/css/font-awesome.min.css?{{ site.time | date: '%s' }}" rel="stylesheet">
-        <link href="/css/xceptance.css?{{ site.time | date: '%s' }}" rel="stylesheet" media="all">       
-                
+        <link href="/css/xceptance.css?{{ site.time | date: '%s' }}" rel="stylesheet" media="all">
+
         <script src="/js/jquery-1.11.1.min.js"></script>
         <script src="/js/bootstrap.min.js?{{ site.time | date: '%s' }}"></script>
 
@@ -51,7 +55,7 @@
         <script type="text/javascript">
 			$( window ).load(
 				function() {
-                    
+
                     /* important to avoid missed scrolls when not on the
                        page but coming in from with a hash */
                     $('body.local-scroll').scrollTo( 0 );
@@ -59,12 +63,12 @@
 
 					$('body.local-scroll').localScroll({
                         duration: 500,
-						easing:"swing", 
+						easing:"swing",
 						hash: true,
 						offset: {top: -90},
 						queue:false
 					});
-                    
+
 					$.localScroll.hash({
 						queue:false,
 						offset: {top: -90}

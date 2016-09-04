@@ -1,0 +1,40 @@
+---
+layout: news-post
+title: posts.news.27.title
+when: posts.news.27.when
+categories: news
+excerpt: posts.news.27.excerpt
+---
+{% if site.lang == 'en' %}
+    <!-- headline comes automatic based on the filled out title -->
+
+    <!-- that is a part that jumps as text, that can be the excerpt text again, but
+    also different text. The excerpt above is for automatic picking when embeeded into
+    other pages, this here is for the visual stuff on the news post page -->
+    <p class="lead">Meet us at this year‘s Demandware XChange conference, April 04-06, 2016 in Hollywood, Florida, USA.</p>
+
+    <p>Xceptance is a silver sponsor of Demandware XChange‘16. If you are interested in learning how we help Demandware‘s customers and partners ensure the highest level of quality and customer satisfaction, stop by our stand at Demandware XChange in Hollywood, Florida and talk to us!</p>
+
+    <p class="text-center"><a href="http://www.demandwarexchange.com/americas/"><img src="/images/news/xchange-americas-2016.png" /></a></p>
+
+    <p>We are more than happy to share our wealth of experience in the domains of load and regression testing, test automation, and test tools.
+    Special topics this year are our open community test automation suite that helps you succeed in achieving your automation strategy, why continuous performance testing and monitoring is business critical, as well as lessons learned from our functional test projects.</p>
+
+    <h2>We‘d love to talk to you!</h2>
+    <p>Feel free to <a href="{{ 'contact/' | to_absoluteurl }}">email us</a> if you will be at XChange‘16 and would like to meet up. We‘ll be in touch and make sure we get to talk to you in Hollywood, FL. We’re looking forward to meeting you and to an interesting exchange of ideas!</p>
+
+{% else %}
+	<p class="lead">Treffen Sie uns auf der diesjährigen Demandware XChange Konferenz, 04.-06. April 2016 in Hollywood, Florida, USA.</p>
+
+    <p>Xceptance ist dieses Jahr Silber-Sponsor der Demandware XChange‘16. Besuchen Sie uns auf unserem Stand und erfahren Sie, wie wir Demandware-Kunden und -Partnern helfen, die Qualität Ihrer Online-Shops und Implementierungen zu sichern.</p>
+
+    <p class="text-center"><a href="http://www.demandwarexchange.com/americas/"><img src="/images/news/xchange-americas-2016.png" /></a></p>
+
+    <p>Wir freuen uns darauf, unsere umfangreichen Erfahrungen auf den Gebieten Funktions- und Regressionstests, Last- und Performancetest und Testautomation mit Ihnen zu teilen.</p>
+
+    <p>Schwerpunkte dieses Jahres sind unsere Open-Community-Testautomation-Suite, die der ideale Startpunkt für Ihre Testautomationsstrategie ist, warum fortlaufende Performancetests und Performance-Monitoring heute geschäftsentscheidend sind und warum man nur mit ausreichend funktionaler Testabdeckung im Wettbewerb bestehen kann.</p>
+
+    <h2>Wir freuen uns darauf, mit Ihnen ins Gespräch zu kommen!</h2>
+    <p>Schicken Sie uns eine <a href="{{ 'contact/' | to_absoluteurl }}">Email</a>, wenn Sie uns auf der XChange‘16 in Hollywood, Florida treffen möchten. Wir freuen uns darauf, mit Ihnen persönlich ins Gespräch zu kommen und Ideen rund um das Testen auszutauschen.</p>
+
+{% endif %}

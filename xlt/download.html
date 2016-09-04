@@ -15,7 +15,7 @@ parent: XLT
 				<h1>{% t xlt.download.intro.headline %}</h1>
 				<p class="lead">{% t xlt.download.intro.details %}</p>
 				<a class="btn btn-lg btn-primary" href="{{ site.data.xlt.download.link }}">
-                    Download XLT {{ site.data.xlt.version }}
+                    Download<span class="meta"> XLT {{ site.data.xlt.version }}</span>
                 </a>
 	            <p><a href="{{ site.data.xlt.download.link }}.sha256"><small><strong>SHA-256</strong></small></a></p>
 			</div>
@@ -25,15 +25,13 @@ parent: XLT
 	<div class="row">
 		<div class="container">
 			<div class="col-sm-6">
-				<h3>{% t xlt.download.license.headline %}</h3>
+				<h2><i class="fa fa-check-square-o"></i> {% t xlt.download.license.headline %}</h2>
 				<p>{% t xlt.download.license.details %}</p>   
 				<p>{% t xlt.download.license.price %}</p>
                 <ul>
-					<li><a href="https://lab.xceptance.de/releases/xlt/latest/releasenotes.html" target="_blank">{% t xlt.download.license.list.release %}</a></li>
+					<li><a href="https://lab.xceptance.de/releases/xlt/latest/release-notes/index.html" target="_blank">{% t xlt.download.license.list.release %}</a></li>
 					<li><a href="https://lab.xceptance.de/releases/xlt/" target="_blank">{% t xlt.download.license.list.older %}</a></li>
 				</ul>
-			</div>
-			<div class="col-sm-6">
 				<h3>{% t xlt.download.amazon.headline %}</h3>
     		    <p>
                     <a href="http://aws.amazon.com/what-is-cloud-computing"><img class="pull-right no-decoration" src="https://awsmedia.s3.amazonaws.com/AWS_Logo_PoweredBy_127px.png" alt="Powered by AWS Cloud Computing" title="Powered by AWS Cloud Computing"></a>{% t xlt.download.amazon.details %}
@@ -44,7 +42,19 @@ parent: XLT
                         <li>{{ ami.zone }}: {{ ami.ID }}</li>
                     {% endfor %}
                 </ul>
-   			</div>
+			</div>
+			<div class="col-sm-6">
+				<h2><i class="fa fa-check-square-o"></i> {% t xlt.download.sd.headline %}</h2>
+				<p>{% t xlt.download.sd.details %}</p>
+				<img src="/images/xlt/script-developer.png" alt="Script Developer UI" width="100%" title="Example View of the Script Developer"/>
+				<hr>
+				<div class="highlighted">
+	        		<p class="lead">{% t xlt.download.sd.standalone.headline %}</p>
+					<p>{% t xlt.download.sd.standalone.details %}</p>
+					<a href="{{ site.data.xlt.scriptdeveloper.download.link }}" class="btn btn-lg btn-primary">Download<span class="meta"> XLT Script Developer</span></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

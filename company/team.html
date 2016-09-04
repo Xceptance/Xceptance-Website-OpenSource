@@ -4,7 +4,7 @@ title: company.team.title
 description: company.team.description
 
 navName: Team
-mainNavLinkName: 
+mainNavLinkName:
 subNavLinkName: navigation.sub.Team
 parent: Company
 ---
@@ -13,13 +13,14 @@ parent: Company
         <div class="container">
             <div class="col-md-3">
                 <blockquote class="standalone hidden-sm hidden-xs">
-                    <p>{% t company.team.quote %}</p>
-                </blockquote>			
+                    <p>{% t company.team.quote.text %}</p>
+                    <footer>{% t company.team.quote.author %}</footer>
+                </blockquote>
             </div>
             <div class="col-md-9">
                 <h1 class="text-center">{% t company.team.intro.headline %}</h1>
                 <p class="lead text-center">{% t company.team.intro.details %}</p>
-            
+
                 <div class="team-image">
                     <img src="/images/company/1.jpg" alt="Team1">
                     <img src="/images/company/2.jpg" alt="Team2">
@@ -31,27 +32,26 @@ parent: Company
                     <img src="/images/company/8.jpg" alt="Team8">
                     <img src="/images/company/9.jpg" alt="Team9">
                     <img src="/images/company/10.jpg" alt="Team10">
+                    <img src="/images/company/11.jpg" alt="Team11">
                     <img src="/images/company/23.jpg" alt="Team23">
                     <img src="/images/company/12.jpg" alt="Team12">
                     <img src="/images/company/14.jpg" alt="Team14">
                     <img src="/images/company/25.jpg" alt="Team25">
-                    <img src="/images/company/13.jpg" alt="Team13">
                     <img src="/images/company/15.jpg" alt="Team15">
                     <img src="/images/company/16.jpg" alt="Team16">
-                    <img src="/images/company/17.jpg" alt="Team17">
-                    <img src="/images/company/18.jpg" alt="Team18">   
+                    <img src="/images/company/18.jpg" alt="Team18">
                     <img src="/images/company/20.jpg" alt="Team20">
-                    <img src="/images/company/24.jpg" alt="Team24">
                     <img src="/images/company/21.jpg" alt="Team21">
                     <img src="/images/company/22.jpg" alt="Team22">
+                    <img src="/images/company/26.jpg" alt="Team26">
                 </div>
                 <div class="clearfix"></div>
-                
+
                 <h2>{% t company.team.teams.headline %}</h2>
-                
+
                 <div class="row">
 	                <div class="col-sm-6 col-left">
-		                <h3>{% t company.team.teams.functional.headline %}</h3> 
+		                <h3>{% t company.team.teams.functional.headline %}</h3>
 		                <p>{% t company.team.teams.functional.details %}</p>
 	                </div>
 	                <div class="col-sm-6 col-right">
@@ -59,7 +59,7 @@ parent: Company
 	                	<p>{% t company.team.teams.load.details %}</p>
 	                </div>
                 </div>
-                
+
                 <div class="row">
 	                <div class="col-sm-6 col-left">
 		                <h3>{% t company.team.teams.security.headline %}</h3>

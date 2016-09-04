@@ -88,6 +88,16 @@
 	box-shadow: 0px 0px 5px 2px rgba(150, 150, 150, 0.3);
 }
 
+.contrastShadow {
+	text-shadow: 1px 3px 6px rgba(10, 10, 10, 0.8);
+}
+
+.highlighted {
+	background: @cLightGray;
+	padding: 6% 6% 8%;
+	border-radius: 4px;
+}
+
 /* ---------------------------------------------------------- */
 /* --- Grid adjustments -- */
 
@@ -257,7 +267,8 @@ bootstrap's default for @screen-lg-min and up.: @container-large-desktop: ((1140
 	}
 
 	h1 {
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+		/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);*/
+		.contrastShadow;
 		font-family: @fCondensed;
 		line-height: 1.3em;
 		font-size: 2.5em;
@@ -355,7 +366,14 @@ strong {
 
 .meta {
 	font-size: 80%;
-	color: @cLessImportantText;
+	color: #777;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+.btn .meta {
+	color: @cDoubleDarkendLightGray;
 }
 
 .lead {
@@ -381,12 +399,14 @@ p {
 
 .btn {
 	font-weight: normal;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 	border-radius: 0;
+	/* to make sure text breaks into new line on small viewports */
+	white-space: normal;
 	.transition-ease;
 	background-color: @cDarkendLightGray;
-	
+
 	&:hover {
 		background-color: @cDoubleDarkendLightGray;
 	}
@@ -491,7 +511,14 @@ blockquote {
         p {
             position: relative;
             color: darken(@cLightGray, 25%);
+            margin-bottom: 0;
         }
+
+        footer {
+	        background-color: white;
+	        color: darken(@cLightGray, 25%);
+	        line-height: 1.5;
+       }
     }
 }
 
@@ -509,7 +536,7 @@ blockquote {
 
 
 #privacy-message {
-	
+
 	#inner {
 		position: fixed;
 		z-index: 20;
@@ -574,32 +601,34 @@ blockquote {
         	.navbar-nav {
 	        	a {
 	        		font-size: 1em;
+	        		font-family: "roboto condensed";
 	        		padding-right: 15px;
 	        		padding-left: 15px;
+	        		letter-spacing: 1px;
 
 	        		/* this is to push the nav links closer together to also have enough space for the logo
 	        		note: only for the sm view */
 		        	@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 			        	padding-left: 10px;
-			        	padding-right: 0px;
+			        	padding-right: 5px;
 			        }
-			    }	        	
+			    }
 	         }
 
 	         .navbar-nav > li > a {
-	         
+
 	         	@media (min-width: @screen-sm-min) {
 		         	padding-bottom: 21px;
 		         	padding-top: 25px;
 		         }
 	         }
-	         
+
 	         /* to make sure nav and sub-nav are right-aligned; let's say we always want 8px padding on right of nav */
 	         .navbar-nav > li:last-child > a {
 	         	/* should not effect mobile */
 	         	@media (min-width: @screen-sm-min) {
-					padding-right: 8px;  
-				}   
+					padding-right: 8px;
+				}
 			 }
 
         }
@@ -697,17 +726,17 @@ blockquote {
         text-align: right;
         font-size: 1em;
 	}
-	
+
 	.language {
         .textLinkStyling;
 
 		background-color: @cLightGray;
         color: lighten(@cFooterGray, 15%);
 		border-bottom: 2px solid @cLightGray;
-		
+
         letter-spacing: 1px;
 		text-align: center;
-        
+
         a {
             padding: 2px 5px;
             text-transform: lowercase;
@@ -716,13 +745,13 @@ blockquote {
         @media (max-width: @screen-xs-max) {
             background-color: inherit !important;
             border-bottom: none;
-            
+
             a {
                 text-transform: uppercase;
                 color: @cMainNavigationLink;
             }
         }
-            
+
     }
 }
 
@@ -744,7 +773,7 @@ blockquote {
 		border: none;
 		background-color: transparent;
 		min-height: 0;
-		
+
 		@media (max-width: @screen-xs-max) {
 			border-bottom: 1px solid @cDoubleDarkendLightGray;
 			background-color: @cLightGray;
@@ -863,29 +892,29 @@ blockquote {
 .homepage {
 
 	#teaser {
-		
+
 		background: url(/images/teasers/doors_open.jpg) center @navBarHeight no-repeat #802623;
 		background-attachment: fixed;
-		
+
 		@media (min-width: @screen-sm-max) {
 			#myCarousel {
 		 		margin-left: 104px;
 			    margin-right: 104px;
 		    }
 		}
-		
+
 		#moose {
 			position: absolute;
 			top: 90px;
 			right: 0px;
 		}
-		
+
 		@media (max-width: @screen-sm-min) {
 			#moose {
 				display: none;
 			}
 		}
-		
+
 		#first {
 
 			img {
@@ -893,13 +922,13 @@ blockquote {
 				position: relative;
 				top: 19px;
 				left: 38px;
-				
+
 				@media (max-width: @screen-sm-max) {
-					left: -40px;	
+					left: -40px;
 				}
-				
+
 				@media (min-width: @screen-md-max) {
-					left: -5px;	
+					left: -5px;
 				}
 			}
 		}
@@ -951,25 +980,35 @@ blockquote {
 			padding: 8px 0;
 		}
 	}
+}
 
-	/* the decoration images of xlt */
-	#xlt-background {
-		padding-top: 3.5em;
-		padding-bottom: 3.5em;
-		color: @cLightGray;
-		background-color: @cFooterGray;
-		background: url(/images/homepage/floor_large.jpg) repeat 42% 48%;
-		background-attachment: fixed;
-						
-		.lead {
-			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-			font-size: 2.5em;
-            font-weight: 400;
-            font-family: @fCondensed;
-            color: @cLightGray;
-		}
+.background-fixed-image {
+	padding-top: 3.5em;
+	padding-bottom: 3.5em;
+	color: @cLightGray;
+	background: url(/images/homepage/floor_large.jpg) repeat 42% 48%;
+	background-attachment: fixed;
+	background-color: @cFooterGray;
+
+	.lead {
+		.contrastShadow;
+		font-size: 2.5em;
+        font-weight: 400;
+        font-family: @fCondensed;
+        color: @cLightGray;
 	}
 }
+
+/* We are going to use that at other places too */
+#xlt-background {
+	.background-fixed-image;
+	background-image: url(/images/homepage/floor_large.jpg);
+}
+#jobs-background {
+	.background-fixed-image;
+	background-image: url(/images/jobs/jobs-motivation.jpg);
+}
+
 
 /* ---------------------------------------------------------- */
 /* --- This is on the xlt page -- */
@@ -977,7 +1016,7 @@ blockquote {
 .xlt-landing {
 
 	#teaser {
-		background: url(/images/teasers/carousels/grey.png) center @navBarHeight no-repeat @cDoubleDarkendLightGray;
+		background: url(/images/teasers/carousels/red3.jpg) center @navBarHeight no-repeat @cDoubleDarkendLightGray;
 		background-attachment: fixed;
 	}
 
@@ -1034,7 +1073,7 @@ blockquote {
 	#teaser {
 		background: url(/images/teasers/grey_border.jpg) center @navBarHeight no-repeat #d1d1d1;
 		background-attachment: fixed;
-		
+
 		.teaser-image {
 			height: 12px;
 		}
@@ -1045,7 +1084,7 @@ blockquote {
 	.row-padding;
 	.headlineDefinition;
 	.ourStyledList;
-	
+
 	#product-logo {
 		padding-bottom: 0.25em;
 	}
@@ -1110,30 +1149,30 @@ blockquote {
 	.row-padding;
 	padding-bottom: 0;
 	.textLinkStyling;
-	
+
 	.feature-row {
 		margin-top: 1em;
 		padding-bottom: 1em;
 		border-bottom: 1px solid @cDarkendLightGray;
 		.borderShadow;
-		
+
 		@media (min-width: @screen-md-min) {
 			margin-top: 1.5em;
 			padding-bottom: 1.5em;
 		}
-		
+
 		/*
 &:hover {
 			cursor: pointer;
-		
+
 			h2 > a {
 				color: @cLinkHover;
 				border-bottom: 2px solid @cLinkHover;
 			}
-			
+
 			.btn {
 				background-color: @cDoubleDarkendLightGray;
-				
+
 				i {
 					color: @cLinkHover;
 				}
@@ -1142,54 +1181,54 @@ blockquote {
 */
 
 		.iconLarge > i {
-			
+
 			.iconShadow;
 			color: @cLink;
 			font-size: 3.5em;
 			padding-top: 0.2em;
 			float: right;
 		}
-		
+
 		h2 {
 			margin-top: 0;
 			font-size: 1.6em;
-			
+
 			i {
 				margin-right: 0.7em;
 			}
 		}
-		
+
 		.explanation {
-		
+
 			@media (min-width: @screen-sm-min) {
 				padding-right: 2em;
 			}
-			
+
 			@media (min-width: @screen-md-min) {
 				padding-right: 10em;
 			}
-			
+
 			.btn {
 				position: relative;
 				bottom: -1.2em;
-				
+
 				@media (min-width: @screen-sm-max) {
 					right: -55px;
 				}
-				
+
 				@media (min-width: @screen-md-min) {
 					bottom: -24px;
 				}
-				
+
 				i {
 					color: @cLink;
 				}
 			}
 		}
 	}
-	
+
 	.tab {
-		border-bottom: 2px solid @cDarkendLightGray; 
+		border-bottom: 2px solid @cDarkendLightGray;
 	}
 }
 
@@ -1334,7 +1373,7 @@ table {
  			background: url(/images/teasers/floor.jpg) fixed center @navBarHeight no-repeat #bb1c1d;
 		}
 	}
-	
+
 	#main {
 		.row-padding;
 		padding-bottom: 3em;
@@ -1446,7 +1485,6 @@ table {
 		.teaser-image {
 
 			#teaser-text {
-
 				@media (min-width: @screen-xs-max) {
 					margin-top: 35px;
 					.teaserTextDefinition;
@@ -1478,7 +1516,7 @@ table {
             height: @homepageTeaserHeight;
             background: url(/images/teasers/green_inverted.jpg) fixed center @navBarHeight no-repeat #6d9906;
         }
-        
+
         .dw-logo-header {
 	        width: 250px;
 	        position: relative;
@@ -1489,29 +1527,29 @@ table {
 	#demandware {
 		.row-padding;
 	    .ourStyledList;
-	    
+
 	    #logo {
 		    padding-top: 1.7em;
 		    width: 80%;
 		    float: right;
 	    }
-	    
+
 	    .dw-logo-phone {
 		    max-width: 280px;
 		    margin: 0 auto 10px;
 	    }
-	    
+
 	    .facts-table {
 			border-spacing: 0 1em;
 			border-collapse: separate;
-	
+
 			td {
 				vertical-align: top;
 				padding: 0.5em 0.5em 0.5em 0em;
 			}
 			.key {
 				border-bottom: 2px solid @cDarkendLightGray;
-	
+
 				@media (min-width: @screen-sm-max) {
 					width: 47%;
 				}
@@ -1530,7 +1568,7 @@ table {
 
 	#teaser {
 		.teaser-image {
-			background: url(/images/teasers/xceptance-text.jpg) fixed center @navBarHeight no-repeat #695961;
+			background: url(/images/teasers/xceptance-1920px.jpg) fixed center @navBarHeight no-repeat #695961;
 		}
 	}
 
@@ -1544,11 +1582,6 @@ table {
         .news-headline {
 			color: @cLessImportantText;
 		}
-	}
-	
-	.highlighted {
-		background-color: @cLightGray;
-		padding: 5% 5% 8%;
 	}
 
 	.news-post {
@@ -1579,7 +1612,7 @@ table {
 		h1 {
 			line-height: 1.3;
 		}
-		
+
 		img {
 			.floatingShadow;
 		}
@@ -1638,14 +1671,14 @@ table {
 				i {
 					margin-right: 0.15em;
 				}
-				
+
 			}
 			.pull-right {
 				i {
 					margin-left: 0.15em;
 				}
 			}
-			
+
 		}
 
         .news-newer {
@@ -1654,14 +1687,14 @@ table {
             }
             h2 {
                 margin-bottom: 0;
-                
+
                 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	                font-size: 1.2em;
 	            }
             }
         }
 		.news-older {
-		
+
 			.text {
                 margin-left: 1.6em;
                 margin-right: 0.5em;
@@ -1669,17 +1702,17 @@ table {
 
             h2 {
                 margin-bottom: 0;
-                
+
                 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	            	font-size: 1.2em;
 	            }
             }
 		}
-		
+
 		#preview-end {
 			text-align: center;
 			border-bottom: 1px solid @cDoubleDarkendLightGray;
-			padding-bottom: 0.5em; 
+			padding-bottom: 0.5em;
 		}
 	}
 
@@ -1688,8 +1721,8 @@ table {
 		.row-padding;
 		.headlineDefinition;
 
-		.news-post {
-			margin-bottom: 1em;
+		.news-post span.meta {
+			display: block;
 		}
 	}
 }
@@ -1704,9 +1737,10 @@ table {
 		}
 	}
 
-	#jobs-overview {
+	#jobs-overview,#job-post {
 
 		.row-padding;
+		padding-bottom: 0;
 
 		.job-area {
 			.thumbnailDefinition;
@@ -1718,6 +1752,11 @@ table {
 			}
 		}
 	}
+
+	#job-post {
+		padding-bottom: 0;
+	}
+
 
 	.job-listing-row {
 		&.odd {
@@ -1733,20 +1772,24 @@ table {
 			margin-bottom: 0;
 		}
 
-		p {
-			&.excerpt {
-				font-size: 138%;
-			}
-		}
-
 	}
 
 	p {
         &.locations {
+        	margin-top: 0.5em;
+			margin-left: 3px;
+
 			i {
 				color: @cXRed;
-				margin-right: 0.2em;
+				margin-right: 0.5em;
 			}
+		}
+	}
+}
+.job-post {
+	#teaser {
+		.teaser-image {
+			background: url(/images/teasers/notebook-wide.jpg) fixed center @navBarHeight no-repeat #f0f0f0;
 		}
 	}
 }
@@ -1779,7 +1822,7 @@ table {
 /* --- the footer, more on the dark side */
 footer {
 	background-color: @cCopyrightGray;
-	color: darken(#fff, 20%);
+	color: lighten(@cFooterGray, 35%);
 /*     box-shadow: 0px -1px 2px rgba(190, 190, 190, 0.80); */
 
 	#footer-information {
@@ -1792,6 +1835,10 @@ footer {
 
 		i {
 			margin-right: 0.2em;
+		}
+
+		.meta {
+			color: #777;
 		}
 
 		.vcard {
@@ -1843,11 +1890,11 @@ footer {
 				.textLinkStyling;
 
 				a {
-					color: lighten(@cFooterGray, 30%);
+					color: lighten(@cFooterGray, 35%);
 
 					&:hover {
-						color: lighten(@cFooterGray, 30%);
-						border-color: lighten(@cFooterGray, 30%);
+						color: lighten(@cFooterGray, 35%);
+						border-color: lighten(@cFooterGray, 35%);
 					}
 				}
 			}
@@ -1867,11 +1914,11 @@ footer {
 			.textLinkStyling;
 
 				a {
-					color: lighten(@cFooterGray, 30%);
+					color: lighten(@cFooterGray, 35%);
 
 					&:hover {
-						color: lighten(@cFooterGray, 30%);
-						border-color: lighten(@cFooterGray, 30%);
+						color: lighten(@cFooterGray, 35%);
+						border-color: lighten(@cFooterGray, 35%);
 					}
 				}
 		}
@@ -1879,13 +1926,16 @@ footer {
 
 	#copyright {
 		background-color: @cText;
-		color: lighten(@cCopyrightGray, 40%);
 		font-size: 80%;
 		text-align: center;
 		padding: 0.5em 0;
 
+		p {
+			margin: 0;
+		}
+
 		a {
-			color: lighten(@cCopyrightGray, 40%);
+			color: lighten(@cCopyrightGray, 35%);
 
 			&:hover {
 				border: none;

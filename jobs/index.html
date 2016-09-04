@@ -1,14 +1,15 @@
 ---
 layout: jobs
+
 title: jobs.title
 description: jobs.description
 
 navName: Jobs
 mainNavLinkName: navigation.main.Jobs
-subNavLinkName: 
+subNavLinkName:
 parent: Jobs
 
-permalink: /jobs/
+permalink: /careers/
 ---
 
 <div id="jobs-overview">
@@ -20,97 +21,152 @@ permalink: /jobs/
 			</div>
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="container">
+			<div class="job-area col-sm-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3><i class="fa fa-arrow-circle-o-up"></i>{% t jobs.start-up.headline %}</h3>
+                        <p class="explanation">{% t jobs.start-up.details %}</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="caption">
+						<h3><i class="fa fa-smile-o"></i>{% t jobs.balance.headline %}</h3>
+						<p class="explanation">{% t jobs.balance.details %}</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="caption">
+						<h3><i class="fa fa-thumbs-o-up"></i>{% t jobs.integrity.headline %}</h3>
+						<p class="explanation">{% t jobs.integrity.details %}</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="caption">
+						<h3><i class="fa fa-trophy"></i>{% t jobs.career.headline %}</h3>
+						<p class="explanation">{% t jobs.career.details %}</p>
+					</div>
+				</div>
+			</div>
+			<div class="job-area col-sm-4">
+                <div class="thumbnail">
+                    <div class="caption">
+						<h3><i class="fa fa-globe"></i>{% t jobs.international.headline %}</h3>
+						<p class="explanation">{% t jobs.international.details %}</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="caption">
+						<h3><i class="fa fa-puzzle-piece"></i>{% t jobs.creativity.headline %}</h3>
+						<p class="explanation">{% t jobs.creativity.details %}</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="caption">
+						<h3><i class="fa fa-picture-o"></i>{% t jobs.surrounding.headline %}</h3>
+						<p class="explanation">{% t jobs.surrounding.details %}</p>
+					</div>
+				</div>
+				<div class="thumbnail">
+					<div class="caption">
+                        <h3><i class="fa fa-pencil"></i>{% t jobs.internships.headline %}</h3>
+                        <p class="explanation">{% t jobs.internships.details %}</p>
+                    </div>
+				</div>
+			</div>
+
+
 			<div class="col-sm-4 tab-content">
 				<h2>{% t jobs.positions.headline %}</h2>
 
 				<!-- list all open jobs here and link to the job below -->
-				<p class="lead locations"><i class="fa fa-map-marker"></i> in <strong>Cambridge</strong></p>
-				<ul class="jobs-plain-list">
-					{% for job in site.categories.jobs %}
-						{% if job.locations == 'Cambridge' %}
-						<li><a href="{{ page.url | to_absoluteurl }}#{{job.uid}}">{% t job.title %}</a></li>
-						{% endif %}	
-					{% endfor %}
-				</ul>
-				<p class="lead locations"><i class="fa fa-map-marker"></i> in <strong>Jena</strong></p>
-				<ul class="jobs-plain-list">
-					{% for job in site.categories.jobs %}
-						{% if job.locations == 'Jena' %}
-						<li><a href="{{ page.url | to_absoluteurl }}#{{job.uid}}">{% t job.title %}</a></li>
-						{% endif %}
-					{% endfor %}
-				</ul>	
+				<!-- depending on language, the order changes -->
+				{% if site.lang == 'en' %}
+					<p class="lead locations"><i class="fa fa-map-marker"></i> in <strong>{% t jobs.locations.cambridge %}</strong></p>
+					<ul class="jobs-plain-list">
+						{% for job in site.categories.jobs %}
+							{% if job.locations == 'Cambridge' %}
+							<li><a href="{{ job.url | to_absoluteurl }}">{{ job.title }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+
+					<p class="lead locations"><i class="fa fa-map-marker"></i> in <strong>{% t jobs.locations.jena %}</strong></p>
+					<ul class="jobs-plain-list">
+						{% for job in site.categories.jobs %}
+							{% if job.locations == 'Jena' %}
+							<li><a href="{{ job.url | to_absoluteurl }}">{{ job.title }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				{% else %}
+					<p class="lead locations"><i class="fa fa-map-marker"></i> in <strong>{% t jobs.locations.jena %}</strong></p>
+					<ul class="jobs-plain-list">
+						{% for job in site.categories.jobs %}
+							{% if job.locations == 'Jena' %}
+							<li><a href="{{ job.url | to_absoluteurl }}">{{ job.title }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+
+					<p class="lead locations"><i class="fa fa-map-marker"></i> in <strong>{% t jobs.locations.cambridge %}</strong></p>
+					<ul class="jobs-plain-list">
+						{% for job in site.categories.jobs %}
+							{% if job.locations == 'Cambridge' %}
+							<li><a href="{{ job.url | to_absoluteurl }}">{{ job.title }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				{% endif %}
+
 			</div>
-				<div class="job-area col-sm-4">
-					<div class="thumbnail">
-						<div class="caption">
-							<h3><i class="fa fa-trophy"></i>{% t jobs.career.headline %}</h3>
-							<p class="explanation">{% t jobs.career.details %}</p>
-						</div>	
-					</div>
-					<div class="thumbnail">
-						<div class="caption">
-							<h3><i class="fa fa-arrow-circle-o-up"></i>{% t jobs.start-up.headline %}</h3>
-                            <p class="explanation">{% t jobs.start-up.details %}</p> 
-						</div>	
-					</div>
-					<div class="thumbnail">
-						<div class="caption">
-							<h3><i class="fa fa-smile-o"></i>{% t jobs.balance.headline %}</h3>
-    						<p class="explanation">{% t jobs.balance.details %}</p>
-						</div>	
-					</div>
-					<div class="thumbnail">
-						<div class="caption">
-							<h3><i class="fa fa-thumbs-o-up"></i>{% t jobs.integrity.headline %}</h3>
-    						<p class="explanation">{% t jobs.integrity.details %}</p>
-						</div>	
-					</div>
-				</div>
-				<div class="job-area col-sm-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-							<h3><i class="fa fa-globe"></i>{% t jobs.international.headline %}</h3>
-    						<p class="explanation">{% t jobs.international.details %}</p>
-						</div>	
-					</div>
-					<div class="thumbnail">
-						<div class="caption">
-							<h3><i class="fa fa-puzzle-piece"></i>{% t jobs.creativity.headline %}</h3>
-    						<p class="explanation">{% t jobs.creativity.details %}</p>
-						</div>	
-					</div>
-    				<div class="thumbnail">
-						<div class="caption">
-							<h3><i class="fa fa-picture-o"></i>{% t jobs.surrounding.headline %}</h3>
-							<p class="explanation">{% t jobs.surrounding.details %}</p>
-						</div>	
-					</div>
-					<div class="thumbnail">
-						<div class="caption">
-                            <h3><i class="fa fa-pencil"></i>{% t jobs.internships.headline %}</h3>
-                            <p class="explanation">{% t jobs.internships.details %}</p>
-                        </div>    
-					</div>
-				</div>
 		</div>
 	</div>
-</div>	
-	
-{% for job in site.categories.jobs %}
-<div class="row job-listing-row {% cycle 'odd', 'even' %}">
-	<div class="container">
-		<div class="col-sm-4 job-listing-col job-col-header">
-			<h2 name="{{job.uid}}">{% t job.title %}</h2>
-			<p class="meta">{% t job.when %}</p>
-			<p class="lead excerpt">{% t job.excerpt %}</p>
-			<p class="locations"><i class="fa fa-map-marker"></i>{{job.locations}}</p>
-		</div>		
-		<!-- that has to be valid and complete html TWO COLUMNS -->
-		{{job.content}}
-	</div>	
-</div>	
+
+	<div class="row" id="jobs-background">
+		<div class="container">
+			<div class="col-sm-12">
+				<p class="lead">{% t jobs.image.welcome-message %}</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+{%comment%}
+
+{% if site.lang == 'de' %}
+	{% assign order = "Jena,Cambridge" | split: ',' %}
+{% else %}
+	{% assign order = "Cambridge,Jena" | split: ',' %}
+{% endif %}
+
+{% for location in order %}
+	{% for job in site.categories.jobs %}
+		{% if job.locations == location %}
+			<div class="row job-listing-row {% cycle 'odd', 'even' %}">
+				<div class="container">
+					<div class="col-sm-4 job-listing-col job-col-header">
+						<h2 name="{{job.uid}}">{{ job.title }}</h2>
+						<p class="locations">
+							<i class="fa fa-map-marker"></i>
+							{% if job.locations == 'Cambridge' %}
+								{% t jobs.locations.cambridge %}
+							{% endif %}
+							{% if job.locations == 'Jena' %}
+								{% t jobs.locations.jena %}
+							{% endif %}
+						</p>
+					</div>
+					<!-- that has to be valid and complete html TWO COLUMNS -->
+					{{job.content}}
+				</div>
+			</div>
+		{% endif %}
+	{% endfor %}
 {% endfor %}
-	
+
+{%endcomment%}

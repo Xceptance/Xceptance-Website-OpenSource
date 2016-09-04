@@ -42,14 +42,15 @@ module Jekyll
       puts 'Build complete'
     end
 
-    alias :read_posts_org :read_posts
-    def read_posts(dir)
-      if dir == ''
-        read_posts("_i18n/#{self.config['lang']}/")
-      else
-        read_posts_org(dir)
-      end
-    end
+    # THIS CURRENTLY BREAKS US, so posts in _i18n are disabled here.
+    #alias :read_posts_org :read_posts
+    #def read_posts(dir)
+      #if dir == ''
+      #  read_posts("_i18n/#{self.config['lang']}/")
+      #else
+      #  read_posts_org(dir)
+      #end
+    #end
   end
 
   class LocalizeTag < Liquid::Tag
@@ -73,7 +74,7 @@ module Jekyll
       translation = Jekyll.langs[lang].access(key) if key.is_a?(String)
       if translation.nil? or translation.empty?
         translation = Jekyll.langs[context.registers[:site].config['default_lang']].access(key)
-        puts "Missing i18n key: #{lang}:#{key}"
+        puts "Missing i18n key in #{context.registers[:page]['path']} ==> #{lang}:#{key}"
         puts "Using translation '%s' from default language: %s" %[translation, context.registers[:site].config['default_lang']]
       end
       translation
