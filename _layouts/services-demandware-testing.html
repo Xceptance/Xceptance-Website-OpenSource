@@ -12,25 +12,12 @@
 				{% include navigation.html isMainNavigation=true %}
 			</div>
 		</div>
-		
+
 		<div id="sub-navigation">
 			<div class="container">
                 {% include navigation.html isMainNavigation=false %}
-            </div>
-        </div>
-        
-        <header id="teaser" class="hidden-xs">
-			<div class="container">
-				<div class="teaser-image">
-					<div class="text-center col-md-offset-2 col-md-8 col-sm-12 col-xs-12" id="teaser-text">
-						<h1>{% t services.dw.teaser %}</h1>
-                        <!-- <p class="lead">With its flexible SaaS e-commerce platform, Demandware is considered one of the leading providers of digital commerce solutions.</p> -->
-                        
-					</div>
-				</div>
-				<a href="http://www.demandware.com/"><img src="/images/demandware_logo_transp.png" alt="Demandware logo" title="Visit Demandware" class="dw-logo-header pull-right"></a>
-			</div>
-		</header>	
+      </div>
+  	</div>
 
 		<div id="main">
 			{{ content }}
@@ -39,7 +26,7 @@
 		<footer>
 			{% include footer.html %}
 		</footer>
-		
+
         {% include tracking.html %}
     </body>
 </html>

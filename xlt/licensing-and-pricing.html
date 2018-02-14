@@ -18,16 +18,6 @@ parent: XLT
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="container">
-			<div class="col-sm-12 col-md-11 text-right">
-				<p>
-                    {% t xlt.pricing.switch.currency %} <a href="#" onclick="showEURPrices(); return false;" class="USD-price">{% t xlt.pricing.switch.eur %}</a><a href="#" onclick="showUSDPrices(); return false;" class="EUR-price">{% t xlt.pricing.switch.usd %}</a>.
-                </p>
-			</div>
-		</div>
-	</div>
-
 	<!-- NOTE: this only shows on screen sizes xs -->
 	<div class="row visible-xs">
 		<div class="container">
@@ -85,73 +75,14 @@ parent: XLT
 	                <table class="table license">
 	                    <thead>
 	                        <tr class="name">
-	                            <th class="colB">{% t xlt.pricing.entry.head %}</th>
-	                        </tr>
-	                    </thead>
-
-	                    <tfoot>
-	                        <tr class="price">
-	                            <td>
-	                                <span class="USD-price"><span class="currency">$</span> {% t xlt.pricing.entry.price.p-usd %}</span>
-	                                <span class="EUR-price"><span class="currency">€</span> {% t xlt.pricing.entry.price.p-eur %}</span>
-	                            </td>
-	                        </tr>
-	                    </tfoot>
-
-	                    <tbody>
-	                        <!-- Motivation -->
-	                        <tr class="motivation">
-	                            <td>{% t xlt.pricing.entry.motivation %}</td>
-	                        </tr>
-
-	                        <!-- Features -->
-	                        <tr class="features">
-	                            <td>
-	                                <ul>
-	                                	<li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li1 %}</li>
-	                                    <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li2 %}</li>
-	                                    <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li3 %}</li>
-	                                    <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li4 %}</li>
-	                                </ul>
-	                            </td>
-	                        </tr>
-
-	                        <!-- Scaling -->
-	                        <tr class="users">
-	                            <td><i class="fa fa-users fa-2x"></i><br/>{% t xlt.pricing.entry.users %}</td>
-	                        </tr>
-
-	                        <!-- Validity -->
-	                        <tr  class="validity">
-	                            <td>{% t xlt.pricing.entry.validity %}</td>
-	                        </tr>
-
-	                        <!-- Action -->
-	                        <tr class="action">
-	                            <td>
-                                    <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=CI&vusers=100&runtime=52&currencyCode=USD&licenseOnly=true">{% t global.button.buy %}</a></span>
-                                    <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=CI&vusers=100&runtime=52&currencyCode=EUR&licenseOnly=true">{% t global.button.buy %}</a></span>
-
-                                    <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
-                                </td>
-	                        </tr>
-	                    </tbody>
-	                </table>
-	        </div>
-
-	        <div class="col-sm-6 col-md-3">
-	                <table class="table license">
-	                    <thead>
-	                        <tr class="name">
 	                            <th class="em">{% t xlt.pricing.standard.head %}</th>
 	                        </tr>
 	                    </thead>
 
 	                    <tfoot>
 	                        <tr class="price">
-	                            <td class="em">{% t xlt.pricing.standard.price %}<br/>
-	                                <span class="USD-price"><span class="currency">$</span> {% t xlt.pricing.standard.p-usd %}<span class="time"> / {% t xlt.pricing.standard.period %}</span></span>
-	                                <span class="EUR-price"><span class="currency">€</span> {% t xlt.pricing.standard.p-eur %}<span class="time"> / {% t xlt.pricing.standard.period %}</span></span>
+	                            <td class="em">
+                                    {% t xlt.pricing.standard.price %}
 	                            </td>
 	                        </tr>
 	                    </tfoot>
@@ -181,85 +112,27 @@ parent: XLT
 
 	                        <!-- Validity -->
 	                        <tr  class="validity">
-	                            <td class="em">{% t xlt.pricing.standard.validity %}y</td>
+	                            <td class="em">{% t xlt.pricing.standard.validity %}</td>
 	                        </tr>
 
 	                        <!-- Action -->
 	                        <tr class="action">
 	                            <td class="em">
-                                    <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=Standard&vusers=100&runtime=1&currencyCode=USD&licenseOnly=true">{% t global.button.buy %}</a></span>
-                                    <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=Standard&vusers=100&runtime=1&currencyCode=EUR&licenseOnly=true">{% t global.button.buy %}</a></span>
-
-                                    <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
+                                    <a class="btn btn-primary" href="https://xltportal.xceptance.de/">{% t global.button.requestlicense %}</a>
+                                    <br/>{% t xlt.pricing.standard.action %}<br/>
+                                    <a href="{{ 'contact/' | to_absoluteurl }}">{% t xlt.pricing.standard.contact %}</a>
                                 </td>
 	                        </tr>
 	                    </tbody>
 	                </table>
 	        </div>
 
-	        <div class="col-sm-6 col-md-3">
-	                <table class="table license">
-	                    <thead>
-	                        <tr class="name">
-	                            <th class="colC">{% t xlt.pricing.flat.head %}</th>
-	                        </tr>
-	                    </thead>
-
-	                    <tfoot>
-	                        <tr class="price">
-                                <td>
-                                    <span class="USD-price"><span class="currency">$</span> {% t xlt.pricing.flat.price.p-usd %}</span>
-                                    <span class="EUR-price"><span class="currency">€</span> {% t xlt.pricing.flat.price.p-eur %}</span>
-                                </td>
-	                        </tr>
-	                    </tfoot>
-
-	                    <tbody>
-	                        <!-- Motivation -->
-	                        <tr class="motivation">
-	                            <td>{% t xlt.pricing.flat.motivation %}</td>
-	                        </tr>
-
-	                        <!-- Features -->
-	                        <tr class="features">
-	                            <td>
-	                                <ul>
-	                                    <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li1 %}</li>
-	                                    <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li2 %}</li>
-	                                    <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li3 %}</li>
-	                                    <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li4 %}</li>
-	                                </ul>
-	                            </td>
-	                        </tr>
-
-	                        <!-- Scaling -->
-	                        <tr class="users">
-	                            <td><i class="fa fa-users fa-2x"></i><br/>{% t xlt.pricing.flat.users %}</td>
-	                        </tr>
-
-	                        <!-- Validity -->
-	                        <tr  class="validity">
-	                            <td>{% t xlt.pricing.flat.validity %}</td>
-	                        </tr>
-
-	                        <!-- Action -->
-	                        <tr class="action">
-	                            <td>
-                                    <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=No+Limits&vusers=100000&runtime=52&currencyCode=USD&licenseOnly=true">{% t global.button.buy %}</a></span>
-                                    <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=No+Limits&vusers=10000&runtime=52&currencyCode=EUR&licenseOnly=true">{% t global.button.buy %}</a></span>
-
-                                    <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
-                                </td>
-	                        </tr>
-	                    </tbody>
-	                </table>
-	        </div>
 		</div>
 	</div>
 
 <!-- 	********************************************************** -->
 
-<!-- NOTE: this only shows on screen sizes xs -->
+<!-- NOTE: this only shows on screen sizes larger xs -->
 	<div class="row hidden-xs">
 		<div class="container">
 			<div class="table-responsive col-md-10 col-md-offset-1">
@@ -267,27 +140,14 @@ parent: XLT
                         <thead>
                             <tr class="name">
                                 <th class="colA">{% t xlt.pricing.basic.head %}</th>
-                                <th class="colB">{% t xlt.pricing.entry.head %}</th>
                                 <th class="em">{% t xlt.pricing.standard.head %}</th>
-                                <th class="colC">{% t xlt.pricing.flat.head %}</th>
                             </tr>
                         </thead>
 
                         <tfoot>
                             <tr class="price">
                                 <td>{% t xlt.pricing.basic.price %}</td>
-                                <td>
-                                    <span class="USD-price"><span class="currency">$</span> {% t xlt.pricing.entry.price.p-usd %}</span>
-                                    <span class="EUR-price"><span class="currency">€</span> {% t xlt.pricing.entry.price.p-eur %}</span>
-                                </td>
-                                <td class="em">{% t xlt.pricing.standard.price %}<br/>
-                                    <span class="USD-price"><span class="currency">$</span> {% t xlt.pricing.standard.p-usd %}<span class="time"> / {% t xlt.pricing.standard.period %}</span></span>
-                                    <span class="EUR-price"><span class="currency">€</span> {% t xlt.pricing.standard.p-eur %}<span class="time"> / {% t xlt.pricing.standard.period %}</span></span>
-                                </td>
-                                <td>
-                                    <span class="USD-price"><span class="currency">$</span> {% t xlt.pricing.flat.price.p-usd %}</span>
-                                    <span class="EUR-price"><span class="currency">€</span> {% t xlt.pricing.flat.price.p-eur %}</span>
-                                </td>
+                                <td class="em">{% t xlt.pricing.standard.price %}</td>
                             </tr>
                         </tfoot>
 
@@ -295,9 +155,7 @@ parent: XLT
                             <!-- Motivation -->
                             <tr class="motivation">
                                 <td>{% t xlt.pricing.basic.motivation %}</td>
-                                <td>{% t xlt.pricing.entry.motivation %}</td>
                                 <td class="em">{% t xlt.pricing.standard.motivation %}</td>
-                                <td>{% t xlt.pricing.flat.motivation %}</td>
                             </tr>
 
                             <!-- Features -->
@@ -310,14 +168,6 @@ parent: XLT
                                         <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.basic.features.li4 %}</li>
                                     </ul>
                                 </td>
-                                <td>
-                                    <ul>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li1 %}</li>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li2 %}</li>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li3 %}</li>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.entry.features.li4 %}</li>
-                                    </ul>
-                                </td>
                                 <td class="em">
                                     <ul>
                                         <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.standard.features.li1 %}</li>
@@ -326,51 +176,27 @@ parent: XLT
                                         <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.standard.features.li4 %}</li>
                                     </ul>
                                 </td>
-                                <td>
-                                    <ul>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li1 %}</li>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li2 %}</li>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li3 %}</li>
-                                        <li><i class="fa fa-check-square-o"></i> {% t xlt.pricing.flat.features.li4 %}</li>
-                                    </ul>
-                                </td>
                             </tr>
 
                             <!-- Scaling -->
                             <tr class="users">
                                 <td><i class="fa fa-users fa-2x"></i><br/>{% t xlt.pricing.basic.users %}</td>
-                                <td><i class="fa fa-users fa-2x"></i><br/>{% t xlt.pricing.entry.users %}</td>
                                 <td class="em"><i class="fa fa-users fa-2x"></i><br/>{% t xlt.pricing.standard.users %}</td>
-                                <td><i class="fa fa-users fa-2x"></i><br/>{% t xlt.pricing.flat.users %}</td>
                             </tr>
 
                             <!-- Validity -->
                             <tr  class="validity">
                                 <td>{% t xlt.pricing.basic.validity %}</td>
-                                <td>{% t xlt.pricing.entry.validity %}</td>
                                 <td class="em">{% t xlt.pricing.standard.validity %}</td>
-                                <td>{% t xlt.pricing.flat.validity %}</td>
                             </tr>
 
                             <!-- Action -->
                             <tr class="action">
                                 <td><strong>{% t xlt.pricing.basic.action %}</strong></td>
-                                <td>
-                                    <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=CI&vusers=100&runtime=52&currencyCode=USD&licenseOnly=true">{% t global.button.buy %}</a></span>
-                                    <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=CI&vusers=100&runtime=52&currencyCode=EUR&licenseOnly=true">{% t global.button.buy %}</a></span>
-
-                                    <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
-                                </td>
                                 <td class="em">
-                                    <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=Standard&vusers=100&runtime=1&currencyCode=USD&licenseOnly=true">{% t global.button.buy %}</a></span>
-                                    <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=Standard&vusers=100&runtime=1&currencyCode=EUR&licenseOnly=true">{% t global.button.buy %}</a></span>
-
-                                    <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
-                                </td>
-                                <td>
-                                    <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=No+Limits&vusers=100000&runtime=52&currencyCode=USD&licenseOnly=true">{% t global.button.buy %}</a></span>
-                                    <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/license/add/automatically?projectID=No+Limits&vusers=100000&runtime=52&currencyCode=EUR&licenseOnly=true">{% t global.button.buy %}</a></span>
-                                    <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
+                                    <a class="btn btn-primary" href="https://xltportal.xceptance.de/">{% t global.button.requestlicense %}</a>
+                                    <br/>{% t xlt.pricing.standard.action %}<br/>
+                                    <a href="{{ 'contact/' | to_absoluteurl }}">{% t xlt.pricing.standard.contact %}</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -379,56 +205,20 @@ parent: XLT
          </div>
 	</div>
 
-	<div class="row">
-		<div class="container">
-			<div class="col-sm-12 col-md-11 text-right">
-				<p>
-                    {% t xlt.pricing.switch.currency %} <a href="#" onclick="showEURPrices(); return false;" class="USD-price">{% t xlt.pricing.switch.eur %}</a><a href="#" onclick="showUSDPrices(); return false;" class="EUR-price">{% t xlt.pricing.switch.usd %}</a>.
-                </p>
-			</div>
-		</div>
-	</div>
 <!-- 	********************************************************* -->
 
 	<div class="row" id="pricing-details">
 		<div class="container">
-			<div class="col-sm-4 col-md-offset-1">
-	            <h3>{% t xlt.pricing.standard-details.headline %}</h3>
-	            <p>{% t xlt.pricing.standard-details.details %}</p>
+            <div class="col-sm-12 col-md-11 col-md-offset-1">
+                <h3>{% t xlt.pricing.standard-details.headline %}</h3>
+            </div>
+			<div class="col-sm-6 col-md-5 col-md-offset-1">
+                {% t xlt.pricing.standard-details.details1 %}
 			</div>
-	        <div class="col-sm-8 col-md-6">
-	                <table class="table license">
-	                    <thead>
-	                        <tr>
-	                            <th>&nbsp;</th>
-	                            <th>{% t xlt.pricing.standard-details.table.headline %}</th>
-	                        </tr>
-	                    </thead>
-	                    <tbody>
-	                        <tr>
-	                            <td>{% t xlt.pricing.standard-details.table.base.key %}</td>
-	                            <td>
-	                                <span class="USD-price">{% t xlt.pricing.standard-details.table.base.usd %}</span>
-	                                <span class="EUR-price">{% t xlt.pricing.standard-details.table.base.eur %}</span>
-	                            </td>
-	                        </tr>
-	                        <tr>
-	                            <td>{% t xlt.pricing.standard-details.table.step1.key %}</td>
-	                            <td>
-	                                <span class="USD-price">{% t xlt.pricing.standard-details.table.step1.usd %}</span>
-	                                <span class="EUR-price">{% t xlt.pricing.standard-details.table.step1.eur %}</span>
-	                            </td>
-	                        </tr>
-	                        <tr>
-	                            <td>{% t xlt.pricing.standard-details.table.step2.key %}</td>
-	                            <td>
-	                                <span class="USD-price">{% t xlt.pricing.standard-details.table.step2.usd %}</span>
-	                                <span class="EUR-price">{% t xlt.pricing.standard-details.table.step2.eur %}</span>
-	                            </td>
-	                        </tr>
-	                    </tbody>
-	                </table>
-	       </div>
+
+	        <div class="col-sm-6 col-md-5">
+                {% t xlt.pricing.standard-details.details2 %}
+            </div>
 	</div>
 </div>
 
@@ -490,13 +280,13 @@ parent: XLT
                         <!-- Action -->
                         <tr class="action">
                             <td>
-                                <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support?currencyCode=USD">{% t global.button.buy %}</a></span>
-                                <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support?currencyCode=EUR">{% t global.button.buy %}</a></span>
+                                <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support/add/automatically?currency=USD&runtime=4">{% t global.button.buy %}</a></span>
+                                <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support/add/automatically?currency=EUR&runtime=4">{% t global.button.buy %}</a></span>
                                 <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
                             </td>
                             <td class="em">
-                                <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support?currencyCode=USD">{% t global.button.buy %}</a></span>
-                                <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support?currencyCode=EUR">{% t global.button.buy %}</a></span>
+                                <span class="USD-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support/add/automatically?currency=USD&runtime=52">{% t global.button.buy %}</a></span>
+                                <span class="EUR-price"><a class="btn btn-primary" href="https://xltportal.xceptance.de/cart/support/add/automatically?currency=EUR&runtime=52">{% t global.button.buy %}</a></span>
                                  <br/>{% t xlt.pricing.standard.action %}<br/><a href="{{ 'contact/' | to_absoluteurl }}">{% t global.link.contact %}</a>
                             </td>
                         </tr>
@@ -511,9 +301,13 @@ parent: XLT
 
 	<div class="row">
 		<div class="container">
-            <div class="col-sm-9 col-md-6 col-md-offset-1">
+            <div class="col-sm-12 col-md-11 col-md-offset-1">
 				<h2>{% t xlt.pricing.support.training.headline %}</h2>
+            </div>
+            <div class="col-sm-12 col-md-5 col-md-offset-1">
 				<p>{% t xlt.pricing.support.training.details %}</p>
+            </div>
+            <div class="col-sm-12 col-md-5">
 				<p>{% t xlt.pricing.support.training.contact %}</p>
 			</div>
 		</div>

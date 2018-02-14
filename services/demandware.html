@@ -9,33 +9,44 @@ parent: Services
 ---
 
 <div id="demandware">
-	
-	<div class="row">
+
+	<div id="teaser">
+		<div class="container">
+			<div class="teaser-image">
+				<div class="text-center col-md-offset-2 col-md-8 col-sm-12 col-xs-12" id="text">
+					<h1>{% t services.dw.teaser %}</h1>
+					<a href="http://www.demandware.com/"><img src="/images/scc-logo.svg" alt="SCC logo" id="teaser-SFCC-logo" title="Visit Salesforce Commerce Cloud"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row more-padding">
 		<div class="container">
 			<div class="text-center col-md-10 col-md-offset-1">
-				<a href="http://www.demandware.com/"><img src="/images/demandware_logo_transp.png" alt="Demandware logo" title="Visit Demandware" class="dw-logo-phone visible-xs-block"></a>
+				<!-- <a href="http://www.demandware.com/"><img src="/images/scc-logo.svg" alt="SCC logo" title="Visit Salesforce Commerce Cloud"></a> -->
 				<h1>{% t services.dw.intro.headline %}</h1>
 				<p class="lead">{% t services.dw.intro.teaser %}</p>
 			</div>
 		</div>
 	</div>
-	
-	<div class="row" id="dw-overview">
+
+	<div class="row more-padding-below" id="dw-overview">
 		<div class="container">
 			<div class="col-sm-4 facts-col hidden-xs">
             	<div class="headline">
                 	<p><i class="fa fa-shopping-cart fa-4x"></i></p>
                 	<h2>{% t services.dw.table.headline %}</h2>
             	</div>
-                
+
                 <table class="facts-table">
                     <tr><td class="key">{% t services.dw.table.load.key %}</td><td class="value">{% t services.dw.table.load.value %}</td></li>
                     <tr><td class="key">{% t services.dw.table.storefront.key %}</td><td class="value">{% t services.dw.table.storefront.value %}</td></li>
                 </table>
-                
-		     	<a href="http://www.demandware.com/"><img id="logo" src="/images/demandware_logo_transp.png" alt="Demandware logo" title="Visit Demandware"></a>
+
+		     	<a href="http://www.demandware.com/"><img src="/images/scc-logo.svg" alt="SCC logo" title="Visit Salesforce Commerce Cloud" ></a>
 			</div>
-            
+
 			<div class="col-sm-8">
 				<h2>{% t services.dw.history.headline %}</h2>
 				<p class="lead">{% t services.dw.history.teaser %}</p>
@@ -51,7 +62,7 @@ parent: Services
 					<li>{% t services.dw.functional.list.li4 %}</li>
 				</ul>
 
-                
+
                 <h2>{% t services.dw.agile.headline %}</h2>
                 <p class="lead">{% t services.dw.agile.teaser %}</p>
                 <ul>
@@ -61,7 +72,7 @@ parent: Services
 					<li>{% t services.dw.agile.list.li4 %}</li>
                 </ul>
 
-                
+
                 <h2>{% t services.dw.load.headline %}</h2>
                 <p class="lead">{% t services.dw.load.teaser %}</p>
                 <ul>
@@ -71,7 +82,7 @@ parent: Services
 					<li>{% t services.dw.load.list.li4 %}</li>
                 </ul>
 
-                
+
                 <h2>{% t services.dw.automate.headline %}</h2>
                 <p class="lead">{% t services.dw.automate.teaser %}</p>
                 <ul>
@@ -80,7 +91,7 @@ parent: Services
 					<li>{% t services.dw.automate.list.li3 %}</li>
                 </ul>
 
-                
+
                  <h2>{% t services.dw.secure.headline %}</h2>
                 <p class="lead">{% t services.dw.secure.teaser %}</p>
                 <ul>
@@ -88,7 +99,7 @@ parent: Services
 					<li>{% t services.dw.secure.list.li2 %}</li>
 					<li>{% t services.dw.secure.list.li3 %}</li>
                 </ul>
-                
+
 			</div>
 		</div>
 	</div>

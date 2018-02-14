@@ -37,6 +37,7 @@ global:
     button:
         download: Download
         buy: Buy Online
+        requestlicense: Request Online
     label:
         phone-label: Phone
         email-label: Email
@@ -74,12 +75,12 @@ navigation:
         Contact: Contact
     sub:
         Services: Overview
-        Demandware: Demandware
+        Demandware: Salesforce Commerce Cloud
         XLT: Overview
         Features: Features
         Documentation: Documentation
         Download: Download
-        LicensingAndPricing: Pricing
+        LicensingAndPricing: License &amp; Support
         Company: About Us
         Management: Management
         Team: Team
@@ -98,7 +99,7 @@ homepage:
         service_slide:
             text: We Test Software.<br/>Because Quality Matters.
             btn: Learn More
-        dw_slide: Demandware Partner since 2005.
+        dw_slide: We are a Salesforce Commerce Cloud Partner.
         load_slide: XLT. The Tool to Make Automation an Engineering Habit.
 
     intro:
@@ -117,7 +118,7 @@ homepage:
             details: We love to share our knowledge and can help you establish or improve your own quality assurance processes. Let us inspire you to test better!
         product:
             headline: Our Testing Tool
-            details: You’ll love functional testing with XLT because it takes Selenium style testing to the next level. XLT also covers all your web performance testing needs.
+            details: You’ll love functional testing with XLT because it takes Selenium style testing to the next level. XLT also covers all your web performance testing needs. XLT is available free of charge.
 
     welcome_teaser:
         headline: Welcome to Xceptance!<br/>Get to know us.
@@ -138,19 +139,19 @@ company:
         founded: Founded
         size:
             key: Company size
-            value: 40 employees
+            value: 42 employees
         headquarters:
             key: Headquarters
             value: "Jena (Germany)"
         dw:
-            key: Demandware partner
+            key: Salesforce Commerce Cloud (previously Demandware) partner
             value: Since 2005
         offices:
             key: Offices
             value: "Jena (Germany) & Cambridge (USA)"
         customers:
             key: Customers
-            value: "110"
+            value: "More than 250"
 
     know:
         headline: We Know Testing
@@ -166,7 +167,7 @@ company:
         details: Every one of us is capable of communicating in both German and English so that we can easily participate in international projects and work with customers from around the world.
     collaborate:
         headline: We Collaborate
-        details: We are not a testing squad made up of pedantic nit-pickers who are out to denigrate others’ work. Rather, our goal is to be a reliable, trusted <strong>partner</strong>. To that end, we foster a relationship with our clients that is based on respectful communication and consructive cooperation, and we always keep their needs front and center. We feel comfortable behind the scenes and are satisfied when we can accompany our clients on their road to success.
+        details: We are not a testing squad made up of pedantic nit-pickers who are out to denigrate others’ work. Rather, our goal is to be a reliable, trusted <strong>partner</strong>. To that end, we foster a relationship with our clients that is based on respectful communication and constructive cooperation, and we always keep their needs front and center. We feel comfortable behind the scenes and are satisfied when we can accompany our clients on their road to success.
     share:
         headline: We Share and Contribute to the Testing Community
         details: "It is very important to us to share our knowledge and skills, which is why we work hard on developing <strong>software testing tools</strong>. Xceptance LoadTest (XLT) was created to not only enhance our own testing experience but also to serve others of our profession. Open source projects help us greatly in our efforts and we try to give something in return, such as a <a href=\"/en/xlt/licensing-and-pricing.html\">community license</a> or our <strong>open source</strong> email service<a href=\"https://github.com/Xceptance/XCMailr\" target=\"_blank\"> XCMailr</a> for testing.</i>"
@@ -186,7 +187,7 @@ company:
         intro:
             headline: Management
             details: "Our management knows quality assurance and e-commerce from the inside and out. They convey the message of quality first."
-        simone: "Simone is a founder of Xceptance. From 1998 until 2004, she was Quality Assurance Manager at Intershop Communications AG before she decided to start Xceptance. As our Quality Assurance Manager, she now is especially responsible for all quality assurance services we offer to Demandware, Inc. Other than that, she has a sixth sense and contributes to the team by coming up with great business ideas. Simone studied Computer Science at the University of Applied Sciences Schmalkalden."
+        simone: "Simone is a founder of Xceptance. From 1998 until 2004, she was Quality Assurance Manager at Intershop Communications AG before she decided to start Xceptance. As our Quality Assurance Manager, she now is especially responsible for all quality assurance services we offer to Salesforce Commerce Cloud, previously Demandware, Inc. Other than that, she has a sixth sense and contributes to the team by coming up with great business ideas. Simone studied Computer Science at the University of Applied Sciences Schmalkalden."
         roy: "Roy is a founder of Xceptance and has served as our Managing Director since 2004, thus establishing and fostering Xceptance’s business philosophy right from the start. From 1998 until 2004, he served as Corporate Counsel of Intershop Communications AG, a well-known e-commerce company headquartered in Jena, Germany. Roy studied law at Humboldt University Berlin. His long-term experience in leadership and his comprehensive knowledge of the e-commerce industry contribute to the steady and stable growth of Xceptance and make it a trustworthy business partner."
         rene: "René is a founder of Xceptance and he adds the technical know-how of software quality assurance to our management board. He has served as Xceptance’s Managing Director since 2004 and plays a major role in shaping our company’s profile, including the continuous evaluation and development of our test tools and services. He has been serving as CEO of Xceptance, Inc. in Cambridge, MA, USA since 2006. Prior to founding Xceptance, René was the Technical Director of the quality assurance department of Intershop Communications AG, thus gaining first-hand experience in the fields of e-commerce and web-based software. René holds a Master’s degree in Computer Science from Brandenburg University of Technology."
         ronny: "Ronny is a founder of Xceptance and has served as our Quality Assurance Manager since 2004. From 1998 until 2004, he was Quality Assurance Manager at Intershop Communications AG, where he met Simone, Roy, and René. Ronny holds a Master’s degree in Computer Science from Chemnitz University of Technology. Prior to helping start Xceptance, he was also a research associate at the department of Computer Science at Chemnitz University, acquiring vast and comprehensive technological knowledge and expertise."
@@ -249,7 +250,7 @@ company:
             author: James Bach
         intro:
             headline: Behind the Scenes
-            details: Founded in 2004 by four friends, Xceptance has since grown into a company with 35 testing addicts located in Jena, Germany, and Cambridge, MA, USA.
+            details: Founded in 2004 by four friends, Xceptance has since grown into a company with many testing addicts located in Jena, Germany, and Cambridge, MA, USA.
         teams:
             headline: Dedicated Teams Work Hard to Serve You
             functional:
@@ -263,7 +264,7 @@ company:
                 details: Our security experts will try to find weaknesses in your application before the bad guys do, and make sure your product complies with essential security standards.
             client:
                 headline: Client-Specific Sub-Teams
-                details: We want to communicate closely with our clients and meet all of their requirements. Specialized teams serve long-term clients such as Demandware, Inc. or Carl Zeiss SMS GmbH, which allows us to build trust-based and productive relationships.
+                details: We want to communicate closely with our clients and meet all of their requirements. Specialized teams serve long-term clients such as Salesforce (previously Demandware, Inc.) or Carl Zeiss SMS GmbH, which allows us to build trust-based and productive relationships.
 
 ########################################################################
 # Jobs
@@ -373,27 +374,27 @@ services:
 
 ##################################
     dw:
-        teaser: "11 Years of Quality Assurance Support for Demandware."
-        title: Xceptance – Demandware Partner
-        description: We are Demandware partner
+        teaser: "12 Years of Quality Assurance Support for Salesforce Commerce Cloud."
+        title: Xceptance – Salesforce Partner
+        description: We are Salesforce partner
 
         table:
             headline: E-Commerce Testing
             load:
-                key: Load Tests for DW implementations
+                key: Load Tests for SFCC implementations
                 value: "48 (in 2014)"
             storefront:
-                key: Storefront QA for DW-based stores
+                key: Storefront QA for SFCC-based stores
                 value: "10 (in 2014)"
 
         intro:
             headline: Partnering For Success
-            teaser: We have been providing quality assurance services for both Demandware and its clients since 2005, shortly after Demandware was founded. Take advantage of our extensive first-hand knowledge of the Demandware platform.
+            teaser: We have been providing quality assurance services for both Salesforce Commerce Cloud (previously Demandware) and its clients since 2005, shortly after Demandware was founded. Take advantage of our extensive first-hand knowledge of the Salesforce Commerce Cloud platform.
         history:
-            headline: We know Demandware
-            teaser: Rely on the partner who knows best how to test a Demandware site. We offer a wide range of QA services tailored to fit Demandware-based implementations.
-            description: With its flexible SaaS e-commerce platform, <a href="http://www.demandware.com/">Demandware</a> has become one of the leading providers of digital commerce solutions. As an official Demandware LINK Affiliate Partner we have received specialized training and gained professional expertise by testing both within Demandware and for Demandware’s clients.
-            numbers: Over the last decade, <strong>we have worked with more than 200 of Demandware’s clients</strong>, providing quality assurance designed for each one’s individual needs, helping them achieve the best possible quality for their e-commerce implementations.
+            headline: We know Salesforce Commerce Cloud
+            teaser: Rely on the partner who knows best how to test a Salesforce Commerce Cloud (SFCC) site. We offer a wide range of QA services tailored to fit SFCC-based implementations.
+            description: With its flexible SaaS e-commerce platform Commerce Cloud, <a href="http://www.demandware.com/">Salesforce</a> has become one of the leading providers of digital commerce solutions. As an official Demandware LINK Affiliate Partner we have received specialized training and gained professional expertise by testing both within Salesforce Commerce Cloud and for Commerce Cloud’s clients.
+            numbers: Over the last decade, <strong>we have worked with more than 200 of Commerce Cloud’s clients</strong>, providing quality assurance designed for each one’s individual needs, helping them achieve the best possible quality for their e-commerce implementations.
 
         functional:
             headline: Functional Testing
@@ -415,7 +416,7 @@ services:
 
         load:
             headline: Load and Performance Testing with <a href="/en/xlt/">XLT</a>
-            teaser: We are the leading provider of load and performance tests for customers on the Demandware platform.
+            teaser: We are the leading provider of load and performance tests for customers on the Salesforce Commerce Cloud platform.
             list:
                 li1: Comprehensive performance analysis before a site launch
                 li2: In-depth, precise test reports – not just the numbers, but also an explanation
@@ -432,7 +433,7 @@ services:
 
         secure:
             headline: Security Testing
-            teaser: We’re intimately familiar with established security standards for Demandware implementations and can help you apply them to your store.
+            teaser: We’re intimately familiar with established security standards for Salesforce's e-commerce implementations and can help you apply them to your store.
             list:
                 li1: Code audits and reviews
                 li2: Set-up of your site following proven security standards
@@ -559,8 +560,8 @@ xlt:
     carousel:
         intro: "One Tool for<br/>Test Automation and Performance Testing"
         license:
-            headline: Always Free for Functional Testing.<br/>Always Free Updates.
-            btn: Pricing &amp; Licensing
+            headline: Completely Free Of Charge
+            btn: License &amp; Support
         webdriver: Know WebDriver and Selenium already?<br/>You’re good to go.
         report:
             headline: Awesome Reporting. Instant, Rich, Comprehensive, Customizable.
@@ -571,20 +572,9 @@ xlt:
 
     testautomation:
         headline: Test Automation
-        lead: "Familiar with Selenium? You will love functional testing with XLT! We extended the concept with test data management, modules, variables, and macro functionality."
-        text1: Choose your preferred way of writing tests. You can utilize our Script Developer UI or code all your tests in Java using the familiar WebDriver syntax. Of course, XLT also works perfectly with all <a href="http://docs.seleniumhq.org/projects/webdriver/">WebDrivers</a>, with <a href="http://www.browserstack.com/">BrowserStack</a>, and <a href="https://saucelabs.com/">Sauce Labs</a>.
-        features:
-            headline: What XLT Brings to the Table
-            details: "<li><strong>Script Developer</strong> as a small but flexible IDE that lets you script right in Firefox</li>
-                    <li><strong>Modules</strong> to achieve great reusability</li>
-                    <li><strong>Parameters</strong> to pass data to modules</li>
-                    <li><strong>Variables</strong> to deal with flexible test data as well as random data</li>
-                    <li><strong>Macros</strong> to generate data dynamically</li>
-                    <li><strong>Test documentation</strong> is maintained together with the scripts</li>
-                    <li>An <strong>open file format</strong> to avoid exporting to Java if not necessary</li>
-                    <li><strong>Test data sets</strong> to run</li>
-                    <li><strong>No-programming configuration</strong> of WebDrivers to simplify development</li>"
-        text2: XLT is always free for functional testing. And that includes all updates.
+        lead: "Familiar with WebDriver and Selenium? You will be instantaneously able to write test with XLT."
+        text1: Choose your preferred way of writing tests. Code all your tests in Java using the familiar WebDriver syntax or use the simplified Script API. Of course, XLT also works perfectly with all <a href="http://docs.seleniumhq.org/projects/webdriver/">WebDrivers</a>, with <a href="http://www.browserstack.com/">BrowserStack</a>, and <a href="https://saucelabs.com/">Sauce Labs</a>.
+        text2: XLT enables you to automate performance measurement of the client because it includes Chrome and Firefox plugins that collect client performance data right in the browser. You can also run performance tests with real browsers easily.
 
     loadtesting:
         headline: Load Testing
@@ -616,7 +606,7 @@ xlt:
                     <li>Get <strong>full reports</strong> at any time during test execution.</li>
                     <li><strong>External data</strong> can be captured and added to the reports.</li>
 
-        text2: Updates are always free and we do not charge for seats. You just pay for the users you need.
+        text2: XLT is available free of charge with unlimited users and unlimited runtime. Please see the <a href="/en/xlt/licensing-and-pricing.html">license</a> section for more details.
 
 
 ##################################
@@ -653,8 +643,8 @@ xlt:
 
         license:
             headline: Free Basic License Included
-            details: Your download automatically includes a Basic License. With this license type, you can run tests with up to five virtual users. <strong>There is no time limit, nor are there any other usage restrictions</strong>. You can test the entire range of functionality while being free to use XLT within your company or consulting projects.
-            price: In case you only do test automation and functional regression testing, XLT is free forever.
+            details: Your download automatically includes a Basic License. With this license, you can run tests with up to five virtual users. <strong>There is no time limit, nor are there any other usage restrictions</strong>.
+            price: If you want to run test with more users, you can request a free-of-charge unlimited license for XLT. Please see the <a href="/en/xlt/licensing-and-pricing.html">price and license page</a>.
             list:
                 release: Get the Release Notes
                 older: Older releases
@@ -952,12 +942,12 @@ xlt:
 
 ##################################
     pricing:
-        title: Xceptance - XLT Pricing and Licensing
+        title: Xceptance - XLT Licensing
         description: The most flexible load and performance testing tool for Engineering.
 
         intro:
-            headline: Pricing &amp; Licensing
-            details: The XLT license model is simple. Free for test automation, free load test development with up to five virtual users, no seat limits, and always free updates. You just pay for virtual users when you need them. <a href="/en/xlt/licensing-and-pricing.html#support-and-training">Support</a> is always available.
+            headline: Licensing
+            details: The XLT license model is extremely simple. It is free of charge for nearly everything you want to do. Period. <a href="#support-and-training">Paid support and trainings</a> are available when needed.
 
         switch:
             currency: "Change the displayed currency:"
@@ -967,94 +957,51 @@ xlt:
         basic:
             head: Basic
             price: Free
-            motivation: This one is perfect for just test automation and initial coding for load testing
+            motivation: Perfect for evaluation and test automation.
             features:
-                li1: No usage restrictions
-                li2: Free updates
-                li3: No seat limits
-                li4: Support available
-            users: 5 virtual users
+                li1: For Evaluation and Test Automation
+                li2: Free Updates
+                li3: No Seat Limits
+                li4: Support Available
+            users: 5 Virtual Users
             validity: Unlimited Validity
-            action: Automatically included with XLT Download
-
-        entry:
-            head: CI
-            price:
-                p-usd: "5,460"
-                p-eur: "4,550"
-            motivation: Great for continuous performance testing
-            features:
-                li1: No usage restrictions
-                li2: Free updates
-                li3: No seat limits
-                li4: Support available
-            users: 100 virtual users
-            validity: One Year Validity
-
-        flat:
-            head: Unlimited
-            price:
-                p-usd: "60,000"
-                p-eur: "50,000"
-            motivation: Perfect for all testing needs
-            features:
-                li1: No usage restrictions
-                li2: Free updates
-                li3: No seat limits
-                li4: Support available
-            users: Unlimited Users
-            validity: One Year Validity
+            action: Automatically included with Download
 
         standard:
             head: Standard
-            price: Starting at
-            p-usd: "210"
-            p-eur: "175"
-            period: week
-            motivation: Our most popular license. You can pick validity and size.
+            price: FREE
+            motivation: For your everyday workload.
             features:
-                li1: No usage restrictions
-                li2: Free updates
-                li3: No seat limits
-                li4: Support available
-            users: Starting at 100 virtual users
-            validity: At least One Week
+                li1: Almost Ńo Usage Restrictions (see below)
+                li2: Free Updates
+                li3: No Seat Limits
+                li4: Support Available
+            users: Unlimited
+            validity: Unlimited Validity
             action: or
-
-        community:
-            head: Community
-            price: Free
-            motivation: We give back to the community and invest in education. This is your license when you are an approved open source project, school, or university.
-            features:
-                li1: No commercial usage
-                li2: Free updates
-                li3: No seat limits
-                li4: Support available
-            users: Unlimited virtual users
-            validity: One Year Validity
+            contact: Contact Us to Request Your Free License
 
         standard-details:
-            headline: Standard License Pricing Details
-            details: A standard license features a fixed base price and a scalable per user component. Minimum purchase is 100 users and 7 days. We grant a 25% discount starting with week four and 50% for an annual license. Alternatively you can purchase an unlimited annual license for an attractive fixed price, see table above.
-            table:
-                headline: Cost per Week
-                base:
-                    key: Base Price
-                    usd: $ 168,00
-                    eur: € 140,00
-                step1:
-                    key: User Price for user 1 to 500
-                    usd: $ 0,420
-                    eur: € 0,350
-                step2:
-                    key: User Price from user 501
-                    usd: $ 0,084
-                    eur: € 0,070
+            headline: License Terms
+            details1: |
+                <p>
+                    XLT is available free of charge but you still need a license file. Request this license from Xceptance via <a href="/en/contact/">email</a> or use our license portal, and we will issue you one without any user or time limits.</p>
+                <p>
+                    You can use XLT for commercial purposes as long as you do not sell XLT itself or create the impression that XLT is your own software. You can sell software components built on top of XLT.</p>
+                <p>
+                    You must not modify XLT in any way. But you can customize test suites, demos, templates, or other customizable components such as CSS or XSL as long as you distribute these components separately.</p>
+            details2: |
+                <p>
+                    You cannot offer XLT for download, excluding your local Maven/Nexus repositories and company internal redistribution, of course.</p>
+                <p>
+                    You cannot integrate XLT into public SaaS or other commercial or noncommercial hosting offers without explicit permission from us. If you built your own company-internal cloud for load testing for instance, that is of course permitted.</p>
+                <p>
+                    You cannot share your license outside of your organization. If you are a consulting company or freelancer, we encourage your clients to request their own licenses, but we do not require it. All licenses are personalized with email and company name.</p>
 
         support:
             intro:
                 headline: Support &amp; Training
-                details: Qualified support comes on top of any license type. Also, support is not required to receive any updates.
+                details: Qualified support is available at any time. Also, support is not required to receive any updates. Trainings will be tailored to your needs.
             list:
                 headline: Support
                 li1: Email support comes standard
@@ -1062,18 +1009,18 @@ xlt:
                 li3: 24/7 support is available on request
                 li4: 2h support time per week
             period:
-                usd: "168"
-                eur: "140"
+                usd: "840"
+                eur: "756"
             basic:
                 name: Basic
                 motivation: This support package is perfect for test automation and initial coding for load testing.
-                validity: One Week
+                validity: Four Weeks / 28 Days
             flat:
                 name: Annual
-                usd: "8,736"
-                eur: "7,280"
+                usd: "10,920"
+                eur: "9,828"
                 motivation: Our most popular support package.
-                validity: One year
+                validity: One Year / 52 Weeks
                 action: or
             switch:
                 currency: "Change the displayed currency:"
@@ -1212,3 +1159,11 @@ posts:
             title: Xceptance at the inova2016
             when: July 07, 2016
             excerpt: This year Xceptance will join inova at TU Ilmenau again, one of the largest career fairs in Germany with about 200 exhibitors and 5,000 visitors.
+        32:
+            title: Xceptance sponsors FSU Summer Festival and Kulturarena Open Air 2017
+            when: May 18, 2017
+            excerpt: Come on out and enjoy the summer in Jena!
+        33:
+            title: XLT Becomes Entirely Free of Charge
+            when: December 22, 2017
+            excerpt: XLT will be free of charge for load and performance testing starting 1 January 2018.

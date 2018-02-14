@@ -22,9 +22,9 @@ excerpt_separator: N/A-------N/A... Workaround for https://github.com/mojombo/je
 # a key to find the correct page. The name and link titles are
 # taken from every page itself as well as the relation to its parent.
 
-# Each name has to be unique and the page has to have the same name 
+# Each name has to be unique and the page has to have the same name
 # Check the area in -- and the name attribute for that.
-# Same name, same page. URLs here are also the default built urls. 
+# Same name, same page. URLs here are also the default built urls.
 # Custom works different.
 sitenavigation:
   - name: Services
@@ -35,8 +35,8 @@ sitenavigation:
     secondarynav:
         - name: XLT
         - name: Features
-        - name: Licensing & Pricing
         - name: Documentation
+        - name: Licensing & Pricing
         - name: Download
   - name: Company
     secondarynav:
@@ -54,4 +54,3 @@ sitenavigation:
   - name: :External
     title: Blog
     url: https://blog.xceptance.com/
-

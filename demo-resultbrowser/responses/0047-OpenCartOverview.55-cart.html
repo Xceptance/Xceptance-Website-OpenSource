@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Posters - The Ultimate Online Shop</title>
+    <link href="/posters/assets/css/bootstrap-2.3.1.min.css" rel="stylesheet">
+    <link href="/posters/assets/css/bootstrap-responsive-2.0.4.css" rel="stylesheet">
+	<link href="/posters/assets/css/cartSlider.css" rel="stylesheet"/>
+    <style type="text/css">
+      	body {
+        	padding-top: 60px;
+        	padding-bottom: 40px;
+        	padding-left: 20px;
+        	padding-right: 40px;
+      	}
+    </style>
+	<script src="/posters/assets/js/jquery-1.9.1.min.js"></script>
+    <script src="/posters/assets/js/bootstrap-2.3.1.min.js"></script>
+    <script src="/posters/assets/js/bootstrap-paginator-0.5.js"></script>
+    <script type="text/javascript">
+    	var CONTEXT_PATH = '/posters';
+    </script>
+	<script src="/posters/assets/js/customCartSlider.js"></script>
+	<script src="/posters/assets/js/custom.js"></script>
+  </head>
+  <body>
+  		<!-- cart slider -->
+<div id="slidingTopWrap">
+	<div id="slidingTopContent">
+		<div id="cartSliderWrap">
+			<div id="cartSliderTitleWrap">
+				<a id="cartSliderHeader" href="http://localhost:8080/posters/cart">Cart</a>
+				<span id="notificationsLoader"></span>
+			</div>
+			<div id="cartSliderItemsWrap">
+				<ul id="cartSliderElementList">
+				</ul>
+			</div>
+			<div style="text-align:right">Total: <span id="cartSliderTotalPrice"></span></div>
+		</div>
+	</div>
+	<div id="slidingTopFooter">
+		<div id="slidingTopFooterLeft">
+			<button class="btn" id="slidingTopTriggerShow" onclick="showCartSlider()">Show cart</button>
+			<button class="btn" id="slidingTopTriggerHide" onclick="showCartSlider()">Hide cart</button>
+		</div>
+	</div>
+</div>
+    	<!-- header -->
+<div id="header" class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<!-- brand -->
+			<a id="brand" class="brand span2 text-center" href="http://localhost:8080/posters/">
+				<img src="/posters/assets/img/xceptanceLogo.png" width="28"> Poster&nbsp;Store</a>
+			<!-- collapse -->
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<!-- search -->
+				<form id="search" class="navbar-search span6" action="http://localhost:8080/posters/search"
+					method="get">
+					<input id="searchText" name="searchText" type="text"
+						class="search-query span5" placeholder="Search" value="">
+					<button id="btnSearch" class="btn" type="submit">
+						<i class="icon-search"></i>
+					</button>
+				</form>
+				<!-- login -->
+					<ul id="headerLoggedCustomer" class="nav pull-right">
+						<li id="dropdown" class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown">Hi! John <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li id="btnAccountOverview">
+									<a href="https://localhost:8443/posters/accountOverview">My Account</a>
+								</li> 
+								<li id="btnLogout">
+									<a href="http://localhost:8080/posters/logout">Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				<!-- cart overview -->
+				<p id="btnCartOverview" class="navbar-text span3 pull-right">
+					<a id="headerCartOverview" href="http://localhost:8080/posters/cart"><i class="icon-shopping-cart"></i>
+						<span>Cart: 1
+						Items - 23.90$</span></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>		<!-- checkout breadcrumb -->
+		<!-- messages -->
+		<div class="row" id="errorMessage">
+			<div class="span6 offset3 text-center alert alert-error">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+		<div class="row" id="successMessage">
+			<div class="span6 offset3 text-center alert alert-success">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+		<div class="row" id="infoMessage">
+			<div class="span6 offset3 text-center alert alert-info">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+
+		<!-- body -->
+		<div id="main" class="container-fluid">
+			<div class="row-fluid">
+				<!-- sidebar -->
+				<div class="span3">
+<div id="sidebarNav" class="well sidebar-nav">
+	<ul class="nav nav-list">
+			<li id="topCategory0" class="topCategory"><h4><a href="http://localhost:8080/posters/topCategory/World%20of%20Nature?categoryId=1">World of Nature</a></h4></li>
+			<li id="subCategory00" class="level-1"><a href="http://localhost:8080/posters/category/Animals?categoryId=1">Animals</a></li>
+			<li id="subCategory10" class="level-1"><a href="http://localhost:8080/posters/category/Flowers?categoryId=2">Flowers</a></li>
+			<li id="subCategory20" class="level-1"><a href="http://localhost:8080/posters/category/Trees?categoryId=3">Trees</a></li>
+			<li id="topCategory1" class="topCategory"><h4><a href="http://localhost:8080/posters/topCategory/Dining?categoryId=2">Dining</a></h4></li>
+			<li id="subCategory01" class="level-1"><a href="http://localhost:8080/posters/category/Cold%20Cuts?categoryId=4">Cold Cuts</a></li>
+			<li id="subCategory11" class="level-1"><a href="http://localhost:8080/posters/category/Main%20Dishes?categoryId=5">Main Dishes</a></li>
+			<li id="subCategory21" class="level-1"><a href="http://localhost:8080/posters/category/Sweets?categoryId=6">Sweets</a></li>
+			<li id="topCategory2" class="topCategory"><h4><a href="http://localhost:8080/posters/topCategory/Transportation?categoryId=3">Transportation</a></h4></li>
+			<li id="subCategory02" class="level-1"><a href="http://localhost:8080/posters/category/Air%20Travel?categoryId=7">Air Travel</a></li>
+			<li id="subCategory12" class="level-1"><a href="http://localhost:8080/posters/category/Classic%20Cars?categoryId=8">Classic Cars</a></li>
+			<li id="subCategory22" class="level-1"><a href="http://localhost:8080/posters/category/Railways?categoryId=9">Railways</a></li>
+			<li id="topCategory3" class="topCategory"><h4><a href="http://localhost:8080/posters/topCategory/Panoramas?categoryId=4">Panoramas</a></h4></li>
+			<li id="subCategory03" class="level-1"><a href="http://localhost:8080/posters/category/Architecture?categoryId=10">Architecture</a></li>
+			<li id="subCategory13" class="level-1"><a href="http://localhost:8080/posters/category/Fireworks?categoryId=11">Fireworks</a></li>
+			<li id="subCategory23" class="level-1"><a href="http://localhost:8080/posters/category/Landscapes?categoryId=12">Landscapes</a></li>
+			<li id="subCategory33" class="level-1"><a href="http://localhost:8080/posters/category/XXL%20Panoramas?categoryId=13">XXL Panoramas</a></li>
+	</ul>
+</div>				</div>
+				<!-- content -->
+				<div class="span9">
+	<h1 id="titleCart">Cart</h1>
+	<table class="table" table-bordered>
+			<tr id="product0">
+				<td><a href="/posters/productDetail/Niagara%20Ferris%20Wheel?productId=87"><img data-src="/posters/assets/js/holder.js/150x100" alt="" src="/posters/assets/img/products/Panoramas/Buildings/Buildings_1.jpg
+		" width="150"></img></a></td>
+				<td id="productName0">Niagara Ferris Wheel</td>
+				<td id="productDescriptionOverview0">Up for a night sky wheel ride?</td>
+				<td id="productFinish0">gloss</td>
+				<td id="productSize0">32 x 24 in</td>
+				<td id="productPrice0">23.90$</td>
+				<td>
+	      			<input class="input-mini productCount0" type="number" id="productCount0" name="productCount0" value=1><br/>
+	      			<button class="btn" id="btnUpdateProdCount0" name="btnUpdateProdCount0" onclick="updateProductCount(36, $('#productCount0').val(), 0)">Update quantity</button>
+				</td>
+				<td>
+      				<button class="btn" id="btnRemoveProduct0" name="btnRemoveProduct0" onclick="deleteFromCart(36, 0)">Remove from cart</button>
+				</td>
+			</tr>
+	</table>
+
+	<h3 align="right">Total: <b id="totalPrice">23.90$</b></h3>
+	
+	<h3 align="right"><a href="https://localhost:8443/posters/checkout" id="btnStartCheckout">Proceed to checkout</a></h3>
+
+				</div>
+			</div>
+			<!-- footer -->
+			<hr>
+<footer id="footer">
+	<p class="text-center muted">Copyright (c) 2014 Xceptance Software Technologies -- This software is for demo purposes only and not meant to be used in production.</p>
+</footer>
+		</div>
+  </body>
+</html>
+
+
+<!-- #################### Added by XLT ########################
+
+Request Information:
+
+  URL: http://localhost:8080/posters/cart
+
+  Current Time: Thu Jan 15 13:14:30 CET 2015
+
+
+Response Information:
+
+  Response Code: 200
+  Response Time: 20 ms
+
+  Date: Thu, 15 Jan 2015 12:14:30 GMT
+  Expires: Thu, 01 Jan 1970 00:00:00 GMT
+  Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+  Content-Type: text/html;charset=UTF-8
+  Transfer-Encoding: chunked
+  Server: Jetty(8.1.12.v20130726)
+
+########################################################### -->

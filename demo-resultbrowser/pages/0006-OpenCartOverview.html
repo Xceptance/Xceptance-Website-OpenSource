@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "null" "null">
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <title>Posters - The Ultimate Online Shop</title>
+    <link href="cache/2831137398.css" rel="stylesheet">
+    <link href="cache/566202396.css" rel="stylesheet">
+	<link href="cache/3897068798.css" rel="stylesheet">
+    <style type="text/css">
+      	body {
+        	padding-top: 60px;
+        	padding-bottom: 40px;
+        	padding-left: 20px;
+        	padding-right: 40px;
+      	}
+    </style>
+	
+    
+    
+    
+	
+	
+  </head><body>
+  		<!-- cart slider -->
+<div id="slidingTopWrap">
+	<div id="slidingTopContent" style="display: none;">
+		<div id="cartSliderWrap">
+			<div id="cartSliderTitleWrap">
+				<a href="http://localhost:8080/posters/cart" id="cartSliderHeader">Cart</a>
+				<span id="notificationsLoader"></span>
+			</div>
+			<div id="cartSliderItemsWrap">
+				<ul id="cartSliderElementList">
+				</ul>
+			</div>
+			<div style="text-align:right">Total: <span id="cartSliderTotalPrice"></span></div>
+		</div>
+	</div>
+	<div id="slidingTopFooter">
+		<div id="slidingTopFooterLeft">
+			<button class="btn" id="slidingTopTriggerShow">Show cart</button>
+			<button class="btn" id="slidingTopTriggerHide" style="display: none;">Hide cart</button>
+		</div>
+	</div>
+</div>
+    	<!-- header -->
+<div class="navbar navbar-fixed-top" id="header">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			<a class="btn btn-navbar" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<!-- brand -->
+			<a class="brand span2 text-center" href="http://localhost:8080/posters/" id="brand">
+				<img src="cache/478001277.png" width="28"> Poster Store</a>
+			<!-- collapse -->
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<!-- search -->
+				<form action="http://localhost:8080/posters/search" class="navbar-search span6" id="search" method="get">
+					<input class="search-query span5" id="searchText" name="searchText" placeholder="Search" type="text" value="">
+					<button class="btn" id="btnSearch" type="submit">
+						<i class="icon-search"></i>
+					</button>
+				</form>
+				<!-- login -->
+					<ul class="nav pull-right" id="headerLoggedCustomer">
+						<li class="dropdown" id="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hi! John <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li id="btnAccountOverview">
+									<a href="https://localhost:8443/posters/accountOverview">My Account</a>
+								</li> 
+								<li id="btnLogout">
+									<a href="http://localhost:8080/posters/logout">Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				<!-- cart overview -->
+				<p class="navbar-text span3 pull-right" id="btnCartOverview">
+					<a href="http://localhost:8080/posters/cart" id="headerCartOverview"><i class="icon-shopping-cart"></i>
+						<span>Cart: 1
+						Items - 23.90$</span></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>		<!-- checkout breadcrumb -->
+		<!-- messages -->
+		<div class="row" id="errorMessage" style="display: none;">
+			<div class="span6 offset3 text-center alert alert-error">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+		<div class="row" id="successMessage" style="display: none;">
+			<div class="span6 offset3 text-center alert alert-success">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+		<div class="row" id="infoMessage" style="display: none;">
+			<div class="span6 offset3 text-center alert alert-info">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+
+		<!-- body -->
+		<div class="container-fluid" id="main">
+			<div class="row-fluid">
+				<!-- sidebar -->
+				<div class="span3">
+<div class="well sidebar-nav" id="sidebarNav">
+	<ul class="nav nav-list">
+			<li class="topCategory" id="topCategory0"><h4><a href="http://localhost:8080/posters/topCategory/World%20of%20Nature?categoryId=1">World of Nature</a></h4></li>
+			<li class="level-1" id="subCategory00"><a href="http://localhost:8080/posters/category/Animals?categoryId=1">Animals</a></li>
+			<li class="level-1" id="subCategory10"><a href="http://localhost:8080/posters/category/Flowers?categoryId=2">Flowers</a></li>
+			<li class="level-1" id="subCategory20"><a href="http://localhost:8080/posters/category/Trees?categoryId=3">Trees</a></li>
+			<li class="topCategory" id="topCategory1"><h4><a href="http://localhost:8080/posters/topCategory/Dining?categoryId=2">Dining</a></h4></li>
+			<li class="level-1" id="subCategory01"><a href="http://localhost:8080/posters/category/Cold%20Cuts?categoryId=4">Cold Cuts</a></li>
+			<li class="level-1" id="subCategory11"><a href="http://localhost:8080/posters/category/Main%20Dishes?categoryId=5">Main Dishes</a></li>
+			<li class="level-1" id="subCategory21"><a href="http://localhost:8080/posters/category/Sweets?categoryId=6">Sweets</a></li>
+			<li class="topCategory" id="topCategory2"><h4><a href="http://localhost:8080/posters/topCategory/Transportation?categoryId=3">Transportation</a></h4></li>
+			<li class="level-1" id="subCategory02"><a href="http://localhost:8080/posters/category/Air%20Travel?categoryId=7">Air Travel</a></li>
+			<li class="level-1" id="subCategory12"><a href="http://localhost:8080/posters/category/Classic%20Cars?categoryId=8">Classic Cars</a></li>
+			<li class="level-1" id="subCategory22"><a href="http://localhost:8080/posters/category/Railways?categoryId=9">Railways</a></li>
+			<li class="topCategory" id="topCategory3"><h4><a href="http://localhost:8080/posters/topCategory/Panoramas?categoryId=4">Panoramas</a></h4></li>
+			<li class="level-1" id="subCategory03"><a href="http://localhost:8080/posters/category/Architecture?categoryId=10">Architecture</a></li>
+			<li class="level-1" id="subCategory13"><a href="http://localhost:8080/posters/category/Fireworks?categoryId=11">Fireworks</a></li>
+			<li class="level-1" id="subCategory23"><a href="http://localhost:8080/posters/category/Landscapes?categoryId=12">Landscapes</a></li>
+			<li class="level-1" id="subCategory33"><a href="http://localhost:8080/posters/category/XXL%20Panoramas?categoryId=13">XXL Panoramas</a></li>
+	</ul>
+</div>				</div>
+				<!-- content -->
+				<div class="span9">
+	<h1 id="titleCart">Cart</h1>
+	<table class="table" table-bordered="">
+			<tbody><tr id="product0">
+				<td><a href="/posters/productDetail/Niagara%20Ferris%20Wheel?productId=87"><img alt="" data-src="/posters/assets/js/holder.js/150x100" src="cache/3355760400.jpg" width="150"></a></td>
+				<td id="productName0">Niagara Ferris Wheel</td>
+				<td id="productDescriptionOverview0">Up for a night sky wheel ride?</td>
+				<td id="productFinish0">gloss</td>
+				<td id="productSize0">32 x 24 in</td>
+				<td id="productPrice0">23.90$</td>
+				<td>
+	      			<input class="input-mini productCount0" id="productCount0" name="productCount0" type="number" value="1"><br>
+	      			<button class="btn" id="btnUpdateProdCount0" name="btnUpdateProdCount0">Update quantity</button>
+				</td>
+				<td>
+      				<button class="btn" id="btnRemoveProduct0" name="btnRemoveProduct0">Remove from cart</button>
+				</td>
+			</tr>
+	</tbody></table>
+
+	<h3 align="right">Total: <b id="totalPrice">23.90$</b></h3>
+	
+	<h3 align="right"><a href="https://localhost:8443/posters/checkout" id="btnStartCheckout">Proceed to checkout</a></h3>
+
+				</div>
+			</div>
+			<!-- footer -->
+			<hr>
+<footer id="footer">
+	<p class="text-center muted">Copyright (c) 2014 Xceptance Software Technologies -- This software is for demo purposes only and not meant to be used in production.</p>
+</footer>
+		</div>
+  
+</body></html>

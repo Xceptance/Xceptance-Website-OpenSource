@@ -1,32 +1,38 @@
-version: 4.7.1
+version: 4.10.2
 
 download:
-    link: https://lab.xceptance.de/releases/xlt/4.7.1/xlt-4.7.1.zip
+    link: https://lab.xceptance.de/releases/xlt/4.10.2/xlt-4.10.2.zip
 
 AMIs:
     - zone: ap-northeast-1
-      ID: ami-3f74b95e
+      ID: ami-15e79673
     - zone: ap-northeast-2
-      ID: ami-5487523a
+      ID: ami-d78a28b9
     - zone: ap-south-1
-      ID: ami-e051248f
+      ID: ami-512c7e3e
     - zone: ap-southeast-1
-      ID: ami-5e5f863d
+      ID: ami-9996d6e5
     - zone: ap-southeast-2
-      ID: ami-cf3f08ac
+      ID: ami-0e956f6c
+    - zone: ca-central-1
+      ID: ami-9148ccf5
     - zone: eu-central-1
-      ID: ami-0239c86d
+      ID: ami-c64522a9
     - zone: eu-west-1
-      ID: ami-afd7a3dc
+      ID: ami-64a5d11d
+    - zone: eu-west-2
+      ID: ami-82ea0fe5
     - zone: sa-east-1
-      ID: ami-bbd342d7
+      ID: ami-af713fc3
     - zone: us-east-1
-      ID: ami-bd2e49aa
+      ID: ami-8b6e7af1
+    - zone: us-east-2
+      ID: ami-8d4672e8
     - zone: us-west-1
-      ID: ami-8b6d2feb
+      ID: ami-a5313fc5
     - zone: us-west-2
-      ID: ami-d93beeb9
+      ID: ami-524cca2a
 
 scriptdeveloper:
     download:
-        link: https://lab.xceptance.de/releases/xlt/4.7.1/xlt-scriptdeveloper-4.7.1.xpi
+        link: https://lab.xceptance.de/releases/xlt/4.10.2/xlt-scriptdeveloper-4.10.2.xpi

@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "null" "null">
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <title>Posters - The Ultimate Online Shop</title>
+    <link href="cache/1973688119.css" rel="stylesheet">
+    <link href="cache/2773429046.css" rel="stylesheet">
+	<link href="cache/4079994087.css" rel="stylesheet">
+    <style type="text/css">
+      	body {
+        	padding-top: 60px;
+        	padding-bottom: 40px;
+        	padding-left: 20px;
+        	padding-right: 40px;
+      	}
+    </style>
+	
+    
+    
+    
+	
+	
+  </head><body>
+  		<!-- cart slider -->
+<div id="slidingTopWrap">
+	<div id="slidingTopContent" style="display: none;">
+		<div id="cartSliderWrap">
+			<div id="cartSliderTitleWrap">
+				<a href="http://localhost:8080/posters/cart" id="cartSliderHeader">Cart</a>
+				<span id="notificationsLoader"></span>
+			</div>
+			<div id="cartSliderItemsWrap">
+				<ul id="cartSliderElementList">
+				</ul>
+			</div>
+			<div style="text-align:right">Total: <span id="cartSliderTotalPrice"></span></div>
+		</div>
+	</div>
+	<div id="slidingTopFooter">
+		<div id="slidingTopFooterLeft">
+			<button class="btn" id="slidingTopTriggerShow">Show cart</button>
+			<button class="btn" id="slidingTopTriggerHide" style="display: none;">Hide cart</button>
+		</div>
+	</div>
+</div>
+    	<!-- header -->
+<div class="navbar navbar-fixed-top" id="header">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+			<a class="btn btn-navbar" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<!-- brand -->
+			<a class="brand span2 text-center" href="http://localhost:8080/posters/" id="brand">
+				<img src="cache/3841724783.png" width="28"> Poster Store</a>
+			<!-- collapse -->
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<!-- search -->
+				<form action="http://localhost:8080/posters/search" class="navbar-search span6" id="search" method="get">
+					<input class="search-query span5" id="searchText" name="searchText" placeholder="Search" type="text" value="">
+					<button class="btn" id="btnSearch" type="submit">
+						<i class="icon-search"></i>
+					</button>
+				</form>
+				<!-- login -->
+					<ul class="nav pull-right" id="headerLoggedCustomer">
+						<li class="dropdown" id="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hi! John <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li id="btnAccountOverview">
+									<a href="https://localhost:8443/posters/accountOverview">My Account</a>
+								</li> 
+								<li id="btnLogout">
+									<a href="http://localhost:8080/posters/logout">Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				<!-- cart overview -->
+				<p class="navbar-text span3 pull-right" id="btnCartOverview">
+					<a href="http://localhost:8080/posters/cart" id="headerCartOverview"><i class="icon-shopping-cart"></i>
+						<span>Cart: 1
+						Items - 23.90$</span></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>		<!-- checkout breadcrumb -->
+<div class="row" id="breadcrumbCheckout">
+	<ul class="breadcrumb span6 offset4 text-center">
+		<!-- add shipping address -->
+			<li id="btnDelAddr">
+				<a href="enterShippingAddress">Shipping Addresses</a> <span class="divider"> &gt; </span>
+			</li>
+		<!-- add billing address -->	
+			<li id="btnBillAddr"> Billing Addresses
+			<span class="divider"> &gt; </span></li>
+		<!-- add credit card -->
+			<li id="btnCreditCard"> Credit card
+			<span class="divider"> &gt; </span></li>
+		<!-- place order -->
+			<li id="btnPlaceOrder"> Place order
+			</li>
+	</ul>
+</div>		<!-- messages -->
+		<div class="row" id="errorMessage" style="display: none;">
+			<div class="span6 offset3 text-center alert alert-error">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+		<div class="row" id="successMessage" style="display: none;">
+			<div class="span6 offset3 text-center alert alert-success">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+		<div class="row" id="infoMessage" style="display: none;">
+			<div class="span6 offset3 text-center alert alert-info">
+  				<a class="close" data-dismiss="alert">×</a>
+  				<strong></strong>
+			</div>
+		</div>
+
+		<!-- body -->
+		<div class="container-fluid" id="main">
+			<div class="row-fluid">
+				<!-- sidebar -->
+				<div class="span3">
+<div class="well sidebar-nav" id="sidebarNav">
+	<ul class="nav nav-list">
+			<li class="topCategory" id="topCategory0"><h4><a href="http://localhost:8080/posters/topCategory/World%20of%20Nature?categoryId=1">World of Nature</a></h4></li>
+			<li class="level-1" id="subCategory00"><a href="http://localhost:8080/posters/category/Animals?categoryId=1">Animals</a></li>
+			<li class="level-1" id="subCategory10"><a href="http://localhost:8080/posters/category/Flowers?categoryId=2">Flowers</a></li>
+			<li class="level-1" id="subCategory20"><a href="http://localhost:8080/posters/category/Trees?categoryId=3">Trees</a></li>
+			<li class="topCategory" id="topCategory1"><h4><a href="http://localhost:8080/posters/topCategory/Dining?categoryId=2">Dining</a></h4></li>
+			<li class="level-1" id="subCategory01"><a href="http://localhost:8080/posters/category/Cold%20Cuts?categoryId=4">Cold Cuts</a></li>
+			<li class="level-1" id="subCategory11"><a href="http://localhost:8080/posters/category/Main%20Dishes?categoryId=5">Main Dishes</a></li>
+			<li class="level-1" id="subCategory21"><a href="http://localhost:8080/posters/category/Sweets?categoryId=6">Sweets</a></li>
+			<li class="topCategory" id="topCategory2"><h4><a href="http://localhost:8080/posters/topCategory/Transportation?categoryId=3">Transportation</a></h4></li>
+			<li class="level-1" id="subCategory02"><a href="http://localhost:8080/posters/category/Air%20Travel?categoryId=7">Air Travel</a></li>
+			<li class="level-1" id="subCategory12"><a href="http://localhost:8080/posters/category/Classic%20Cars?categoryId=8">Classic Cars</a></li>
+			<li class="level-1" id="subCategory22"><a href="http://localhost:8080/posters/category/Railways?categoryId=9">Railways</a></li>
+			<li class="topCategory" id="topCategory3"><h4><a href="http://localhost:8080/posters/topCategory/Panoramas?categoryId=4">Panoramas</a></h4></li>
+			<li class="level-1" id="subCategory03"><a href="http://localhost:8080/posters/category/Architecture?categoryId=10">Architecture</a></li>
+			<li class="level-1" id="subCategory13"><a href="http://localhost:8080/posters/category/Fireworks?categoryId=11">Fireworks</a></li>
+			<li class="level-1" id="subCategory23"><a href="http://localhost:8080/posters/category/Landscapes?categoryId=12">Landscapes</a></li>
+			<li class="level-1" id="subCategory33"><a href="http://localhost:8080/posters/category/XXL%20Panoramas?categoryId=13">XXL Panoramas</a></li>
+	</ul>
+</div>				</div>
+				<!-- content -->
+				<div class="span9">
+	<h3 id="titleDelAddr">Select or enter a shipping address</h3>
+	<!-- choose available address -->
+      		<div class="row-fluid">
+      			<ul>
+      				<li class="span4" id="delAddr0">
+      					<address>
+      						<strong>John Doe</strong><br>
+      						John Doe Inc.<br>
+      						5-7 John Doe street<br>
+      						New York, NY 12345<br>
+      						United States<br>
+      					</address>
+      					<form action="addShippingAddressToOrder" method="post">
+    						<input id="addressId" name="addressId" type="hidden" value="1">
+    						<button class="btn" id="btnUseDelAddress0" name="btnUseDelAddress0" type="submit">Use this shipping address</button>
+						</form>
+      				</li>
+      	    	</ul>
+      		</div>
+	<!-- add new address -->
+	<form action="/posters/shippingAddressCompleted" class="form-horizontal" id="formAddDelAddr" method="post">
+		<fieldset>
+			<!-- Form Name -->
+			<legend>Add a new shipping address</legend>
+			<!-- include form -->
+<!-- full name-->
+<div class="control-group">
+  <label class="control-label" for="fullName">Full name:</label>
+  <div class="controls">
+    <input class="input-xlarge" data-error="Please enter a valid name." id="fullName" name="fullName" pattern="[A-Za-z\s]+" required="" type="text" value="">
+  </div>
+</div>
+
+<!-- company-->
+<div class="control-group">
+  <label class="control-label" for="company">Company:</label>
+  <div class="controls">
+    <input class="input-xlarge" id="company" name="company" placeholder="company name" required="" type="text" value="">
+  </div>
+</div>
+
+<!-- address line-->
+<div class="control-group">
+  <label class="control-label" for="addressLine">Address:</label>
+  <div class="controls">
+    <input class="input-xlarge" id="addressLine" name="addressLine" placeholder="Street address, Apartment, etc." required="" type="text" value="">
+  </div>
+</div>
+
+<!-- city-->
+<div class="control-group">
+  <label class="control-label" for="city">City:</label>
+  <div class="controls">
+    <input class="input-xlarge" data-error="Please enter a valid city." id="city" name="city" pattern="[A-Za-z\s]+" required="" type="text" value="">
+  </div>
+</div>
+
+<!-- state-->
+<div class="control-group">
+  <label class="control-label" for="state">State/Province/Region:</label>
+  <div class="controls">
+    <input class="input-xlarge" data-error="Please enter a valid state." id="state" name="state" pattern="[A-Za-z\s]+" required="" type="text" value="">
+  </div>
+</div>
+
+<!-- zip-->
+<div class="control-group">
+  <label class="control-label" for="zip">ZIP/Postal code:</label>
+  <div class="controls">
+    <input class="input-xlarge" data-error="Please enter a valid ZIP/Postal code." id="zip" name="zip" pattern="[0-9]+" required="" type="text" value="">
+  </div>
+</div>
+
+<!-- Select country -->
+<div class="control-group">
+  <label class="control-label" for="country">Country:</label>
+  <div class="controls">
+    <select class="input-xlarge" id="country" name="country">
+      <option>United States</option>
+      <option>Germany</option>
+    </select>
+  </div>
+</div>			<!-- choose: shipping equals billing address -->
+			<div class="control-group">
+				<label class="control-label" for="billEqualShipp">Use this address for billing?</label>
+				<div class="controls">
+					<label class="radio" for="billEqualShipp-Yes">
+						<input checked="checked" id="billEqualShipp-Yes" name="billEqualShipp" type="radio" value="Yes">
+							Yes
+					</label>
+					<label class="radio" for="billEqualShipp-No">
+						<input id="billEqualShipp-No" name="billEqualShipp" type="radio" value="No">
+							No
+					</label>
+				</div>
+			</div>
+			<!-- continue button -->
+			<div class="control-group">
+				<label class="control-label" for="continue"></label>
+				<div class="controls">
+					<button class="btn btn-primary" id="btnAddDelAddr" name="btnAddDelAddr" type="submit">Continue</button>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+				</div>
+			</div>
+			<!-- footer -->
+			<hr>
+<footer id="footer">
+	<p class="text-center muted">Copyright (c) 2014 Xceptance Software Technologies -- This software is for demo purposes only and not meant to be used in production.</p>
+</footer>
+		</div>
+  
+</body></html>

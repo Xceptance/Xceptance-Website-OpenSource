@@ -1512,31 +1512,68 @@ table {
 
 	#teaser {
 
-		@media (min-width: @screen-xs-max) {
-            height: @homepageTeaserHeight;
-            background: url(/images/teasers/green_inverted.jpg) fixed center @navBarHeight no-repeat #6d9906;
-        }
+		background: url(/images/teasers/commerce_mobile.png) center no-repeat #D1CFC3;
+		height: 400px;
 
-        .dw-logo-header {
-	        width: 250px;
-	        position: relative;
-	        top: -65px;
-        }
+		#text h1 {
+			margin-top: 2em;
+			font-size: 2.3em;
+			color: #fff;
+			.contrastShadow;
+			font-family: @fCondensed;
+			line-height: 1.6em;
+		}
+
+		#teaser-SFCC-logo {
+			width: 90%;
+		}
+
+		@media (min-width: @screen-xs-max) {
+			height: 600px;
+			background: url(/images/teasers/commerce.png) center no-repeat #D1CFC3;
+		// position: relative;
+			#text h1 {
+				margin-top: 6em;
+				font-size: 2.5em;
+				line-height: 1.6em;
+			}
+
+			#teaser-SFCC-logo {
+				width: 60%;
+			}
+		}
+
+		// .teaser-image::after {
+		// 	bottom: 0;
+		// 	content: "";
+		// 	height: 100%;
+		// 	left: 0;
+		// 	position: absolute;
+		// 	right: 0;
+		// 	top: 0;
+		// 	width: 100%;
+		// 	background-image: linear-gradient(0deg, rgba(0,15,20,0.8),rgba(0,15,20,0.1));
+		// }
     }
 
+
+
 	#demandware {
-		.row-padding;
 	    .ourStyledList;
+
+			.more-padding {
+				padding-top: 3em;
+				padding-bottom: 3em;
+			}
+
+			.more-padding-below {
+				padding-bottom: 5em;
+			}
 
 	    #logo {
 		    padding-top: 1.7em;
 		    width: 80%;
 		    float: right;
-	    }
-
-	    .dw-logo-phone {
-		    max-width: 280px;
-		    margin: 0 auto 10px;
 	    }
 
 	    .facts-table {

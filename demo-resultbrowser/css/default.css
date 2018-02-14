@@ -1,0 +1,455 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html { /* get rid of the default vertical scroll bar in IE */
+    overflow: auto;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #E9E9E9;
+    font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
+}
+
+/*
+ * The header
+ */
+#header {
+    width: 100%;
+    position:fixed;
+}
+
+#header h1 {
+    font-size: 16px;
+    padding: 5px;
+    color: white;
+	display: block;
+}
+ 
+#header .logo {
+    padding: 5px;
+    background-color: #A50000;
+    box-shadow: 0 0 2px 2px #888;
+}
+
+#header .logo img {
+    float: left;
+    background-color: white;
+    margin-right: 10px;
+    padding: 5px;
+    box-shadow: 0 0 2px 1px white;
+}
+
+/*
+ * The progress meter look and feel
+ */
+#progressmeter {
+    display: none;
+    background-image: url(../images/progress.gif);
+    width: 24px;
+    height: 24px;
+    float: right;
+    margin: 2px;
+}
+
+#progressmeter p {
+    display: none;
+}
+
+
+#leftSideMenu {
+    width: 275px;
+}
+
+
+/**
+ * The navigation with actions and requests
+ */
+#navigation {
+    position:absolute;
+    font-size: 12px;
+    z-index: -1;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    top: 45px;
+    background-color: white;
+    border-top: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+#navigation #actionlist {
+    margin: 10px 5px 5px 5px;
+    padding: 0px 0px 0px 0px;
+    overflow: auto;
+}
+
+#navigation ul {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+}
+
+#navigation ul li {
+    margin: 1px 0 0 1px;
+    font-weight: bold;
+    padding: 2px;
+    color: Black;
+    overflow: hidden;
+}
+
+#navigation li > .name {
+    cursor: pointer;
+}
+
+#navigation .expander {
+    padding-left: 15px;
+    background: url(../images/arrow-right.gif) left center no-repeat;
+    cursor: pointer;
+}
+
+#navigation .expander.expanded {
+    background-image: url(../images/arrow-bottom-right.gif)
+}
+
+#navigation #actionlist li.request {
+    margin-left: 18px;
+}
+
+#navigation li.action {
+    border-bottom: 1px solid #CBD6F3;
+    border-top: 1px solid transparent;
+    color: #2F4782;
+    margin-top: -1px;
+    padding-top: 3px;
+}
+
+#navigation li.action:first-child {
+    margin-top: 0px;
+}
+
+#navigation li.action:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+#navigation li.action.current {
+    border-top: 1px solid #9AF;
+    border-bottom: 1px solid #9AF;
+    background-color: #E4F1FF;
+}
+
+
+#navigation li.action.active > span {
+    font-style: italic;
+}
+
+#navigation li.active {
+    font-weight: bold;
+    border-right: 5px solid #9AF;
+}
+
+#navigation ul li ul {
+    padding: 0px;
+    border: none;
+}
+
+#navigation ul li ul li {
+    font-size: 11px;
+    padding: 1px 1px 1px 2px;
+    font-weight: normal;
+}
+
+#content {
+    background-color: white;
+    position:fixed !important;
+    top: 0px;
+    left: 256px;
+    height:100%;
+}
+
+#actioncontent, #postrequestparameters, #postrequestdata {
+    display: none;
+}
+
+#postrequestdata > textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    background-color: #f9f9fc;
+    border: 1px solid #97a6cc;
+    padding: 3px;
+}
+
+#queryparameters td.value {
+    white-space: pre-wrap;
+}
+
+#requestcontent { /* take the whole space of parent */
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#requestcontent h2 {
+    font-size: 12px;
+    margin: 4px 2px;
+    color: #2F4785;
+}
+
+#requestcontent h1 {
+    font-size: 14pt;
+    color: #2F4785;
+}
+
+#requestcontent table {
+    font-size: 11px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-spacing: 1px;
+}
+
+#requestcontent table td {
+    padding: 2px 4px;
+    vertical-align: top;
+    border: 1px solid transparent;
+    background-color: #E8E8E8;
+}
+
+
+#requestcontent table tr:nth-child(even) td {
+    background-color: #F9F9FC;
+}
+
+#requestcontent table td.key {
+    font-weight: bold;
+    width: 15em;
+    min-width: 15em;
+    text-align: right;
+    background-color: #BCCBDC;
+}
+
+#requestcontent table tr:nth-child(even) td.key {
+    background-color: #CED9E5;
+}
+
+#requestcontent table td.value {
+    
+}
+
+#requestcontent table td.empty {
+    border: none;
+    color: gray;
+    background-color: transparent;
+}
+
+#requestcontent table td.value .crow {
+    border-top: 1px solid white;
+    margin-top: 2px;
+    padding-top: 2px;
+}
+
+#requestcontent table tr:nth-child(even) td.value .crow {
+    border-color: #d8d8d8;
+}
+
+#requestcontent table td.value .crow:first-child {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#requestcontent table td.value .cname {
+    color: #266cb0;
+    font-weight: bold;
+}
+
+#requestcontent table td.value .cvalue {
+    font-weight: normal;
+}
+
+#requestcontent table td.value .csep {
+    padding: 0px 5px;
+}
+
+
+#requestimage {
+    
+}
+
+#requesttext {
+    
+}
+
+.contentTypeImage {
+    color: green;
+}
+
+.contentTypeCSS {
+    color: blue;
+}
+
+.contentTypeJS {
+    color: #7D28C0;
+}
+
+.httpError {
+    color: red;
+}
+
+.httpRedirect {
+    color: gray;
+}
+
+.tabs {
+    height: 100%;
+}
+
+.tabs .tabs-nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    overflow: visible;
+    border-bottom: 1px solid #aaa;
+    padding-top: 4px;
+    background-color: #A50000;
+}
+
+.tabs .tabs-nav li {
+    float: left;
+    margin: 4px 0px -1px 4px;
+    padding: 8px;
+    list-style: none;
+    cursor: pointer;
+    color: #f9f9f9;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    border-bottom-color: #aaa;
+}
+
+.tabs .tabs-nav li:hover {
+    color: #fff;
+    background-color: #DB0009;
+}
+
+.tabs .tabs-nav li.selected {
+    border: 1px solid #aaa;
+    border-bottom-color: transparent;
+    background-color: #fff;
+    color: #000;
+}
+
+.tabs .tabs-panel {
+    display: block;
+    background: white;
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.error {
+    width: 700px;
+    position: absolute;
+    background-color: #a50000;
+    padding: 25px;
+    display: none;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 2px #888;
+    color: white;
+}
+
+.error p {
+    margin-top: 10px;
+}
+
+.error > p:first-child {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.error ul {
+    padding: 5px 0 0 20px;
+    list-style-type: circle;
+}
+
+.error ul li {
+    padding: 2px 0;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+#errorMessage .filename{
+    font-weight: bold;
+}
+
+
+/********************************************************************************************
+*
+* Style for vertical split bar design
+*
+*********************************************************************************************/
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+.vsplitbar {
+    width: 4px;
+    height: 100%;
+    background: #5A6673;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    cursor: ew-resize;
+}
+
+.vsplitbar:active{
+    background: #6E7A87;
+}
+
+/*
+* Invisible mask overlays whole page during moving of split bar. Prevents IFrame errors.
+*/
+.splitterMask
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background-color: black;
+   opacity: 0;
+   z-index: 20000;
+}
+
+.unselectable {
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#responseContentActions {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+}
